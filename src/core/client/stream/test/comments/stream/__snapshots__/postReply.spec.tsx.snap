@@ -690,8 +690,17 @@ exports[`post a reply: optimistic response 1`] = `
                 <div
                   className="Comment-subBar"
                 >
-                  <div
-                    className="Box-root Flex-root coral coral-comment-inReplyTo Flex-flex Flex-alignCenter"
+                  <i
+                    aria-hidden="true"
+                    className="Icon-root Icon-sm InReplyTo-icon"
+                  >
+                    reply
+                  </i>
+                  <span>
+                     
+                  </span>
+                  <span
+                    className="InReplyTo-inReplyTo coral coral-comment-inReplyToText"
                   >
                     <i
                       aria-hidden="true"
@@ -703,7 +712,7 @@ exports[`post a reply: optimistic response 1`] = `
                        
                     </span>
                     <span
-                      className="InReplyTo-inReplyTo coral coral-comment-inReplyToText"
+                      className="InReplyTo-username coral coral-comment-inReplyToUsername"
                     >
                       In reply to
                       <span

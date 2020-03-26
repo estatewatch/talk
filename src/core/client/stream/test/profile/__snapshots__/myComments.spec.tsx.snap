@@ -10,9 +10,7 @@ exports[`renders profile 1`] = `
     className="Box-root HorizontalGutter-root HistoryComment-root coral coral-myComment HorizontalGutter-full"
     data-testid="historyComment-comment-0"
   >
-    <div
-      className="coral coral-myComment-commentOn"
-    >
+    <div>
       <span
         className="HistoryComment-commentOn"
       >
@@ -59,7 +57,7 @@ exports[`renders profile 1`] = `
     <div
       className="Box-root Flex-root HistoryComment-footer Flex-flex Flex-doubleItemGutter Flex-alignCenter Flex-directionRow gutter"
     >
-      <a
+      <button
         className="BaseButton-root Button-root Button-sizeRegular HistoryComment-sizeRegular Button-colorRegular HistoryComment-colorRegular Button-variantTextUnderlined HistoryComment-variantTextUnderlined HistoryComment-viewConversation coral coral-myComment-viewConversationButton"
         data-color="regular"
         data-variant="textUnderlined"
@@ -84,16 +82,14 @@ exports[`renders profile 1`] = `
           </i>
           View Conversation
         </div>
-      </a>
+      </button>
     </div>
   </div>
   <div
     className="Box-root HorizontalGutter-root HistoryComment-root coral coral-myComment HorizontalGutter-full"
     data-testid="historyComment-comment-1"
   >
-    <div
-      className="coral coral-myComment-commentOn"
-    >
+    <div>
       <span
         className="HistoryComment-commentOn"
       >
@@ -140,7 +136,7 @@ exports[`renders profile 1`] = `
     <div
       className="Box-root Flex-root HistoryComment-footer Flex-flex Flex-doubleItemGutter Flex-alignCenter Flex-directionRow gutter"
     >
-      <a
+      <button
         className="BaseButton-root Button-root Button-sizeRegular HistoryComment-sizeRegular Button-colorRegular HistoryComment-colorRegular Button-variantTextUnderlined HistoryComment-variantTextUnderlined HistoryComment-viewConversation coral coral-myComment-viewConversationButton"
         data-color="regular"
         data-variant="textUnderlined"
@@ -165,7 +161,7 @@ exports[`renders profile 1`] = `
           </i>
           View Conversation
         </div>
-      </a>
+      </button>
     </div>
   </div>
   <button
