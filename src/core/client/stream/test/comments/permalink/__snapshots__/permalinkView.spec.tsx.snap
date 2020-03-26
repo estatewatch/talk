@@ -1070,7 +1070,7 @@ exports[`renders permalink view 1`] = `
                             <span
                               className="InReplyTo-inReplyTo coral coral-comment-inReplyToText"
                             >
-                              In reply to 
+                              In reply to
                               <span
                                 className="InReplyTo-username coral coral-comment-inReplyToUsername"
                               >
@@ -1357,7 +1357,7 @@ exports[`renders permalink view 1`] = `
                             <span
                               className="InReplyTo-inReplyTo coral coral-comment-inReplyToText"
                             >
-                              In reply to 
+                              In reply to
                               <span
                                 className="InReplyTo-username coral coral-comment-inReplyToUsername"
                               >

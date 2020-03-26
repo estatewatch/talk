@@ -159,8 +159,12 @@ it("report comment as offensive", async () => {
       within(comment).getByText("Thank you", { exact: false })
     );
   });
-  expect(within(comment).toJSON()).toMatchSnapshot();
-  within(comment).getByTestID("comment-reported-button");
+  expect(within(popover).toJSON()).toMatchSnapshot();
+
+  const reportedButton = within(comment).getByTestID("comment-report-button");
+  expect(reportedButton.props.disabled).toBe(false);
+  within(comment).getByText("Dismiss").props.onClick();
+  expect(reportedButton.props.disabled).toBe(true);
   expect(resolvers.Mutation.createCommentFlag.called).toBe(true);
 });
 
@@ -203,7 +207,18 @@ it("dont agree with comment", async () => {
     );
   });
 
-  within(comment).getByTestID("comment-reported-button");
+  act(() =>
+    within(popover).getByText("Dismiss", { exact: false }).props.onClick({})
+  );
+
+  await wait(() =>
+    expect(
+      within(popover).queryByText("Thank you", { exact: false })
+    ).toBeNull()
+  );
+
+  const reportedButton = within(comment).getByTestID("comment-report-button");
+  expect(reportedButton.props.disabled).toBe(true);
   expect(resolvers.Mutation.createCommentDontAgree.called).toBe(true);
 });
 
