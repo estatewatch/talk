@@ -32,11 +32,7 @@ const ModerationActionBanContainer: FunctionComponent<Props> = ({
             </div>
           }
           adornment={<Spinner size="xs" className={styles.spinner} />}
-          className={CLASSES.moderationDropdown.banUserButton}
-          classes={{
-            root: styles.label,
-            mouseHover: styles.mouseHover,
-          }}
+          className={cn(styles.label, CLASSES.moderationDropdown.banUserButton)}
           disabled
         >
           Ban User
@@ -54,11 +50,11 @@ const ModerationActionBanContainer: FunctionComponent<Props> = ({
               <Icon size="sm">block</Icon>
             </div>
           }
-          className={CLASSES.moderationDropdown.bannedButton}
-          classes={{
-            root: cn(styles.label, styles.banned),
-            mouseHover: styles.mouseHover,
-          }}
+          className={cn(
+            styles.label,
+            styles.banned,
+            CLASSES.moderationDropdown.bannedButton
+          )}
           disabled
         >
           Banned
@@ -75,11 +71,7 @@ const ModerationActionBanContainer: FunctionComponent<Props> = ({
           </div>
         }
         onClick={onBan}
-        className={CLASSES.moderationDropdown.banUserButton}
-        classes={{
-          root: styles.label,
-          mouseHover: styles.mouseHover,
-        }}
+        className={cn(styles.label, CLASSES.moderationDropdown.banUserButton)}
       >
         Ban User
       </DropdownButton>

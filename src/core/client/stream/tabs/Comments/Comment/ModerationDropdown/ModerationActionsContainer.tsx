@@ -103,11 +103,11 @@ const ModerationActionsContainer: FunctionComponent<Props> = ({
                 star
               </Icon>
             }
-            className={cn(CLASSES.moderationDropdown.unfeatureButton)}
-            classes={{
-              root: cn(styles.label, styles.featured),
-              mouseHover: styles.mouseHover,
-            }}
+            className={cn(
+              styles.label,
+              styles.featured,
+              CLASSES.moderationDropdown.unfeatureButton
+            )}
             onClick={onUnfeature}
             disabled={isQA}
           >
@@ -117,11 +117,10 @@ const ModerationActionsContainer: FunctionComponent<Props> = ({
       ) : (
         <Localized id="comments-moderationDropdown-feature">
           <DropdownButton
-            className={cn(CLASSES.moderationDropdown.featureButton)}
-            classes={{
-              root: styles.label,
-              mouseHover: styles.mouseHover,
-            }}
+            className={cn(
+              styles.label,
+              CLASSES.moderationDropdown.featureButton
+            )}
             icon={<Icon size="md">star_border</Icon>}
             onClick={onFeature}
             disabled={isQA}
@@ -141,11 +140,11 @@ const ModerationActionsContainer: FunctionComponent<Props> = ({
                 check
               </Icon>
             }
-            className={cn(CLASSES.moderationDropdown.approvedButton)}
-            classes={{
-              root: cn(styles.label, styles.approved),
-              mouseHover: styles.mouseHover,
-            }}
+            className={cn(
+              styles.label,
+              styles.approved,
+              CLASSES.moderationDropdown.approvedButton
+            )}
             disabled
           >
             Approved
@@ -154,11 +153,7 @@ const ModerationActionsContainer: FunctionComponent<Props> = ({
       ) : (
         <Localized id="comments-moderationDropdown-approve">
           <DropdownButton
-            className={CLASSES.moderationDropdown.approveButton}
-            classes={{
-              root: styles.label,
-              mouseHover: styles.mouseHover,
-            }}
+            className={(styles.label, CLASSES.moderationDropdown.approveButton)}
             icon={
               <Icon size="md" className={styles.approveIcon}>
                 check
@@ -207,9 +202,6 @@ const ModerationActionsContainer: FunctionComponent<Props> = ({
               styles.label,
               CLASSES.moderationDropdown.rejectButton
             )}
-            classes={{
-              mouseHover: styles.mouseHover,
-            }}
           >
             Reject
           </DropdownButton>
