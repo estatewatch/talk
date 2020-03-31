@@ -9,8 +9,8 @@ import TIME from "coral-common/time";
 import { useCoralContext } from "coral-framework/lib/bootstrap";
 import { useMutation, withFragmentContainer } from "coral-framework/lib/relay";
 import CLASSES from "coral-stream/classes";
-import { Flex, Icon } from "coral-ui/components/v2";
-import { Button, CallOut } from "coral-ui/components/v3";
+import { Button, Flex, Icon } from "coral-ui/components/v2";
+import { CallOut } from "coral-ui/components/v3";
 
 import { DownloadCommentsContainer_viewer } from "coral-stream/__generated__/DownloadCommentsContainer_viewer.graphql";
 
@@ -86,10 +86,12 @@ const DownloadCommentsContainer: FunctionComponent<Props> = ({ viewer }) => {
           <div className={styles.requestContainer}>
             <Localized id="profile-account-download-comments-request-button">
               <Button
+                variant="regular"
+                color="regular"
+                size="regular"
                 disabled={!canDownload}
                 className={CLASSES.downloadCommentHistory.requestButton}
                 onClick={onClick}
-                upperCase
               >
                 Request
               </Button>
@@ -116,16 +118,18 @@ const DownloadCommentsContainer: FunctionComponent<Props> = ({ viewer }) => {
       </Flex>
       {showSuccessMessage && (
         <CallOut
-          color="positive"
+          color="success"
           className={cn(
             styles.callout,
             CLASSES.downloadCommentHistory.requestLater
           )}
           visible={showSuccessMessage}
           onClose={onCloseSuccess}
-          icon={<Icon size="sm">check_circle</Icon>}
-          titleWeight="semiBold"
-          title={
+        >
+          <Flex justifyContent="flex-start" alignItems="center">
+            <Icon size="sm" className={styles.successIcon}>
+              check_circle
+            </Icon>
             <Localized
               id="profile-account-download-comments-requestSubmitted"
               $value={scaled}
@@ -136,21 +140,23 @@ const DownloadCommentsContainer: FunctionComponent<Props> = ({ viewer }) => {
                 download your comment history again in {scaled} {unit}.
               </span>
             </Localized>
-          }
-        />
+          </Flex>
+        </CallOut>
       )}
       {showErrorMessage && (
         <CallOut
-          color="negative"
+          color="alert"
           className={cn(
             styles.callout,
             CLASSES.downloadCommentHistory.requestError
           )}
           visible={showErrorMessage}
           onClose={onCloseError}
-          icon={<Icon size="sm">warning</Icon>}
-          titleWeight="semiBold"
-          title={
+        >
+          <Flex justifyContent="flex-start" alignItems="center">
+            <Icon size="sm" className={styles.errorIcon}>
+              warning
+            </Icon>
             <Localized
               id="profile-account-download-comments-error"
               $value={scaled}
@@ -158,8 +164,8 @@ const DownloadCommentsContainer: FunctionComponent<Props> = ({ viewer }) => {
             >
               <span>We were unable to complete your download request.</span>
             </Localized>
-          }
-        />
+          </Flex>
+        </CallOut>
       )}
     </div>
   );
