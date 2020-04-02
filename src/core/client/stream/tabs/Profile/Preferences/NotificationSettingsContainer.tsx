@@ -225,28 +225,28 @@ const NotificationSettingsContainer: FunctionComponent<Props> = ({
                 (submitSucceeded && showSuccess)) && (
                 <div className={styles.callOut}>
                   {submitError && showError && (
-                    <CallOut
-                      color="negative"
-                      onClose={closeError}
-                      icon={<Icon size="sm">warning</Icon>}
-                      titleWeight="semiBold"
-                      title={<span>{submitError}</span>}
-                    />
+                    <CallOut color="alert" onClose={closeError}>
+                      <Flex justifyContent="flex-start" alignItems="center">
+                        <Icon size="sm" className={styles.errorIcon}>
+                          warning
+                        </Icon>
+                        <span>{submitError}</span>
+                      </Flex>
+                    </CallOut>
                   )}
                   {submitSucceeded && showSuccess && (
-                    <CallOut
-                      color="positive"
-                      onClose={closeSuccess}
-                      icon={<Icon size="sm">check_circle</Icon>}
-                      titleWeight="semiBold"
-                      title={
+                    <CallOut color="success" onClose={closeSuccess}>
+                      <Flex justifyContent="flex-start" alignItems="center">
+                        <Icon size="sm" className={styles.successIcon}>
+                          check_circle
+                        </Icon>
                         <Localized id="profile-account-notifications-updated">
                           <span>
                             Your notification settings have been updated
                           </span>
                         </Localized>
-                      }
-                    />
+                      </Flex>
+                    </CallOut>
                   )}
                 </div>
               )}

@@ -50,19 +50,16 @@
 }
 
 /* Box checked */
-
-input:checked.default + .label:before {
+.input:checked,
+.default:checked + .label:before {
   background: var(--v2-palette-primary-main);
   border: 1px solid var(--v2-palette-primary-main);
 }
 
-.input:checked.streamBlue + .label:before {
+.input:checked,
+.streamBlue:checked + .label:before {
   background: var(--v2-colors-stream-blue-500);
   border: 1px solid var(--v2-colors-stream-blue-500);
-}
-
-input:checked + .label {
-  font-weight: var(--v2-font-weight-primary-bold);
 }
 
 /* Disabled state label. */
