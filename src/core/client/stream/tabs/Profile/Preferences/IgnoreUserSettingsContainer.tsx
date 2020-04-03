@@ -7,12 +7,11 @@ import { useViewerEvent } from "coral-framework/lib/events";
 import { useMutation, withFragmentContainer } from "coral-framework/lib/relay";
 import CLASSES from "coral-stream/classes";
 import { ShowIgnoreUserdDialogEvent } from "coral-stream/events";
-import { HorizontalGutter } from "coral-ui/components/v2";
+import { Flex, HorizontalGutter, Icon } from "coral-ui/components/v2";
 import { Button } from "coral-ui/components/v3";
 
 import { IgnoreUserSettingsContainer_viewer as ViewerData } from "coral-stream/__generated__/IgnoreUserSettingsContainer_viewer.graphql";
 
-import IgnoreUserListItem from "./IgnoreUserListItem";
 import RemoveUserIgnoreMutation from "./RemoveUserIgnoreMutation";
 
 import styles from "./IgnoreUserSettingsContainer.css";
@@ -67,7 +66,8 @@ const IgnoreUserSettingsContainer: FunctionComponent<Props> = ({ viewer }) => {
         <Localized id="profile-account-ignoredCommenters-close">
           <Button
             variant="filled"
-            color="secondary"
+            size="medium"
+            color="mono"
             upperCase
             onClick={toggleManage}
             className={CLASSES.ignoredCommenters.manageButton}
@@ -80,13 +80,11 @@ const IgnoreUserSettingsContainer: FunctionComponent<Props> = ({ viewer }) => {
         <Localized id="profile-account-ignoredCommenters-manage">
           <Button
             variant="outlined"
-            color="secondary"
+            size="medium"
+            color="mono"
             upperCase
             onClick={toggleManage}
-            className={cn(
-              styles.manageButton,
-              CLASSES.ignoredCommenters.manageButton
-            )}
+            className={CLASSES.ignoredCommenters.manageButton}
           >
             Manage
           </Button>
@@ -97,15 +95,42 @@ const IgnoreUserSettingsContainer: FunctionComponent<Props> = ({ viewer }) => {
           spacing={1}
           className={cn(styles.list, CLASSES.ignoredCommenters.list)}
         >
-          {orderedUsers.map((user) => (
-            <IgnoreUserListItem
+          {viewer.ignoredUsers.map((user) => (
+            <Flex
               key={user.id}
-              id={user.id}
-              username={user.username}
-              onRemove={remove}
-            />
+              justifyContent="space-between"
+              alignItems="center"
+            >
+              <span
+                className={cn(
+                  styles.username,
+                  CLASSES.ignoredCommenters.username
+                )}
+              >
+                {user.username}
+              </span>
+              <Button
+                variant="none"
+                size="medium"
+                color="none"
+                onClick={() => removeUserIgnore({ userID: user.id })}
+                className={cn(
+                  styles.stopIgnoringButton,
+                  CLASSES.ignoredCommenters.stopIgnoreButton
+                )}
+              >
+                <Flex justifyContent="center" alignItems="center">
+                  <Icon size="sm" className={styles.icon}>
+                    close
+                  </Icon>
+                  <Localized id="profile-account-ignoredCommenters-stopIgnoring">
+                    <span>Stop ignoring</span>
+                  </Localized>
+                </Flex>
+              </Button>
+            </Flex>
           ))}
-          {orderedUsers.length === 0 && (
+          {viewer.ignoredUsers.length === 0 && (
             <Localized id="profile-account-ignoredCommenters-empty">
               <div className={styles.empty}>
                 You are not currently ignoring anyone
