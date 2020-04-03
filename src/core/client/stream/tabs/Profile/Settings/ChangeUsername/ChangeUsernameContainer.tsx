@@ -17,7 +17,7 @@ import getAuthenticationIntegrations from "coral-framework/helpers/getAuthentica
 import { useCoralContext } from "coral-framework/lib/bootstrap";
 import { InvalidRequestError } from "coral-framework/lib/errors";
 import { useViewerEvent } from "coral-framework/lib/events";
-import { streamColorFromMeta } from "coral-framework/lib/form";
+import { hasError } from "coral-framework/lib/form";
 import { useMutation, withFragmentContainer } from "coral-framework/lib/relay";
 import {
   composeValidators,
@@ -28,6 +28,7 @@ import {
 import CLASSES from "coral-stream/classes";
 import { ShowEditUsernameDialogEvent } from "coral-stream/events";
 import {
+  Flex,
   FormField,
   HorizontalGutter,
   Icon,
@@ -171,29 +172,18 @@ const ChangeUsernameContainer: FunctionComponent<Props> = ({
         </div>
       </div>
       {canChangeLocalAuth && !showEditForm && (
-        <div
-          className={cn({
-            [styles.changeButton]: canChangeUsername && !showSuccessMessage,
-            [styles.changeButtonMessage]:
-              !canChangeUsername || showSuccessMessage,
-          })}
-        >
-          <Localized id="profile-changeUsername-change">
-            <Button
-              className={cn(
-                CLASSES.myUsername.editButton,
-                CLASSES.myUsername.change
-              )}
-              variant="flat"
-              paddingSize="none"
-              color="primary"
-              onClick={toggleEditForm}
-              disabled={!canChangeUsername}
-            >
-              Change
-            </Button>
-          </Localized>
-        </div>
+        <Localized id="profile-changeUsername-change">
+          <Button
+            className={CLASSES.myUsername.change}
+            variant="text"
+            marginSize="none"
+            color="streamBlue"
+            onClick={toggleEditForm}
+            disabled={!canChangeUsername}
+          >
+            Change
+          </Button>
+        </Localized>
       )}
       {showSuccessMessage && (
         <div
@@ -203,17 +193,19 @@ const ChangeUsernameContainer: FunctionComponent<Props> = ({
           )}
         >
           <CallOut
-            color="positive"
+            color="success"
             onClose={closeSuccessMessage}
             className={cn(CLASSES.myUsername.form.successCallOut)}
-            icon={<Icon size="sm">check_circle</Icon>}
-            titleWeight="semiBold"
-            title={
+          >
+            <Flex justifyContent="flex-start" alignItems="center">
+              <Icon size="sm" className={styles.successIcon}>
+                check_circle
+              </Icon>
               <Localized id="profile-changeUsername-success">
                 <span>Your username has been successfully updated</span>
               </Localized>
-            }
-          />
+            </Flex>
+          </CallOut>
         </div>
       )}
       {!canChangeUsername && !showSuccessMessage && (
@@ -276,71 +268,83 @@ const ChangeUsernameContainer: FunctionComponent<Props> = ({
                 >
                   <HorizontalGutter spacing={4}>
                     <FormField>
-                      <Field
-                        name="username"
-                        validate={composeValidators(required, validateUsername)}
-                      >
-                        {({ input, meta }) => (
-                          <>
-                            <Localized id="profile-changeUsername-newUsername-label">
-                              <InputLabel htmlFor={input.name}>
-                                New username
-                              </InputLabel>
-                            </Localized>
-                            <TextField
-                              {...input}
-                              fullWidth
-                              id={input.name}
-                              data-testid="profile-changeUsername-username"
-                              color={streamColorFromMeta(meta)}
-                            />
-                            <ValidationMessage
-                              className={CLASSES.validationMessage}
-                              meta={meta}
-                            />
-                          </>
-                        )}
-                      </Field>
+                      <HorizontalGutter>
+                        <Field
+                          name="username"
+                          validate={composeValidators(
+                            required,
+                            validateUsername
+                          )}
+                        >
+                          {({ input, meta }) => (
+                            <>
+                              <Localized id="profile-changeUsername-newUsername-label">
+                                <InputLabel htmlFor={input.name}>
+                                  New username
+                                </InputLabel>
+                              </Localized>
+                              <TextField
+                                {...input}
+                                fullWidth
+                                id={input.name}
+                                data-testid="profile-changeUsername-username"
+                                color={
+                                  hasError(meta) ? "streamError" : "regular"
+                                }
+                              />
+                              <ValidationMessage
+                                className={CLASSES.validationMessage}
+                                meta={meta}
+                              />
+                            </>
+                          )}
+                        </Field>
+                      </HorizontalGutter>
                     </FormField>
                     <FormField>
-                      <Field
-                        name="usernameConfirm"
-                        validate={composeValidators(
-                          required,
-                          validateUsernameEquals
-                        )}
-                        id="profile-changeUsername-username-confirm"
-                      >
-                        {({ input, meta }) => (
-                          <>
-                            <Localized id="profile-changeUsername-confirmNewUsername-label">
-                              <InputLabel htmlFor={input.name}>
-                                Confirm new username
-                              </InputLabel>
-                            </Localized>
-                            <TextField
-                              {...input}
-                              fullWidth
-                              id={input.name}
-                              data-testid="profile-changeUsername-username-confirm"
-                              color={streamColorFromMeta(meta)}
-                            />
-                            <ValidationMessage
-                              className={CLASSES.validationMessage}
-                              meta={meta}
-                            />
-                          </>
-                        )}
-                      </Field>
+                      <HorizontalGutter>
+                        <Field
+                          name="usernameConfirm"
+                          validate={composeValidators(
+                            required,
+                            validateUsernameEquals
+                          )}
+                          id="profile-changeUsername-username-confirm"
+                        >
+                          {({ input, meta }) => (
+                            <>
+                              <Localized id="profile-changeUsername-confirmNewUsername-label">
+                                <InputLabel htmlFor={input.name}>
+                                  Confirm new username
+                                </InputLabel>
+                              </Localized>
+                              <TextField
+                                {...input}
+                                fullWidth
+                                id={input.name}
+                                data-testid="profile-changeUsername-username-confirm"
+                                color={
+                                  hasError(meta) ? "streamError" : "regular"
+                                }
+                              />
+                              <ValidationMessage
+                                className={CLASSES.validationMessage}
+                                meta={meta}
+                              />
+                            </>
+                          )}
+                        </Field>
+                      </HorizontalGutter>
                     </FormField>
                     {submitError && (
                       <CallOut
-                        color="negative"
+                        color="alert"
                         className={CLASSES.myUsername.form.errorMessage}
-                        icon={<Icon size="sm">error</Icon>}
-                        titleWeight="semiBold"
-                        title={submitError}
-                      />
+                      >
+                        <Flex justifyContent="flex-start" alignItems="center">
+                          {submitError}
+                        </Flex>
+                      </CallOut>
                     )}
                   </HorizontalGutter>
                   <div
@@ -357,7 +361,7 @@ const ChangeUsernameContainer: FunctionComponent<Props> = ({
                         )}
                         type="button"
                         variant="outlined"
-                        color="secondary"
+                        color="mono"
                         onClick={toggleEditForm}
                         upperCase
                       >
@@ -373,7 +377,7 @@ const ChangeUsernameContainer: FunctionComponent<Props> = ({
                         variant="filled"
                         type="submit"
                         data-testid="profile-changeUsername-save"
-                        color="primary"
+                        color="streamBlue"
                         disabled={pristine || invalid}
                         upperCase
                       >

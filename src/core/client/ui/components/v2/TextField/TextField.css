@@ -10,6 +10,8 @@ $input-disabled-border: var(--v2-colors-grey-400);
 $input-error-border: var(--v2-colors-red-500);
 $input-dark-focused-border: var(--v2-colors-blue-500);
 
+$input-streamError-border: var(--v2-colors-red-500);
+
 .root {
   display: flex;
   width: calc(29 * var(--mini-unit));
@@ -83,6 +85,10 @@ $input-dark-focused-border: var(--v2-colors-blue-500);
 
 .colorError {
   border: 2px solid $input-error-border;
+}
+
+.colorStreamError {
+  border: 2px solid $input-streamError-border;
 }
 
 .fullWidth {

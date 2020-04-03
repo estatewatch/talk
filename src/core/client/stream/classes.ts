@@ -716,7 +716,6 @@ const CLASSES = {
   myUsername: {
     title: "coral coral-myUsername-title",
     username: "coral coral-myUsername",
-    editButton: "coral coral-myUsername-editButton",
     change: "coral coral-myUsername-change",
     tooSoon: "coral-myUsername-tooSoon",
     form: {
@@ -729,8 +728,7 @@ const CLASSES = {
       saveButton: "coral coral-changeMyUsername-saveButton",
       closeButton: "coral coral-changeMyUsername-closeButton",
       footer: "coral coral-changeMyUsername-footer",
-      errorMessage:
-        "coral coral-changeMyUsername-errorMessage coral-changeMyEmail-errorMessage",
+      errorMessage: "coral coral-changeMyUsername-errorMessage",
       successMessage: "coral coral-changeMyUsername-successMessage",
       successCallOut: "coral coral-changeMyUsername-successCallOut",
     },
