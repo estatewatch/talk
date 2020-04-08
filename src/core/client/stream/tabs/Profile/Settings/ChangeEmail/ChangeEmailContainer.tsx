@@ -15,7 +15,7 @@ import { PasswordField } from "coral-framework/components";
 import getAuthenticationIntegrations from "coral-framework/helpers/getAuthenticationIntegrations";
 import { InvalidRequestError } from "coral-framework/lib/errors";
 import { useViewerEvent } from "coral-framework/lib/events";
-import { streamColorFromMeta } from "coral-framework/lib/form";
+import { hasError } from "coral-framework/lib/form";
 import {
   createFetch,
   useFetch,
@@ -181,10 +181,7 @@ const changeEmailContainer: FunctionComponent<Props> = ({
         </Localized>
         <Flex>
           <div
-            className={cn(
-              styles.currentEmail,
-              CLASSES.myEmail.form.currentEmail
-            )}
+            className={cn(styles.currentEmail, CLASSES.myEmail.currentEmail)}
           >
             {viewer.email}
           </div>{" "}
@@ -193,7 +190,7 @@ const changeEmailContainer: FunctionComponent<Props> = ({
               <div
                 className={cn(
                   styles.currentEmail,
-                  CLASSES.myEmail.form.currentEmail
+                  CLASSES.myEmail.currentEmail
                 )}
               >
                 (Unverified)
@@ -205,7 +202,7 @@ const changeEmailContainer: FunctionComponent<Props> = ({
               <div
                 className={cn(
                   styles.currentEmail,
-                  CLASSES.myEmail.form.currentEmail
+                  CLASSES.myEmail.currentEmail
                 )}
               >
                 (current)
@@ -255,9 +252,9 @@ const changeEmailContainer: FunctionComponent<Props> = ({
                 <Localized id="profile-changeEmail-resend">
                   <Button
                     onClick={resend}
-                    variant="flat"
-                    color="primary"
-                    paddingSize="none"
+                    variant="text"
+                    color="streamBlue"
+                    marginSize="none"
                     className={cn(
                       styles.resendButton,
                       CLASSES.verifyEmail.resendButton
@@ -281,8 +278,8 @@ const changeEmailContainer: FunctionComponent<Props> = ({
           <Localized id="profile-changeEmail-change">
             <Button
               className={CLASSES.myEmail.editButton}
-              variant="flat"
-              paddingSize="none"
+              variant="text"
+              marginSize="none"
               onClick={toggleEditForm}
             >
               Change
@@ -292,23 +289,22 @@ const changeEmailContainer: FunctionComponent<Props> = ({
       )}
       {showSuccessMessage && (
         <div className={styles.successMessage}>
-          <CallOut
-            color="positive"
-            onClose={onCloseSuccess}
-            icon={<Icon size="sm">check_circle</Icon>}
-            titleWeight="semiBold"
-            title={
+          <CallOut color="success" onClose={onCloseSuccess}>
+            <Flex justifyContent="flex-start" alignItems="center">
+              <Icon className={styles.successIcon} size="sm">
+                check_circle
+              </Icon>
               <Localized id="profile-changeEmail-success">
                 Your email has been successfully updated
               </Localized>
-            }
-          />
+            </Flex>
+          </CallOut>
         </div>
       )}
       {confirmationResent && (
         <CallOut className={CLASSES.verifyEmail.resentMessage} color="mono">
           <Localized id="profile-changeEmail-resent">
-            <span>Your confirmation email has been re-sent.</span>
+            <div>Your confirmation email has been re-sent.</div>
           </Localized>
         </CallOut>
       )}
@@ -359,7 +355,7 @@ const changeEmailContainer: FunctionComponent<Props> = ({
                               {...input}
                               fullWidth
                               id="profile-changeEmail-Email"
-                              color={streamColorFromMeta(meta)}
+                              color={hasError(meta) ? "streamError" : "regular"}
                             />
                             <ValidationMessage
                               meta={meta}
@@ -391,7 +387,9 @@ const changeEmailContainer: FunctionComponent<Props> = ({
                                 {...input}
                                 id={input.name}
                                 placeholder="Password"
-                                color={streamColorFromMeta(meta)}
+                                color={
+                                  hasError(meta) ? "streamError" : "regular"
+                                }
                                 disabled={submitting}
                                 fullWidth
                               />
@@ -408,11 +406,15 @@ const changeEmailContainer: FunctionComponent<Props> = ({
                   {submitError && (
                     <CallOut
                       className={CLASSES.myEmail.form.errorMessage}
-                      color="negative"
-                      icon={<Icon size="sm">error</Icon>}
-                      titleWeight="semiBold"
-                      title={<span>{submitError}</span>}
-                    />
+                      color="alert"
+                    >
+                      <Flex justifyContent="flex-start" alignItems="center">
+                        <Icon size="sm" className={styles.errorIcon}>
+                          error
+                        </Icon>
+                        <span>{submitError}</span>
+                      </Flex>
+                    </CallOut>
                   )}
                 </HorizontalGutter>
                 <Flex
@@ -429,7 +431,7 @@ const changeEmailContainer: FunctionComponent<Props> = ({
                       type="button"
                       onClick={toggleEditForm}
                       variant="outlined"
-                      color="secondary"
+                      color="mono"
                       upperCase
                     >
                       Cancel
@@ -443,7 +445,7 @@ const changeEmailContainer: FunctionComponent<Props> = ({
                       )}
                       variant="filled"
                       type="submit"
-                      color="primary"
+                      color="streamBlue"
                       disabled={preventSubmit(formProps)}
                       upperCase
                     >

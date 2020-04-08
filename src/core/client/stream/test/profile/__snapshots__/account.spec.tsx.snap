@@ -74,65 +74,79 @@ exports[`renders the empty settings pane 1`] = `
         className="ChangeEmailContainer-verifyContainer coral coral-verifyEmail-container"
       >
         <div
-          className="CallOut-root CallOut-mono CallOut-leftBorder coral coral-verifyEmail"
+          className="CallOut-root CallOut-mono coral coral-verifyEmail"
         >
           <div
-            className="Box-root Flex-root Flex-flex Flex-justifyFlexStart Flex-alignFlexStart"
+            className="CallOut-content"
           >
             <div
-              className="CallOut-content"
+              className="Box-root Flex-root Flex-flex Flex-itemGutter gutter"
             >
-              <div
-                className="CallOut-body"
-              >
-                <div
-                  className="Box-root Flex-root Flex-flex Flex-itemGutter gutter"
+              <div>
+                <i
+                  aria-hidden="true"
+                  className="Icon-root Icon-lg"
                 >
-                  <div>
-                    <i
-                      aria-hidden="true"
-                      className="Icon-root Icon-lg"
-                    >
-                      email
-                    </i>
+                  email
+                </i>
+              </div>
+              <div>
+                <div
+                  className="ChangeEmailContainer-verifyContent coral coral-verifyEmail-content"
+                >
+                  <div
+                    className="ChangeEmailContainer-verifyTitle coral coral-verifyEmail-title"
+                  >
+                    <div>
+                      Verify your email address
+                    </div>
                   </div>
                   <div>
-                    <div
-                      className="ChangeEmailContainer-verifyContent coral coral-verifyEmail-content"
-                    >
-                      <div
-                        className="ChangeEmailContainer-verifyTitle coral coral-verifyEmail-title"
-                      >
-                        <div>
-                          Verify your email address
-                        </div>
-                      </div>
-                      <div>
-                        An email has been sent to {$email} to verify your account.
+                    An email has been sent to {$email} to verify your account.
 You must verify your new email address before it can be used
 to sign in to your account or to receive notifications.
-                      </div>
-                    </div>
-                    <button
-                      className="BaseButton-root Button-base Button-flat Button-fontSizeSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-colorPrimary ChangeEmailContainer-resendButton coral coral-verifyEmail-resendButton"
-                      disabled={false}
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onMouseOut={[Function]}
-                      onMouseOver={[Function]}
-                      onTouchEnd={[Function]}
-                      type="button"
-                    >
-                      Resend verification
-                    </button>
                   </div>
                 </div>
+                <button
+                  className="BaseButton-root Button-base Button-text Button-textSizeMedium Button-colorStreamBlue ChangeEmailContainer-resendButton coral coral-verifyEmail-resendButton"
+                  disabled={false}
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  onTouchEnd={[Function]}
+                  type="button"
+                >
+                  Resend verification
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div
+        className="ChangeEmailContainer-changeButton"
+      >
+        <button
+          className="BaseButton-root Button-base Button-text Button-textSizeMedium Button-colorStreamBlue coral coral-myEmail-editButton"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          type="button"
+        >
+          Change
+        </button>
+      </div>
+    </div>
+    <div
+      className="coral coral-myPassword"
+      data-testid="profile-account-changePassword"
+    >
       <div
         className="ChangeEmailContainer-changeButton"
       >
