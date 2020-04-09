@@ -201,7 +201,7 @@ to sign in to your account or to receive notifications.
           <div
             className="DeleteAccountContainer-title coral coral-deleteMyAccount-title"
           >
-            Delete my account
+            Delete My Account
           </div>
           <div
             className="DeleteAccountContainer-section coral coral-deleteMyAccount-section"
@@ -211,8 +211,7 @@ all your comments from this site.
           </div>
         </div>
         <button
-          className="BaseButton-root Button-base Button-filled Button-fontSizeSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-paddingSizeSmall Button-colorNegative Button-upperCase DeleteAccountContainer-requestButton coral coral-deleteMyAccount-requestButton"
-          data-testid="deleteAccount-request"
+          className="BaseButton-root Button-base Button-filled Button-textSizeMedium Button-marginSizeMedium Button-colorAlert DeleteAccountContainer-requestButton coral coral-deleteMyAccount-requestButton"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
