@@ -14,6 +14,7 @@ import {
 } from "coral-framework/lib/validation";
 import CLASSES from "coral-stream/classes";
 import {
+  CallOut,
   Flex,
   FormField,
   HorizontalGutter,
@@ -22,7 +23,7 @@ import {
   PasswordField,
   TextField,
 } from "coral-ui/components/v2";
-import { Button, CallOut, ValidationMessage } from "coral-ui/components/v3";
+import { Button } from "coral-ui/components/v3";
 
 import PageStepBar from "./Common/PageStepBar";
 import RequestAccountDeletionMutation from "./RequestAccountDeletionMutation";
@@ -97,24 +98,10 @@ const ConfirmPage: FunctionComponent<Props> = ({
       >
         <div className={sharedStyles.headerContent}>
           <Localized id="profile-account-deleteAccount-pages-sharedHeader">
-            <div
-              className={cn(
-                sharedStyles.subHeaderText,
-                CLASSES.deleteMyAccountModal.subHeaderText
-              )}
-            >
-              Delete my account
-            </div>
+            <div className={sharedStyles.subHeaderText}>Delete my account</div>
           </Localized>
           <Localized id="profile-account-deleteAccount-pages-confirmSubHeader">
-            <div
-              className={cn(
-                sharedStyles.headerText,
-                CLASSES.deleteMyAccountModal.headerText
-              )}
-            >
-              Are you sure?
-            </div>
+            <div className={sharedStyles.headerText}>Are you sure?</div>
           </Localized>
         </div>
       </Flex>
@@ -122,12 +109,7 @@ const ConfirmPage: FunctionComponent<Props> = ({
         <PageStepBar step={step} />
 
         <Localized id="profile-account-deleteAccount-confirmDescContent">
-          <div
-            className={cn(
-              sharedStyles.sectionContent,
-              CLASSES.deleteMyAccountModal.sectionContent
-            )}
-          >
+          <div className={sharedStyles.sectionContent}>
             To confirm you would like to delete your account please type in the
             following phrase into the text box below:
           </div>
@@ -238,7 +220,7 @@ const ConfirmPage: FunctionComponent<Props> = ({
                     <Localized id="profile-account-deleteAccount-pages-cancel">
                       <Button
                         variant="outlined"
-                        color="secondary"
+                        color="mono"
                         upperCase
                         className={cn(
                           sharedStyles.cancelButton,
@@ -251,7 +233,7 @@ const ConfirmPage: FunctionComponent<Props> = ({
                     </Localized>
                     <Localized id="profile-account-deleteAccount-pages-deleteButton">
                       <Button
-                        color="secondary"
+                        color="mono"
                         variant="filled"
                         type="submit"
                         upperCase

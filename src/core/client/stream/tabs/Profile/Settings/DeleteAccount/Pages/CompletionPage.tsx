@@ -50,24 +50,10 @@ const CompletionPage: FunctionComponent<Props> = ({
       >
         <div className={styles.headerContent}>
           <Localized id="profile-account-deleteAccount-pages-sharedHeader">
-            <div
-              className={cn(
-                styles.subHeaderText,
-                CLASSES.deleteMyAccountModal.subHeaderText
-              )}
-            >
-              Delete my account
-            </div>
+            <div className={styles.subHeaderText}>Delete my account</div>
           </Localized>
           <Localized id="profile-account-deleteAccount-pages-completeSubHeader">
-            <div
-              className={cn(
-                styles.headerText,
-                CLASSES.deleteMyAccountModal.headerText
-              )}
-            >
-              Request submitted
-            </div>
+            <div className={styles.headerText}>Request submitted</div>
           </Localized>
         </div>
       </Flex>
@@ -75,12 +61,7 @@ const CompletionPage: FunctionComponent<Props> = ({
         <PageStepBar step={step} />
 
         <Localized id="profile-account-deleteAccount-pages-completeDescript">
-          <div
-            className={cn(
-              styles.sectionContent,
-              CLASSES.deleteMyAccountModal.sectionContent
-            )}
-          >
+          <div className={styles.sectionContent}>
             Your request has been submitted and a confirmation has been sent to
             the email address associated with your account.
           </div>
@@ -90,12 +71,7 @@ const CompletionPage: FunctionComponent<Props> = ({
           id="profile-account-deleteAccount-pages-completeTimeHeader"
           $date={formattedDate}
         >
-          <div
-            className={cn(
-              styles.sectionContent,
-              CLASSES.deleteMyAccountModal.sectionContent
-            )}
-          >
+          <div className={styles.sectionContent}>
             Your account will be deleted on: {formattedDate}
           </div>
         </Localized>
@@ -107,12 +83,7 @@ const CompletionPage: FunctionComponent<Props> = ({
           id="profile-account-deleteAccount-pages-completeSignIntoYourAccount"
           strong={<strong />}
         >
-          <div
-            className={cn(
-              styles.sectionContent,
-              CLASSES.deleteMyAccountModal.sectionContent
-            )}
-          >
+          <div className={styles.sectionContent}>
             Simply sign in to your account again before this time and select
             <strong>“Cancel Account Deletion Request.”</strong>
           </div>
@@ -125,12 +96,7 @@ const CompletionPage: FunctionComponent<Props> = ({
           id="profile-account-deleteAccount-pages-completeWhyDeleteAccount"
           $email={organizationEmail}
         >
-          <div
-            className={cn(
-              styles.sectionContent,
-              CLASSES.deleteMyAccountModal.sectionContent
-            )}
-          >
+          <div className={styles.sectionContent}>
             We'd like to know why you chose to delete your account. Send us
             feedback on our comment system by emailing {organizationEmail}.
           </div>
@@ -139,7 +105,7 @@ const CompletionPage: FunctionComponent<Props> = ({
         <div className={styles.controls}>
           <Button
             variant="filled"
-            color="secondary"
+            color="mono"
             fullWidth
             upperCase
             onClick={onDoneClicked}

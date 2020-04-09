@@ -1,7 +1,6 @@
 import cn from "classnames";
 import React, { FunctionComponent } from "react";
 
-import CLASSES from "coral-stream/classes";
 import { Step, StepBar } from "coral-ui/components/v2";
 
 import styles from "./PageStepBar.css";

@@ -33,24 +33,10 @@ const WhenPage: FunctionComponent<Props> = ({ step, onCancel, onProceed }) => {
       >
         <div className={styles.headerContent}>
           <Localized id="profile-account-deleteAccount-pages-sharedHeader">
-            <div
-              className={cn(
-                styles.subHeaderText,
-                CLASSES.deleteMyAccountModal.subHeaderText
-              )}
-            >
-              Delete my account
-            </div>
+            <div className={styles.subHeaderText}>Delete my account</div>
           </Localized>
           <Localized id="profile-account-deleteAccount-pages-whenSubHeader">
-            <div
-              className={cn(
-                styles.headerText,
-                CLASSES.deleteMyAccountModal.headerText
-              )}
-            >
-              When?
-            </div>
+            <div className={styles.headerText}>When?</div>
           </Localized>
         </div>
       </Flex>
@@ -58,43 +44,23 @@ const WhenPage: FunctionComponent<Props> = ({ step, onCancel, onProceed }) => {
         <PageStepBar step={step} />
 
         <Localized id="profile-account-deleteAccount-pages-whenSec1Header">
-          <div
-            className={cn(
-              styles.sectionHeader,
-              CLASSES.deleteMyAccountModal.sectionHeader
-            )}
-          >
+          <div className={styles.sectionHeader}>
             When will my account be deleted?
           </div>
         </Localized>
         <Localized id="profile-account-deleteAccount-pages-whenSec1Content">
-          <div
-            className={cn(
-              styles.sectionContent,
-              CLASSES.deleteMyAccountModal.sectionContent
-            )}
-          >
+          <div className={styles.sectionContent}>
             Your account will be deleted 24 hours after your request has been
             submitted.
           </div>
         </Localized>
         <Localized id="profile-account-deleteAccount-pages-whenSec2Header">
-          <div
-            className={cn(
-              styles.sectionHeader,
-              CLASSES.deleteMyAccountModal.sectionHeader
-            )}
-          >
+          <div className={styles.sectionHeader}>
             Can I still write comments until my account is deleted?
           </div>
         </Localized>
         <Localized id="profile-account-deleteAccount-pages-whenSec2Content">
-          <div
-            className={cn(
-              styles.sectionContent,
-              CLASSES.deleteMyAccountModal.sectionContent
-            )}
-          >
+          <div className={styles.sectionContent}>
             No. Once you've requested account deletion, you can no longer write
             comments, reply to comments, or select reactions.
           </div>
@@ -103,7 +69,7 @@ const WhenPage: FunctionComponent<Props> = ({ step, onCancel, onProceed }) => {
         <div className={styles.controls}>
           <Button
             variant="filled"
-            color="secondary"
+            color="mono"
             upperCase
             className={cn(
               styles.proceedButton,
@@ -117,7 +83,7 @@ const WhenPage: FunctionComponent<Props> = ({ step, onCancel, onProceed }) => {
           </Button>
           <Button
             variant="outlined"
-            color="secondary"
+            color="mono"
             upperCase
             className={cn(
               styles.cancelButton,

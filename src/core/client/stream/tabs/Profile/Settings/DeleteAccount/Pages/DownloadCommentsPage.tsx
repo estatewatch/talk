@@ -37,24 +37,10 @@ const DownloadCommentsPage: FunctionComponent<Props> = ({
       >
         <div className={styles.headerContent}>
           <Localized id="profile-account-deleteAccount-pages-sharedHeader">
-            <div
-              className={cn(
-                styles.subHeaderText,
-                CLASSES.deleteMyAccountModal.subHeaderText
-              )}
-            >
-              Delete my account
-            </div>
+            <div className={styles.subHeaderText}>Delete my account</div>
           </Localized>
           <Localized id="profile-account-deleteAccount-pages-downloadSubHeader">
-            <div
-              className={cn(
-                styles.headerText,
-                CLASSES.deleteMyAccountModal.headerText
-              )}
-            >
-              Download my comments
-            </div>
+            <div className={styles.headerText}>Download my comments</div>
           </Localized>
         </div>
       </Flex>
@@ -62,24 +48,14 @@ const DownloadCommentsPage: FunctionComponent<Props> = ({
         <PageStepBar step={step} />
 
         <Localized id="profile-account-deleteAccount-pages-downloadCommentsDesc">
-          <div
-            className={cn(
-              styles.sectionContent,
-              CLASSES.deleteMyAccountModal.sectionContent
-            )}
-          >
+          <div className={styles.sectionContent}>
             Before your account is deleted, we recommend you download your
             comment history for your records. After your account is deleted, you
             will be unable to request your comment history.
           </div>
         </Localized>
         <Localized id="profile-account-deleteAccount-pages-downloadCommentsPath">
-          <div
-            className={cn(
-              styles.sectionHeader,
-              CLASSES.deleteMyAccountModal.sectionHeader
-            )}
-          >
+          <div className={styles.sectionHeader}>
             My Profile &gt; Download My Comment History
           </div>
         </Localized>
@@ -87,7 +63,7 @@ const DownloadCommentsPage: FunctionComponent<Props> = ({
         <div className={styles.controls}>
           <Button
             variant="filled"
-            color="secondary"
+            color="mono"
             upperCase
             className={cn(
               styles.proceedButton,
@@ -101,7 +77,7 @@ const DownloadCommentsPage: FunctionComponent<Props> = ({
           </Button>
           <Button
             variant="outlined"
-            color="secondary"
+            color="mono"
             upperCase
             className={cn(
               styles.cancelButton,

@@ -36,14 +36,7 @@ const DescriptionPage: FunctionComponent<Props> = ({
         className={cn(styles.header, CLASSES.deleteMyAccountModal.header)}
       >
         <Localized id="profile-account-deleteAccount-pages-sharedHeader">
-          <div
-            className={cn(
-              styles.headerText,
-              CLASSES.deleteMyAccountModal.headerText
-            )}
-          >
-            Delete my account
-          </div>
+          <div className={styles.headerText}>Delete my account</div>
         </Localized>
       </Flex>
       <div className={cn(styles.body, CLASSES.deleteMyAccountModal.body)}>
@@ -71,7 +64,7 @@ const DescriptionPage: FunctionComponent<Props> = ({
         <div className={styles.controls}>
           <Button
             variant="filled"
-            color="secondary"
+            color="mono"
             upperCase
             className={cn(
               styles.proceedButton,
@@ -85,7 +78,7 @@ const DescriptionPage: FunctionComponent<Props> = ({
           </Button>
           <Button
             variant="outlined"
-            color="secondary"
+            color="mono"
             upperCase
             className={cn(
               styles.cancelButton,
