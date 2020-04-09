@@ -148,22 +148,23 @@ to sign in to your account or to receive notifications.
       data-testid="profile-account-changePassword"
     >
       <div
-        className="ChangeEmailContainer-changeButton"
+        className="ChangePassword-title coral coral-myPassword-title"
       >
-        <button
-          className="BaseButton-root Button-base Button-flat Button-fontSizeSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-colorPrimary coral coral-myEmail-editButton"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseOut={[Function]}
-          onMouseOver={[Function]}
-          onTouchEnd={[Function]}
-          type="button"
-        >
-          Change
-        </button>
+        Password
       </div>
+      <button
+        className="BaseButton-root Button-base Button-text Button-textSizeMedium Button-colorStreamBlue ChangePassword-changeButton coral coral-myPassword-editButton"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        type="button"
+      >
+        Change
+      </button>
     </div>
     <div
       className="coral coral-myPassword"

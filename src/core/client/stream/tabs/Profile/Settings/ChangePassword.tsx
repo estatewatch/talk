@@ -91,9 +91,9 @@ const ChangePassword: FunctionComponent<Props> = ({ onResetPassword }) => {
       {!showForm && (
         <Localized id="profile-account-changePassword-change">
           <Button
-            variant="flat"
-            color="primary"
-            paddingSize="none"
+            variant="text"
+            color="streamBlue"
+            marginSize="none"
             onClick={toggleForm}
             className={cn(
               {
@@ -115,17 +115,19 @@ const ChangePassword: FunctionComponent<Props> = ({ onResetPassword }) => {
           )}
         >
           <CallOut
-            color="positive"
+            color="success"
             onClose={onCloseSuccess}
             className={CLASSES.myPassword.form.successMessage}
-            icon={<Icon size="sm">check_circle</Icon>}
-            titleWeight="semiBold"
-            title={
+          >
+            <Flex justifyContent="flex-start" alignItems="center">
+              <Icon size="sm" className={styles.successIcon}>
+                check_circle
+              </Icon>
               <Localized id="profile-account-changePassword-updated">
                 <span>Your password has been updated</span>
               </Localized>
-            }
-          />
+            </Flex>
+          </CallOut>
         </div>
       )}
       {showForm && (
@@ -165,9 +167,9 @@ const ChangePassword: FunctionComponent<Props> = ({ onResetPassword }) => {
                           <Flex justifyContent="flex-end">
                             <Localized id="profile-account-changePassword-forgotPassword">
                               <Button
-                                variant="flat"
-                                color="primary"
-                                paddingSize="none"
+                                variant="text"
+                                color="streamBlue"
+                                marginSize="none"
                                 underline
                                 onClick={onResetPassword}
                                 className={CLASSES.myPassword.form.forgotButton}
@@ -207,12 +209,11 @@ const ChangePassword: FunctionComponent<Props> = ({ onResetPassword }) => {
                     </Field>
                     {submitError && (
                       <CallOut
-                        color="negative"
+                        color="alert"
                         className={CLASSES.myPassword.form.errorMessage}
-                        icon={<Icon size="sm">error</Icon>}
-                        titleWeight="semiBold"
-                        title={submitError}
-                      />
+                      >
+                        {submitError}
+                      </CallOut>
                     )}
                     <div
                       className={cn(
@@ -224,7 +225,7 @@ const ChangePassword: FunctionComponent<Props> = ({ onResetPassword }) => {
                         <Button
                           type="button"
                           variant="outlined"
-                          color="secondary"
+                          color="mono"
                           onClick={toggleForm}
                           className={cn(
                             styles.footerButton,
@@ -238,7 +239,7 @@ const ChangePassword: FunctionComponent<Props> = ({ onResetPassword }) => {
                         <Button
                           type="submit"
                           variant="filled"
-                          color="primary"
+                          color="streamBlue"
                           className={cn(
                             styles.footerButton,
                             CLASSES.myPassword.form.changeButton
