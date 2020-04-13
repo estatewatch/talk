@@ -14,7 +14,6 @@ import {
 } from "coral-framework/lib/validation";
 import CLASSES from "coral-stream/classes";
 import {
-  CallOut,
   Flex,
   FormField,
   HorizontalGutter,
@@ -23,7 +22,7 @@ import {
   PasswordField,
   TextField,
 } from "coral-ui/components/v2";
-import { Button } from "coral-ui/components/v3";
+import { Button, CallOut, ValidationMessage } from "coral-ui/components/v3";
 
 import PageStepBar from "./Common/PageStepBar";
 import RequestAccountDeletionMutation from "./RequestAccountDeletionMutation";
@@ -185,12 +184,7 @@ const ConfirmPage: FunctionComponent<Props> = ({
                           color={streamColorFromMeta(meta)}
                           autoComplete="off"
                         />
-                        <div className={styles.validationMessage}>
-                          <ValidationMessage
-                            meta={meta}
-                            className={CLASSES.validationMessage}
-                          />
-                        </div>
+                        <ValidationMessage meta={meta} />
                       </FormField>
                     )}
                   </Field>
@@ -213,25 +207,13 @@ const ConfirmPage: FunctionComponent<Props> = ({
                           color={streamColorFromMeta(meta)}
                           autoComplete="off"
                         />
-                        <div className={styles.validationMessage}>
-                          <ValidationMessage
-                            meta={meta}
-                            className={CLASSES.validationMessage}
-                          />
-                        </div>
+                        <ValidationMessage meta={meta} />
                       </FormField>
                     )}
                   </Field>
                 </FormField>
 
-                {submitError && (
-                  <CallOut
-                    color="negative"
-                    icon={<Icon size="sm">error</Icon>}
-                    titleWeight="semiBold"
-                    title={submitError}
-                  />
-                )}
+                {submitError && <CallOut color="alert">{submitError}</CallOut>}
               </HorizontalGutter>
               <div className={styles.controls}>
                 <HorizontalGutter>
