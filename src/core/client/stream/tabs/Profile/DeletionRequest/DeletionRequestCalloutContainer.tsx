@@ -48,41 +48,45 @@ const DeletionRequestCalloutContainer: FunctionComponent<Props> = ({
       className={cn(styles.container, CLASSES.pendingAccountDeletion.container)}
     >
       <CallOut
-        color="negative"
+        color="alert"
         borderPosition="top"
         className={CLASSES.pendingAccountDeletion.$root}
-        icon={
-          <Icon size="sm" className={CLASSES.pendingAccountDeletion.icon}>
-            timer
-          </Icon>
-        }
-        iconColor="none"
-        title={
-          <Localized
-            id="profile-accountDeletion-deletionDesc"
-            $date={deletionDate}
-          >
-            <div>
-              Your account is scheduled to be deleted on {deletionDate}.
-            </div>
-          </Localized>
-        }
       >
-        <Localized id="profile-accountDeletion-cancelAccountDeletion">
-          <Button
-            className={cn(
-              styles.cancelButton,
-              CLASSES.pendingAccountDeletion.cancelRequestButton
-            )}
-            variant="filled"
-            color="secondary"
-            paddingSize="none"
-            upperCase
-            onClick={cancelDeletion}
-          >
-            Cancel account deletion
-          </Button>
-        </Localized>
+        <HorizontalGutter>
+          <Flex>
+            <Icon
+              size="sm"
+              className={cn(CLASSES.pendingAccountDeletion.icon, styles.icon)}
+            >
+              timer
+            </Icon>
+            <div>
+              <Localized
+                id="profile-accountDeletion-deletionDesc"
+                $date={deletionDate}
+              >
+                <div>
+                  Your account is scheduled to be deleted on {deletionDate}.
+                </div>
+              </Localized>
+              <Localized id="profile-accountDeletion-cancelAccountDeletion">
+                <Button
+                  className={cn(
+                    styles.cancelButton,
+                    CLASSES.pendingAccountDeletion.cancelRequestButton
+                  )}
+                  variant="filled"
+                  color="mono"
+                  marginSize="none"
+                  upperCase
+                  onClick={cancelDeletion}
+                >
+                  Cancel account deletion
+                </Button>
+              </Localized>
+            </div>
+          </Flex>
+        </HorizontalGutter>
       </CallOut>
     </div>
   );
