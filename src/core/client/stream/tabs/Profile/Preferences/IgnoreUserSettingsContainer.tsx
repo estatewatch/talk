@@ -66,7 +66,7 @@ const IgnoreUserSettingsContainer: FunctionComponent<Props> = ({ viewer }) => {
         <Localized id="profile-account-ignoredCommenters-close">
           <Button
             variant="filled"
-            color="mono"
+            color="secondary"
             upperCase
             onClick={toggleManage}
             className={CLASSES.ignoredCommenters.manageButton}
@@ -79,7 +79,7 @@ const IgnoreUserSettingsContainer: FunctionComponent<Props> = ({ viewer }) => {
         <Localized id="profile-account-ignoredCommenters-manage">
           <Button
             variant="outlined"
-            color="mono"
+            color="secondary"
             upperCase
             onClick={toggleManage}
             className={CLASSES.ignoredCommenters.manageButton}
