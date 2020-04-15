@@ -145,7 +145,7 @@ it("feature and unfeature comment", async () => {
   act(() => {
     caretButton.props.onClick();
   });
-  const UnfeatureButton = within(comment).getByText("Un-feature", {
+  const UnfeatureButton = within(comment).getByText("Un-Feature", {
     selector: "button",
   });
   await act(async () => {
@@ -225,13 +225,12 @@ it("reject comment", async () => {
       exact: false,
     })
   );
-  const link = within(tabPane).getByText(
-    "Go to moderate to review this decision",
-    {
-      selector: "a",
-      exact: false,
-    }
-  );
+  const link = within(
+    tabPane
+  ).getByText("Go to Moderate to review this decision", {
+    selector: "button",
+    exact: false,
+  });
   expect(link.props.href).toBe(`/admin/moderate/comment/${firstComment.id}`);
 });
 

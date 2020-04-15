@@ -102,8 +102,8 @@ const StreamDeletionRequestCalloutContainer: FunctionComponent<Props> = ({
             <Localized id="comments-stream-deleteAccount-callOut-cancelAccountDeletion">
               <Button
                 variant="filled"
-                paddingSize="extraSmall"
-                fontSize="small"
+                marginSize="extraSmall"
+                textSize="small"
                 upperCase
                 color="secondary"
                 onClick={cancelDeletion}
