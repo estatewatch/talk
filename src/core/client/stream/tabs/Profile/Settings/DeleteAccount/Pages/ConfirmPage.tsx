@@ -184,7 +184,12 @@ const ConfirmPage: FunctionComponent<Props> = ({
                           color={streamColorFromMeta(meta)}
                           autoComplete="off"
                         />
-                        <ValidationMessage meta={meta} />
+                        <div className={styles.validationMessage}>
+                          <ValidationMessage
+                            meta={meta}
+                            className={CLASSES.validationMessage}
+                          />
+                        </div>
                       </FormField>
                     )}
                   </Field>
@@ -207,7 +212,12 @@ const ConfirmPage: FunctionComponent<Props> = ({
                           color={streamColorFromMeta(meta)}
                           autoComplete="off"
                         />
-                        <ValidationMessage meta={meta} />
+                        <div className={styles.validationMessage}>
+                          <ValidationMessage
+                            meta={meta}
+                            className={CLASSES.validationMessage}
+                          />
+                        </div>
                       </FormField>
                     )}
                   </Field>
