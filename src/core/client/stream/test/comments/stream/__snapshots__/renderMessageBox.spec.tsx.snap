@@ -64,7 +64,7 @@ exports[`renders message box when commenting disabled 1`] = `
         className="CallOut-root CallOut-mono CallOut-leftBorder coral coral-createComment-closed"
       >
         <div
-          className="Box-root Flex-root Flex-flex Flex-justifyFlexStart Flex-alignFlexStart"
+          className="Box-root Flex-root Flex-flex Flex-justifyFlexStart"
         >
           <div
             className="CallOut-icon CallOut-mono CallOut-leftIcon"
@@ -80,7 +80,7 @@ exports[`renders message box when commenting disabled 1`] = `
             className="CallOut-content"
           >
             <div
-              className="CallOut-title CallOut-titleBold"
+              className="CallOut-title"
             >
               <div
                 className="Markdown-root"
@@ -287,7 +287,7 @@ exports[`renders message box when logged in 1`] = `
           <span
             className="UserBoxAuthenticated-text UserBoxAuthenticated-signOut"
           >
-            Not you? 
+            Not you?
             <button
               className="BaseButton-root Button-base Button-flat Button-fontSizeSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimarySemiBold Button-colorPrimary Button-underline UserBoxAuthenticated-userBoxButton coral coral-viewerBox-logoutButton"
               disabled={false}
@@ -975,7 +975,7 @@ exports[`renders message box when story isClosed 1`] = `
         className="CallOut-root CallOut-mono CallOut-leftBorder coral coral-createComment-closed"
       >
         <div
-          className="Box-root Flex-root Flex-flex Flex-justifyFlexStart Flex-alignFlexStart"
+          className="Box-root Flex-root Flex-flex Flex-justifyFlexStart"
         >
           <div
             className="CallOut-icon CallOut-mono CallOut-leftIcon"
@@ -991,7 +991,7 @@ exports[`renders message box when story isClosed 1`] = `
             className="CallOut-content"
           >
             <div
-              className="CallOut-title CallOut-titleSemiBold"
+              className="CallOut-title"
             >
               <div
                 className="Markdown-root"
