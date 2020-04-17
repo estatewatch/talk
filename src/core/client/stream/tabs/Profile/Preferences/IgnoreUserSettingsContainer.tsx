@@ -20,32 +20,56 @@ interface Props {
   viewer: ViewerData;
 }
 
+interface User {
+  id: string;
+  name: string | null;
+  removed: boolean;
+}
+
+const renderName = (name: string | null) => {
+  return (
+    <span className={cn(styles.username, CLASSES.ignoredCommenters.username)}>
+      {name}
+    </span>
+  );
+};
+
 const IgnoreUserSettingsContainer: FunctionComponent<Props> = ({ viewer }) => {
   const emitShow = useViewerEvent(ShowIgnoreUserdDialogEvent);
   const removeUserIgnore = useMutation(RemoveUserIgnoreMutation);
   const [showManage, setShowManage] = useState(false);
+  const [removed, setRemoved] = useState(new Array<User>());
   const toggleManage = useCallback(() => {
     if (!showManage) {
       emitShow();
+    } else {
+      setRemoved([]);
     }
-    setShowManage((s) => !s);
-  }, [showManage, setShowManage]);
+    setShowManage(!showManage);
+  }, [showManage, setShowManage, setRemoved]);
   const remove = useCallback(
-    async (id: string) => {
-      await removeUserIgnore({ userID: id });
+    async (user: any) => {
+      await removeUserIgnore({ userID: user.id });
+      setRemoved([...removed, { id: user.id, name: user.name, removed: true }]);
     },
-    [removeUserIgnore]
+    [removeUserIgnore, removed, setRemoved]
   );
 
-  const orderedUsers = viewer.ignoredUsers.concat([]).sort((a, b) => {
-    if (!a.username) {
+  const merged = [
+    ...viewer.ignoredUsers.map((user) => {
+      return { id: user.id, name: user.username, removed: false };
+    }),
+    ...removed,
+  ];
+  const userList = merged.sort((a, b) => {
+    if (!a.name) {
       return -1;
     }
-    if (!b.username) {
+    if (!b.name) {
       return 1;
     }
 
-    return a.username.localeCompare(b.username);
+    return a.name.localeCompare(b.name);
   });
 
   return (
@@ -82,7 +106,10 @@ const IgnoreUserSettingsContainer: FunctionComponent<Props> = ({ viewer }) => {
             color="secondary"
             upperCase
             onClick={toggleManage}
-            className={CLASSES.ignoredCommenters.manageButton}
+            className={cn(
+              styles.manageButton,
+              CLASSES.ignoredCommenters.manageButton
+            )}
           >
             Manage
           </Button>
@@ -93,41 +120,43 @@ const IgnoreUserSettingsContainer: FunctionComponent<Props> = ({ viewer }) => {
           spacing={1}
           className={cn(styles.list, CLASSES.ignoredCommenters.list)}
         >
-          {viewer.ignoredUsers.map((user) => (
-            <Flex
-              key={user.id}
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              <span
-                className={cn(
-                  styles.username,
-                  CLASSES.ignoredCommenters.username
-                )}
+          {userList.map((user) =>
+            user.removed ? (
+              <div className={styles.removed} key={user.id}>
+                <Localized id="profile-account-ignoredCommenters-youAreNoLonger">
+                  <span>{"You are no longer ignoring "}</span>
+                </Localized>
+                {renderName(user.name)}
+              </div>
+            ) : (
+              <Flex
+                key={user.id}
+                justifyContent="space-between"
+                alignItems="center"
               >
-                {user.username}
-              </span>
-              <Button
-                variant="none"
-                color="none"
-                onClick={() => removeUserIgnore({ userID: user.id })}
-                className={cn(
-                  styles.stopIgnoringButton,
-                  CLASSES.ignoredCommenters.stopIgnoreButton
-                )}
-              >
-                <Flex justifyContent="center" alignItems="center">
-                  <Icon size="sm" className={styles.icon}>
-                    close
-                  </Icon>
-                  <Localized id="profile-account-ignoredCommenters-stopIgnoring">
-                    <span>Stop ignoring</span>
-                  </Localized>
-                </Flex>
-              </Button>
-            </Flex>
-          ))}
-          {viewer.ignoredUsers.length === 0 && (
+                {renderName(user.name)}
+                <Button
+                  variant="none"
+                  color="none"
+                  onClick={() => remove(user)}
+                  className={cn(
+                    styles.stopIgnoringButton,
+                    CLASSES.ignoredCommenters.stopIgnoreButton
+                  )}
+                >
+                  <Flex justifyContent="center" alignItems="center">
+                    <Icon size="sm" className={styles.icon}>
+                      close
+                    </Icon>
+                    <Localized id="profile-account-ignoredCommenters-stopIgnoring">
+                      <span>Stop ignoring</span>
+                    </Localized>
+                  </Flex>
+                </Button>
+              </Flex>
+            )
+          )}
+          {userList.length === 0 && (
             <Localized id="profile-account-ignoredCommenters-empty">
               <div className={styles.empty}>
                 You are not currently ignoring anyone
