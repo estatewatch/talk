@@ -21,146 +21,216 @@ exports[`renders configure 1`] = `
         className="Box-root Flex-root Flex-flex Flex-wrap Flex-alignCenter"
       >
         <div
-          className="UserBoxAuthenticated-username"
+          className="ConfigureStream-heading"
         >
-          Moderator
+          Configure this Stream
         </div>
-        <span
-          className="UserBoxAuthenticated-text UserBoxAuthenticated-signOut"
+        <div
+          className="ConfigureStream-liveUpdates"
         >
-          Not you? 
-          <button
-            className="BaseButton-root Button-base Button-flat Button-fontSizeSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimarySemiBold Button-colorPrimary Button-underline UserBoxAuthenticated-userBoxButton coral coral-viewerBox-logoutButton"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            onTouchEnd={[Function]}
-            type="button"
-          >
-            Sign Out
-          </button>
-        </span>
-      </div>
-    </div>
-    <form
-      autoComplete="off"
-      className="coral coral-configureCommentStream"
-      id="configure-form"
-      onSubmit={[Function]}
-    >
-      <div
-        className="ConfigureStream-heading"
-      >
-        Configure this stream
-      </div>
-      <div
-        className="ConfigureStream-configureItems"
-      >
-        <div>
-          <div
-            className="CheckBox-root CheckBox-streamBlue"
-          >
-            <input
-              checked={false}
-              className="CheckBox-input CheckBox-streamBlue"
-              disabled={false}
-              id="moderation"
-              name="moderation"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              type="checkbox"
-              value={false}
-            />
-            <label
-              className="CheckBox-label CheckBox-streamBlue"
-              htmlFor="moderation"
+          <div>
+            <div
+              className="CheckBox-root CheckBox-streamBlue"
             >
-              <span
-                className="CheckBox-labelSpan"
+              <input
+                checked={true}
+                className="CheckBox-input CheckBox-streamBlue"
+                disabled={false}
+                id="live.enabled"
+                name="live.enabled"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+                value={true}
+              />
+              <label
+                className="CheckBox-label CheckBox-streamBlue"
+                htmlFor="live.enabled"
               >
                 <div
                   className="ToggleConfig-title"
                 >
-                  <span>
-                    Pre-moderate all comments
-                  </span>
-                </div>
-              </span>
-            </label>
+                  <div
+                    className="ToggleConfig-title"
+                  >
+                    <span>
+                      Enable Live Updates for this Story
+                    </span>
+                  </div>
+                </span>
+              </label>
+            </div>
+            <div
+              className="ToggleConfig-details"
+            >
+              <div
+                className="WidthLimitedDescription-root"
+              >
+                When enabled, the comments will be updated instantly
+as new comments and replies are submitted, instead of
+requiring a page refresh. You can disable this in the
+unusual situation of an article getting so much traffic that the comments are loading slowly.
+              </div>
+            </div>
           </div>
           <div
             className="ToggleConfig-details"
           >
             <div
-              className="WidthLimitedDescription-root"
+              className="CheckBox-root CheckBox-streamBlue"
             >
-              Moderators must approve any comment before it is published to this story.
+              <input
+                checked={false}
+                className="CheckBox-input CheckBox-streamBlue"
+                disabled={false}
+                id="moderation"
+                name="moderation"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+                value={false}
+              />
+              <label
+                className="CheckBox-label CheckBox-streamBlue"
+                htmlFor="moderation"
+              >
+                <span
+                  className="CheckBox-labelSpan"
+                >
+                  <div
+                    className="ToggleConfig-title"
+                  >
+                    <span>
+                      Enable Pre-Moderation
+                    </span>
+                  </div>
+                </span>
+              </label>
+            </div>
+            <div
+              className="ToggleConfig-details"
+            >
+              <div
+                className="WidthLimitedDescription-root"
+              >
+                Moderators must approve any comment before it is published to this story.
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div
-            className="CheckBox-root CheckBox-streamBlue"
-          >
-            <input
-              checked={false}
-              className="CheckBox-input CheckBox-streamBlue"
-              disabled={false}
-              id="premodLinksEnable"
-              name="premodLinksEnable"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              type="checkbox"
-              value={false}
-            />
-            <label
-              className="CheckBox-label CheckBox-streamBlue"
-              htmlFor="premodLinksEnable"
+          <div>
+            <div
+              className="CheckBox-root CheckBox-streamBlue"
             >
-              <span
-                className="CheckBox-labelSpan"
+              <input
+                checked={false}
+                className="CheckBox-input CheckBox-streamBlue"
+                disabled={false}
+                id="premodLinksEnable"
+                name="premodLinksEnable"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+                value={false}
+              />
+              <label
+                className="CheckBox-label CheckBox-streamBlue"
+                htmlFor="premodLinksEnable"
               >
                 <div
                   className="ToggleConfig-title"
                 >
-                  <span>
-                    Pre-moderate comments containing links
-                  </span>
-                </div>
-              </span>
-            </label>
+                  <div
+                    className="ToggleConfig-title"
+                  >
+                    <span>
+                      Pre-Moderate Comments Containing Links
+                    </span>
+                  </div>
+                </span>
+              </label>
+            </div>
+            <div
+              className="ToggleConfig-details"
+            >
+              <div
+                className="WidthLimitedDescription-root"
+              >
+                Moderators must approve any comment that contains a link before it is published to this story.
+              </div>
+            </div>
           </div>
-          <div
-            className="ToggleConfig-details"
-          >
+          <div>
+            <div
+              className="CheckBox-root CheckBox-streamBlue coral coral-configureMessageBox"
+            >
+              <input
+                checked={false}
+                className="CheckBox-input CheckBox-streamBlue"
+                disabled={false}
+                id="messageBox.enabled"
+                name="messageBox.enabled"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                type="checkbox"
+                value={false}
+              />
+              <label
+                className="CheckBox-label CheckBox-streamBlue"
+                htmlFor="messageBox.enabled"
+              >
+                <span
+                  className="CheckBox-labelSpan"
+                >
+                  <div
+                    className="ToggleConfig-title"
+                  >
+                    <span>
+                      Enable Message Box for this Story
+                    </span>
+                  </div>
+                </span>
+              </label>
+            </div>
             <div
               className="WidthLimitedDescription-root"
             >
-              Moderators must approve any comment that contains a link before it is published to this story.
+              <div
+                className="Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
+              >
+                <div
+                  className="WidthLimitedDescription-root"
+                >
+                  Add a message to the top of the comment box for your readers.
+Use this to suggest a discussion topic, ask a question or make
+announcements relating to the comments on this story.
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <button
-        className="BaseButton-root Button-base Button-filled Button-fontSizeSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-paddingSizeSmall Button-colorPrimary Button-disabled Button-upperCase coral coral-configureCommentStream-applyButton"
-        data-testid="configure-stream-apply"
-        disabled={true}
-        onBlur={[Function]}
-        onFocus={[Function]}
-        onMouseOut={[Function]}
-        onMouseOver={[Function]}
-        onTouchEnd={[Function]}
-        type="submit"
-      >
-        Update
-      </button>
-      <div
-        className="ConfigureStream-footer"
+        <button
+          className="BaseButton-root Button-base Button-filled Button-textSizeSmall Button-marginSizeSmall Button-colorSecondary Button-disabled Button-upperCase coral coral-configureCommentStream-applyButton"
+          data-testid="configure-stream-apply"
+          disabled={true}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          type="submit"
+        >
+          Update
+        </button>
+        <div
+          className="ConfigureStream-footer"
+        />
+      </form>
+      <hr
+        className="HorizontalRule-root"
       />
     </form>
     <hr

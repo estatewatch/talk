@@ -23,74 +23,54 @@ interface Props {
 const ConfigureStream: FunctionComponent<Props> = ({
   onSubmit,
   storySettings,
-}) => {
-  return (
-    <Form onSubmit={onSubmit} initialValues={purgeMetadata(storySettings)}>
-      {({
-        handleSubmit,
-        submitting,
-        pristine,
-        submitError,
-        submitSucceeded,
-      }) => (
-        <form
-          className={CLASSES.configureCommentStream.$root}
-          autoComplete="off"
-          onSubmit={handleSubmit}
-          id="configure-form"
-        >
-          <Localized id="configure-stream-title-configureThisStream">
-            <div className={styles.heading}>Configure this stream</div>
-          </Localized>
-          <div className={styles.configureItems}>
-            <PremodConfigContainer disabled={submitting} />
-            <PremodLinksConfigContainer disabled={submitting} />
-          </div>
-          <Localized id="configure-stream-update">
-            <Button
-              className={CLASSES.configureCommentStream.applyButton}
-              color="primary"
-              variant="filled"
-              type="submit"
-              disabled={submitting || pristine}
-              upperCase
-              data-testid="configure-stream-apply"
-            >
-              Update
-            </Button>
-          </Localized>
-          <div
-            className={
-              submitSucceeded || submitError
-                ? styles.footerWithMessage
-                : styles.footer
-            }
+}) => (
+  <Form onSubmit={onSubmit} initialValues={purgeMetadata(storySettings)}>
+    {({ handleSubmit, submitting, pristine, submitError }) => (
+      <form
+        className={CLASSES.configureCommentStream.$root}
+        autoComplete="off"
+        onSubmit={handleSubmit}
+        id="configure-form"
+      >
+        <Localized id="configure-stream-title-configureThisStream">
+          <div className={styles.heading}>Configure this Stream</div>
+        </Localized>
+        <div className={styles.liveUpdates}>
+          <LiveUpdatesConfigContainer
+            storySettings={storySettings}
+            disabled={submitting}
+          />
+          <PremodConfigContainer disabled={submitting} />
+          <PremodLinksConfigContainer disabled={submitting} />
+          <MessageBoxConfigContainer disabled={submitting} />
+        </div>
+        <Localized id="configure-stream-update">
+          <Button
+            className={CLASSES.configureCommentStream.applyButton}
+            color="secondary"
+            variant="filled"
+            type="submit"
+            disabled={submitting || pristine}
+            upperCase
+            data-testid="configure-stream-apply"
           >
-            {submitSucceeded && (
-              <CallOut
-                className={CLASSES.configureCommentStream.successMessage}
-                color="positive"
-                icon={<Icon size="sm">check_circle</Icon>}
-                title={
-                  <Localized id="configure-stream-streamHasBeenUpdated">
-                    This stream has been updated
-                  </Localized>
-                }
-              />
-            )}
-            {submitError && (
-              <CallOut
-                className={CLASSES.configureCommentStream.errorMessage}
-                color="negative"
-                icon={<Icon size="sm">error</Icon>}
-                title={submitError}
-              />
-            )}
-          </div>
-        </form>
-      )}
-    </Form>
-  );
-};
+            Update
+          </Button>
+        </Localized>
+        <div className={styles.footer}>
+          {submitError && (
+            <CallOut
+              className={CLASSES.configureCommentStream.errorMessage}
+              color="negative"
+              icon={<Icon size="sm">error</Icon>}
+              titleWeight="semiBold"
+              title={submitError}
+            />
+          )}
+        </div>
+      </form>
+    )}
+  </Form>
+);
 
 export default ConfigureStream;

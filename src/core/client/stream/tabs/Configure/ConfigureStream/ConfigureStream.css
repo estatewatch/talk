@@ -6,19 +6,13 @@
 
   color: var(--v2-colors-mono-500);
 
-  margin-top: var(--v2-spacing-5);
   margin-bottom: var(--v2-spacing-3);
 }
 
-.configureItems {
+.liveUpdates {
   margin-bottom: var(--v2-spacing-4);
 }
 
 .footer {
-  margin-bottom: var(--v2-spacing-6);
-}
-
-.footerWithMessage {
-  margin-top: var(--v2-spacing-3);
   margin-bottom: var(--v2-spacing-6);
 }

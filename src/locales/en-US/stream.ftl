@@ -521,14 +521,11 @@ profile-changeUsername-close = Close
 ## Comment Stream
 configure-stream-title =
 configure-stream-title-configureThisStream =
-  Configure this stream
+  Configure this Stream
 configure-stream-apply =
 configure-stream-update = Update
-configure-stream-streamHasBeenUpdated =
-  This stream has been updated
 
-configure-premod-title =
-configure-premod-premoderateAllComments = Pre-moderate all comments
+configure-premod-title = Enable Pre-Moderation
 configure-premod-description =
   Moderators must approve any comment before it is published to this story.
 
