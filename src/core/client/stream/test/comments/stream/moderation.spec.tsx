@@ -217,20 +217,18 @@ it("reject comment", async () => {
   const rejectButton = within(comment).getByText("Reject", {
     selector: "button",
   });
-  act(() => {
-    rejectButton.props.onClick();
-  });
   await waitForElement(() =>
     within(tabPane).getByText("You have rejected this comment", {
       exact: false,
     })
   );
-  const link = within(
-    tabPane
-  ).getByText("Go to Moderate to review this decision", {
-    selector: "button",
-    exact: false,
-  });
+  const link = within(tabPane).getByText(
+    "Go to Moderate to review this decision",
+    {
+      selector: "button",
+      exact: false,
+    }
+  );
   expect(link.props.href).toBe(`/admin/moderate/comment/${firstComment.id}`);
 });
 

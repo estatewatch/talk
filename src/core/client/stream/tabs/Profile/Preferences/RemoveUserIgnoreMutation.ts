@@ -26,9 +26,7 @@ const sharedUpdater = (
   const removeIgnoredUserRecords = viewerProxy.getLinkedRecords("ignoredUsers");
   if (removeIgnoredUserRecords) {
     viewerProxy.setLinkedRecords(
-      removeIgnoredUserRecords.filter(
-        (r) => r!.getValue("id") !== input.userID
-      ),
+      removeIgnoredUserRecords.filter((r) => r.getValue("id") !== input.userID),
       "ignoredUsers"
     );
   }
