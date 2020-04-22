@@ -127,7 +127,7 @@ const ExpertSelectionContainer: FunctionComponent<Props> = ({
   );
   const onRemoveExpert = useCallback(
     (id: string, username: string | null, email: string | null) => {
-      void removeExpertMutation({
+      removeExpertMutation({
         storyID,
         userID: id,
       });

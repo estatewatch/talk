@@ -7,7 +7,7 @@ import { HorizontalRule } from "coral-ui/components/v2";
 import ModerateStreamContainer from "../../common/ModerateStream/ModerateStreamContainer";
 import { AddMessageContainer } from "./AddMessage";
 import ConfigureStreamContainer from "./ConfigureStream";
-import { LiveUpdatesConfigContainer } from "./LiveUpdatesConfig";
+import ModerateStreamContainer from "./ModerateStreamContainer";
 import OpenOrCloseStreamContainer from "./OpenOrCloseStream";
 import { QAConfigContainer } from "./Q&A";
 
@@ -28,12 +28,10 @@ const Configure: FunctionComponent<Props> = (props) => {
   return (
     <div>
       <UserBoxContainer viewer={props.viewer} settings={props.settings} />
+      <ModerateStreamContainer settings={props.settings} story={props.story} />
+      <HorizontalRule />
       <ConfigureStreamContainer story={props.story} />
-      <HorizontalRule />
-      <AddMessageContainer story={props.story} />
       <QAConfigContainer story={props.story} settings={props.settings} />
-      <HorizontalRule />
-      <LiveUpdatesConfigContainer story={props.story} />
       <HorizontalRule />
       <OpenOrCloseStreamContainer story={props.story} />
     </div>
