@@ -606,6 +606,10 @@ qa-experimental-tag-tooltip-content =
   The Q&A format is currently in active development. Please contact
   us with any feedback or requests.
 
+qa-experimental-tag-tooltip-content =
+  The Q&A format is currently in active development. Please contact
+  us with any feedback or requests.
+
 configure-enableQA-title =
 configure-enableQA-switchToQA =
   Switch to Q&A format
