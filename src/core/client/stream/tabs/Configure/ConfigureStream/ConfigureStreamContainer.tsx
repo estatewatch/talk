@@ -53,6 +53,7 @@ const enhanced = withFragmentContainer<Props>({
       settings {
         ...PremodConfig_formValues @relay(mask: false)
         ...PremodLinksConfig_formValues @relay(mask: false)
+        ...MessageBoxConfig_formValues @relay(mask: false)
       }
     }
   `,
