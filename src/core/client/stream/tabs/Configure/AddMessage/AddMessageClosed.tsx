@@ -35,7 +35,6 @@ const AddMessageClosed: FunctionComponent<Props> = ({
           onClick={onClick}
           disabled={disableButton}
           upperCase
-          data-testid="configure-addMessage"
         >
           Add message
         </Button>

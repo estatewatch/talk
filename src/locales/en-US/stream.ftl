@@ -559,7 +559,9 @@ configure-disableLiveUpdates-disable = Disable
 configure-liveUpdates-disabledSuccess = Live updates are now disabled
 configure-liveUpdates-enabledSuccess = Live updates are now enabled
 
-configure-messageBox-title = Enable Message Box for this Story
+configure-messageBox-title =
+configure-addMessage-title =
+  Add a message or question
 configure-messageBox-description =
 configure-addMessage-description =
   Add a message to the top of the comment box for your readers. Use this

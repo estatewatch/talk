@@ -43,7 +43,7 @@ const AddMessageOpen: FunctionComponent<Props> = ({
         return;
       }
 
-      void updateMutation({
+      updateMutation({
         id: storyID,
         settings: {
           messageBox: {
@@ -58,7 +58,7 @@ const AddMessageOpen: FunctionComponent<Props> = ({
     [updateMutation, setShowSuccess]
   );
   const onRemoveClicked = useCallback(() => {
-    void updateMutation({
+    updateMutation({
       id: storyID,
       settings: {
         messageBox: { icon: "", content: "", enabled: false },
@@ -113,7 +113,6 @@ const AddMessageOpen: FunctionComponent<Props> = ({
             autoComplete="off"
             onSubmit={handleSubmit}
             id="message-box-form"
-            data-testid="configure-addMessage-form"
           >
             <MessageBoxConfig disabled={false} />
             {storySettings.messageBox.content ? (
