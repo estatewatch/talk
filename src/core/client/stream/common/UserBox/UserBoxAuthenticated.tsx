@@ -34,9 +34,9 @@ const UserBoxAuthenticated: FunctionComponent<UserBoxAuthenticatedProps> = (
             button={
               <Button
                 color="primary"
-                fontSize="small"
+                textSize="small"
                 fontWeight="semiBold"
-                paddingSize="none"
+                marginSize="none"
                 onClick={props.onSignOut}
                 variant="flat"
                 underline
