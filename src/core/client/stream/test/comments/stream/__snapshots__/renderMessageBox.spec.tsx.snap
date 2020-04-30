@@ -12,50 +12,43 @@ exports[`renders message box when commenting disabled 1`] = `
     className="Box-root HorizontalGutter-root StreamContainer-root coral coral-unauthenticated HorizontalGutter-double"
   >
     <div
-      className="Box-root Flex-root Flex-flex Flex-wrap Flex-justifySpaceBetween Flex-alignFlexStart"
+      className="Box-root Flex-root coral coral-viewerBox Flex-flex Flex-wrap Flex-alignCenter"
     >
-      <div
-        className="Box-root Flex-root coral coral-viewerBox Flex-flex Flex-wrap Flex-alignCenter"
+      <span
+        className="UserBoxUnauthenticated-joinText"
       >
-        <span
-          className="UserBoxUnauthenticated-joinText"
-        >
-          Join the conversation
-        </span>
-        <div
-          className="UserBoxUnauthenticated-actions"
-        >
-          <button
-            className="BaseButton-root Button-base Button-filled Button-fontSizeExtraSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-paddingSizeExtraSmall Button-colorPrimary Button-upperCase UserBoxUnauthenticated-register coral coral-viewerBox-registerButton"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            onTouchEnd={[Function]}
-            type="button"
-          >
-            Register
-          </button>
-          <button
-            className="BaseButton-root Button-base Button-outlined Button-fontSizeExtraSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-paddingSizeExtraSmall Button-colorPrimary Button-upperCase coral coral-viewerBox-signInButton"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            onTouchEnd={[Function]}
-            type="button"
-          >
-            Sign in
-          </button>
-        </div>
-      </div>
+        Join the conversation
+      </span>
       <div
-        className="StreamContainer-moderateStream"
-      />
+        className="UserBoxUnauthenticated-actions"
+      >
+        <button
+          className="BaseButton-root Button-base Button-filled Button-textSizeExtraSmall Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-marginSizeExtraSmall Button-colorPrimary Button-upperCase UserBoxUnauthenticated-register coral coral-viewerBox-registerButton"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          type="button"
+        >
+          Register
+        </button>
+        <button
+          className="BaseButton-root Button-base Button-outlined Button-textSizeExtraSmall Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-marginSizeExtraSmall Button-colorPrimary Button-upperCase coral coral-viewerBox-signInButton"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          type="button"
+        >
+          Sign in
+        </button>
+      </div>
     </div>
     <div
       className="Box-root HorizontalGutter-root HorizontalGutter-double"
@@ -266,43 +259,39 @@ exports[`renders message box when logged in 1`] = `
     className="Box-root HorizontalGutter-root StreamContainer-root coral coral-authenticated HorizontalGutter-double"
   >
     <div
-      className="Box-root Flex-root Flex-flex Flex-wrap Flex-justifySpaceBetween Flex-alignFlexStart"
+      className="coral coral-viewerBox"
     >
       <div
-        className="coral coral-viewerBox"
+        className="UserBoxAuthenticated-text"
+      >
+        Signed in as
+      </div>
+      <div
+        className="Box-root Flex-root Flex-flex Flex-wrap Flex-alignCenter"
       >
         <div
-          className="UserBoxAuthenticated-text"
+          className="UserBoxAuthenticated-username"
         >
-          Signed in as
+          Markus
         </div>
-        <div
-          className="Box-root Flex-root Flex-flex Flex-wrap Flex-alignCenter"
+        <span
+          className="UserBoxAuthenticated-text UserBoxAuthenticated-signOut"
         >
-          <div
-            className="UserBoxAuthenticated-username"
+          Not you?
+          <button
+            className="BaseButton-root Button-base Button-flat Button-textSizeSmall Button-fontFamilyPrimary Button-fontWeightPrimarySemiBold Button-colorPrimary Button-underline UserBoxAuthenticated-userBoxButton coral coral-viewerBox-logoutButton"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+            onTouchEnd={[Function]}
+            type="button"
           >
-            Markus
-          </div>
-          <span
-            className="UserBoxAuthenticated-text UserBoxAuthenticated-signOut"
-          >
-            Not you?
-            <button
-              className="BaseButton-root Button-base Button-flat Button-fontSizeSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimarySemiBold Button-colorPrimary Button-underline UserBoxAuthenticated-userBoxButton coral coral-viewerBox-logoutButton"
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseOut={[Function]}
-              onMouseOver={[Function]}
-              onTouchEnd={[Function]}
-              type="button"
-            >
-              Sign Out
-            </button>
-          </span>
-        </div>
+            Sign Out
+          </button>
+        </span>
       </div>
       <div
         className="StreamContainer-moderateStream"
@@ -596,50 +585,43 @@ exports[`renders message box when not logged in 1`] = `
     className="Box-root HorizontalGutter-root StreamContainer-root coral coral-unauthenticated HorizontalGutter-double"
   >
     <div
-      className="Box-root Flex-root Flex-flex Flex-wrap Flex-justifySpaceBetween Flex-alignFlexStart"
+      className="Box-root Flex-root coral coral-viewerBox Flex-flex Flex-wrap Flex-alignCenter"
     >
-      <div
-        className="Box-root Flex-root coral coral-viewerBox Flex-flex Flex-wrap Flex-alignCenter"
+      <span
+        className="UserBoxUnauthenticated-joinText"
       >
-        <span
-          className="UserBoxUnauthenticated-joinText"
-        >
-          Join the conversation
-        </span>
-        <div
-          className="UserBoxUnauthenticated-actions"
-        >
-          <button
-            className="BaseButton-root Button-base Button-filled Button-fontSizeExtraSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-paddingSizeExtraSmall Button-colorPrimary Button-upperCase UserBoxUnauthenticated-register coral coral-viewerBox-registerButton"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            onTouchEnd={[Function]}
-            type="button"
-          >
-            Register
-          </button>
-          <button
-            className="BaseButton-root Button-base Button-outlined Button-fontSizeExtraSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-paddingSizeExtraSmall Button-colorPrimary Button-upperCase coral coral-viewerBox-signInButton"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            onTouchEnd={[Function]}
-            type="button"
-          >
-            Sign in
-          </button>
-        </div>
-      </div>
+        Join the conversation
+      </span>
       <div
-        className="StreamContainer-moderateStream"
-      />
+        className="UserBoxUnauthenticated-actions"
+      >
+        <button
+          className="BaseButton-root Button-base Button-filled Button-textSizeExtraSmall Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-marginSizeExtraSmall Button-colorPrimary Button-upperCase UserBoxUnauthenticated-register coral coral-viewerBox-registerButton"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          type="button"
+        >
+          Register
+        </button>
+        <button
+          className="BaseButton-root Button-base Button-outlined Button-textSizeExtraSmall Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-marginSizeExtraSmall Button-colorPrimary Button-upperCase coral coral-viewerBox-signInButton"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          type="button"
+        >
+          Sign in
+        </button>
+      </div>
     </div>
     <div
       className="coral coral-createComment"
@@ -910,50 +892,43 @@ exports[`renders message box when story isClosed 1`] = `
     className="Box-root HorizontalGutter-root StreamContainer-root coral coral-unauthenticated HorizontalGutter-double"
   >
     <div
-      className="Box-root Flex-root Flex-flex Flex-wrap Flex-justifySpaceBetween Flex-alignFlexStart"
+      className="Box-root Flex-root coral coral-viewerBox Flex-flex Flex-wrap Flex-alignCenter"
     >
-      <div
-        className="Box-root Flex-root coral coral-viewerBox Flex-flex Flex-wrap Flex-alignCenter"
+      <span
+        className="UserBoxUnauthenticated-joinText"
       >
-        <span
-          className="UserBoxUnauthenticated-joinText"
-        >
-          Join the conversation
-        </span>
-        <div
-          className="UserBoxUnauthenticated-actions"
-        >
-          <button
-            className="BaseButton-root Button-base Button-filled Button-fontSizeExtraSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-paddingSizeExtraSmall Button-colorPrimary Button-upperCase UserBoxUnauthenticated-register coral coral-viewerBox-registerButton"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            onTouchEnd={[Function]}
-            type="button"
-          >
-            Register
-          </button>
-          <button
-            className="BaseButton-root Button-base Button-outlined Button-fontSizeExtraSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-paddingSizeExtraSmall Button-colorPrimary Button-upperCase coral coral-viewerBox-signInButton"
-            disabled={false}
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            onTouchEnd={[Function]}
-            type="button"
-          >
-            Sign in
-          </button>
-        </div>
-      </div>
+        Join the conversation
+      </span>
       <div
-        className="StreamContainer-moderateStream"
-      />
+        className="UserBoxUnauthenticated-actions"
+      >
+        <button
+          className="BaseButton-root Button-base Button-filled Button-textSizeExtraSmall Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-marginSizeExtraSmall Button-colorPrimary Button-upperCase UserBoxUnauthenticated-register coral coral-viewerBox-registerButton"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          type="button"
+        >
+          Register
+        </button>
+        <button
+          className="BaseButton-root Button-base Button-outlined Button-textSizeExtraSmall Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-marginSizeExtraSmall Button-colorPrimary Button-upperCase coral coral-viewerBox-signInButton"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          type="button"
+        >
+          Sign in
+        </button>
+      </div>
     </div>
     <div
       className="coral coral-createComment"
