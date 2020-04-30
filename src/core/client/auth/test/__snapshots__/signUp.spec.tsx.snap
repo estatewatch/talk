@@ -372,7 +372,7 @@ exports[`renders sign up form 1`] = `
         <div
           className="coral coral-login-signUp-alreadyHaveAccount SignUp-alreadyHaveAccount"
         >
-          Already have an account? 
+          Already have an account?
           <a
             className="BaseButton-root Button-base Button-flat Button-fontSizeSmall Button-textAlignCenter Button-fontFamilySecondary Button-fontWeightSecondarySemiBold Button-colorPrimary Button-underline SignUp-signIn"
             disabled={false}

@@ -50,6 +50,7 @@ exports[`renders correctly 1`] = `
           fontSize="small"
           fontWeight="semiBold"
           href="/signIn"
+          marginSize="none"
           onClick={[Function]}
           paddingSize="none"
           underline={true}
@@ -61,7 +62,7 @@ exports[`renders correctly 1`] = `
         className="coral coral-login-signUp-alreadyHaveAccount SignUp-alreadyHaveAccount"
       >
         Already have an account?
-         
+
         <withPropsOnChange(Button)
           className="SignUp-signIn"
           color="primary"
@@ -69,6 +70,7 @@ exports[`renders correctly 1`] = `
           fontSize="small"
           fontWeight="bold"
           href="/signIn"
+          marginSize="none"
           onClick={[Function]}
           paddingSize="none"
           underline={true}

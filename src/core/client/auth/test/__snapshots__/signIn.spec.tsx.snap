@@ -354,7 +354,7 @@ exports[`renders sign in view 1`] = `
         <div
           className="coral coral-login-signIn-noAccount SignIn-noAccount"
         >
-          Don't have an account? 
+          Don't have an account?
           <a
             className="BaseButton-root Button-base Button-flat Button-fontSizeSmall Button-textAlignCenter Button-fontFamilySecondary Button-fontWeightSecondarySemiBold Button-colorPrimary Button-underline SignIn-signUp"
             disabled={false}

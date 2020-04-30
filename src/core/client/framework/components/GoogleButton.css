@@ -17,11 +17,13 @@
     border-color: #db4437;
   }
 
-  &:hover, &.mouseHover {
+  &:hover,
+  &.mouseHover {
     background-color: #e05f54;
     border-color: #e05f54;
   }
-  &:active, &.active {
+  &:active,
+  &.active {
     background-color: #e57a71;
     border-color: #e57a71;
   }
@@ -31,4 +33,3 @@
     border-color: var(--v2-colors-grey-200);
   }
 }
-

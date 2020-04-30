@@ -6,6 +6,7 @@ exports[`renders correctly 1`] = `
   color="none"
   fontSize="small"
   fullWidth={true}
+  marginSize="small"
   onClick={[Function]}
   paddingSize="small"
   upperCase={true}
