@@ -34,7 +34,7 @@ export interface PasswordFieldProps {
   /**
    * Color of the PasswordField
    */
-  color?: "regular" | "streamError" | "error";
+  color?: "regular" | "streamBlue" | "error";
   /*
    * If set renders a full width button
    */
@@ -126,7 +126,6 @@ class PasswordField extends Component<PasswordFieldProps, State> {
         [classes.colorRegular]: color === "regular",
         [classes.colorStreamBlue]: color === "streamBlue",
         [classes.colorError]: color === "error",
-        [classes.colorStreamError]: color === "streamError",
         [classes.fullWidth]: fullWidth,
       },
       classes.input
