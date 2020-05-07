@@ -206,7 +206,7 @@ comments-moderationDropdown-caretButton =
 
 comments-rejectedTombstone-title = You have rejected this comment.
 comments-rejectedTombstone-moderateLink =
-  Go to Moderate to review this decision
+  Go to moderate to review this decision
 
 comments-featuredTag = Featured
 

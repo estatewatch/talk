@@ -223,9 +223,9 @@ it("reject comment", async () => {
     })
   );
   const link = within(tabPane).getByText(
-    "Go to Moderate to review this decision",
+    "Go to moderate to review this decision",
     {
-      selector: "button",
+      selector: "a",
       exact: false,
     }
   );
