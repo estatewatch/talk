@@ -145,7 +145,7 @@ it("feature and unfeature comment", async () => {
   act(() => {
     caretButton.props.onClick();
   });
-  const UnfeatureButton = within(comment).getByText("Un-Feature", {
+  const UnfeatureButton = within(comment).getByText("Un-feature", {
     selector: "button",
   });
   await act(async () => {
