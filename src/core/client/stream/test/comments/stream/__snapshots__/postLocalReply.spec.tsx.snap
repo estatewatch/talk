@@ -200,7 +200,7 @@ exports[`post a reply: open reply form 1`] = `
                   >
                     <i
                       aria-hidden="true"
-                      className="Icon-root Icon-sm"
+                      className="Icon-root Icon-sm ReportButton-icon"
                     >
                       reply
                     </i>
@@ -944,7 +944,7 @@ exports[`renders comment stream 1`] = `
                       >
                         <i
                           aria-hidden="true"
-                          className="Icon-root Icon-sm"
+                          className="Icon-root Icon-sm ReportButton-icon"
                         >
                           reply
                         </i>
@@ -1912,7 +1912,7 @@ exports[`renders comment stream 1`] = `
                                       Read More of this Conversation &gt;
                                     </a>
                                   </div>
-                                </div>
+                                </button>
                               </div>
                             </div>
                           </div>

@@ -1419,7 +1419,7 @@ exports[`edit a comment: server response 1`] = `
                   >
                     <i
                       aria-hidden="true"
-                      className="Icon-root Icon-sm"
+                      className="Icon-root Icon-sm ReportButton-icon"
                     >
                       reply
                     </i>

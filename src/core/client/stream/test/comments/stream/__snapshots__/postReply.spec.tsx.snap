@@ -264,26 +264,12 @@ exports[`post a reply: open reply form 1`] = `
                 <div
                   className="Box-root Flex-root Flex-flex Flex-halfItemGutter Flex-justifySpaceBetween Flex-alignCenter Flex-directionRow gutter"
                 >
-                  <button
-                    aria-controls="report-popover-comment-0"
-                    aria-label="Report"
-                    className="BaseButton-root Button-root Button-sizeRegular Button-colorMono Button-variantText Button-uppercase coral coral-reportButton coral-comment-reportButton"
-                    data-active={false}
-                    data-color="mono"
-                    data-testid="comment-report-button"
-                    data-variant="text"
-                    disabled={false}
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onMouseOut={[Function]}
-                    onMouseOver={[Function]}
-                    onTouchEnd={[Function]}
-                    type="button"
+                  <div
+                    className="Box-root Flex-root Flex-flex Flex-alignCenter"
                   >
                     <i
                       aria-hidden="true"
-                      className="Icon-root Icon-sm"
+                      className="Icon-root Icon-sm ReportButton-icon"
                     >
                       flag
                     </i>
@@ -847,26 +833,12 @@ exports[`post a reply: optimistic response 1`] = `
                     <div
                       className="Box-root Flex-root Flex-flex Flex-halfItemGutter Flex-justifySpaceBetween Flex-alignCenter Flex-directionRow gutter"
                     >
-                      <button
-                        aria-controls="report-popover-uuid-0"
-                        aria-label="Report"
-                        className="BaseButton-root Button-root Button-sizeRegular Button-colorMono Button-variantText Button-uppercase coral coral-reportButton coral-comment-reportButton"
-                        data-active={false}
-                        data-color="mono"
-                        data-testid="comment-report-button"
-                        data-variant="text"
-                        disabled={false}
-                        onBlur={[Function]}
-                        onClick={[Function]}
-                        onFocus={[Function]}
-                        onMouseOut={[Function]}
-                        onMouseOver={[Function]}
-                        onTouchEnd={[Function]}
-                        type="button"
+                      <div
+                        className="Box-root Flex-root Flex-flex Flex-alignCenter"
                       >
                         <i
                           aria-hidden="true"
-                          className="Icon-root Icon-sm"
+                          className="Icon-root Icon-sm ReportButton-icon"
                         >
                           flag
                         </i>
