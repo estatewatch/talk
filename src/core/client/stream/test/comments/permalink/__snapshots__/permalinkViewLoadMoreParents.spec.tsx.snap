@@ -601,14 +601,6 @@ exports[`renders conversation thread 1`] = `
       </div>
     </div>
   </div>
-</div>
-`;
-
-exports[`shows more of this conversation 1`] = `
-<div
-  className="coral coral-conversationThread ConversationThreadContainer-root"
-  data-testid="comments-permalinkView-conversationThread"
->
   <div
     className="ConversationThreadContainer-rootParent"
   >
@@ -756,6 +748,8 @@ exports[`shows more of this conversation 1`] = `
                           />
                         </div>
                       </div>
+                    </div>
+                    <div>
                       <div
                         className="Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
                       >
@@ -770,6 +764,28 @@ exports[`shows more of this conversation 1`] = `
                         <div
                           className="Box-root Flex-root coral coral-comment-actionBar Flex-flex Flex-justifySpaceBetween"
                         >
+                          <button
+                            aria-controls="permalink-popover-comment-0"
+                            aria-label="Share"
+                            className="BaseButton-root Button-root Button-sizeRegular Button-colorMono Button-variantText Button-uppercase CommentContainer-actionButton coral coral-comment-shareButton"
+                            data-active={false}
+                            data-color="mono"
+                            data-variant="text"
+                            onBlur={[Function]}
+                            onClick={[Function]}
+                            onFocus={[Function]}
+                            onMouseOut={[Function]}
+                            onMouseOver={[Function]}
+                            onTouchEnd={[Function]}
+                            type="button"
+                          >
+                            <i
+                              aria-hidden="true"
+                              className="Icon-root Icon-sm"
+                            >
+                              share
+                            </i>
+                          </button>
                           <div
                             className="Box-root Flex-root CommentContainer-actionBar Flex-flex Flex-halfItemGutter Flex-justifySpaceBetween Flex-alignCenter Flex-directionRow gutter"
                           >
@@ -898,6 +914,18 @@ exports[`shows more of this conversation 1`] = `
         </div>
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`shows more of this conversation 1`] = `
+<div
+  className="coral coral-conversationThread ConversationThreadContainer-root"
+  data-testid="comments-permalinkView-conversationThread"
+>
+  <div
+    className="ConversationThreadContainer-rootParent"
+  >
     <div
       className="ConversationThreadContainer-parentContainer"
     >
@@ -1034,6 +1062,9 @@ exports[`shows more of this conversation 1`] = `
                               </time>
                             </button>
                           </div>
+                          <div
+                            className="Box-root Flex-root Flex-flex Flex-alignCenter"
+                          />
                         </div>
                         <div>
                           <div

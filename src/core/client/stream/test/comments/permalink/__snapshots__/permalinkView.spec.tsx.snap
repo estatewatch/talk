@@ -221,6 +221,31 @@ exports[`renders permalink view 1`] = `
                                     </time>
                                   </button>
                                 </div>
+                                <div
+                                  className="Box-root Flex-root Flex-flex Flex-alignCenter"
+                                />
+                              </div>
+                              <div
+                                className="Box-root Flex-root Flex-flex Flex-itemGutter Flex-alignBaseline Flex-directionRow gutter"
+                              >
+                                <button
+                                  className="BaseButton-root Timestamp-root"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseOut={[Function]}
+                                  onMouseOver={[Function]}
+                                  onTouchEnd={[Function]}
+                                  type="button"
+                                >
+                                  <time
+                                    className="RelativeTime-root Timestamp-text Comment-timestamp coral coral-timestamp coral-comment-timestamp"
+                                    dateTime="2018-07-06T18:24:00.000Z"
+                                    title="2018-07-06T18:24:00.000Z"
+                                  >
+                                    2018-07-06T18:24:00.000Z
+                                  </time>
+                                </button>
                               </div>
                               <div>
                                 <div
@@ -507,6 +532,8 @@ exports[`renders permalink view 1`] = `
                                 />
                               </div>
                             </div>
+                          </div>
+                          <div>
                             <div
                               className="Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
                             >
@@ -716,6 +743,28 @@ exports[`renders permalink view 1`] = `
                               <div
                                 className="Box-root Flex-root Flex-flex Flex-halfItemGutter Flex-alignCenter Flex-directionRow gutter"
                               >
+                                <button
+                                  aria-controls="permalink-popover-comment-with-replies"
+                                  aria-label="Share"
+                                  className="BaseButton-root Button-root Button-sizeRegular Button-colorMono Button-variantText Button-uppercase CommentContainer-actionButton coral coral-comment-shareButton"
+                                  data-active={false}
+                                  data-color="mono"
+                                  data-variant="text"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseOut={[Function]}
+                                  onMouseOver={[Function]}
+                                  onTouchEnd={[Function]}
+                                  type="button"
+                                >
+                                  <i
+                                    aria-hidden="true"
+                                    className="Icon-root Icon-sm"
+                                  >
+                                    share
+                                  </i>
+                                </button>
                                 <div
                                   className="Popover-root"
                                 >
