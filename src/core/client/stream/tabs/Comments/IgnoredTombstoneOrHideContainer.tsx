@@ -11,7 +11,7 @@ import { graphql } from "react-relay";
 import { usePrevious } from "coral-framework/hooks";
 import { withFragmentContainer } from "coral-framework/lib/relay";
 import CLASSES from "coral-stream/classes";
-import { Tombstone } from "coral-ui/components/v3";
+import { Button, Tombstone } from "coral-ui/components/v3";
 
 import { IgnoredTombstoneOrHideContainer_comment as CommentData } from "coral-stream/__generated__/IgnoredTombstoneOrHideContainer_comment.graphql";
 import { IgnoredTombstoneOrHideContainer_viewer as ViewerData } from "coral-stream/__generated__/IgnoredTombstoneOrHideContainer_viewer.graphql";
@@ -88,6 +88,28 @@ const IgnoredTombstoneOrHideContainer: FunctionComponent<Props> = ({
             {comment.author!.username}
           </span>
         </Localized>
+        {singleConversationView && (
+          <Button
+            variant="outlined"
+            fontSize="small"
+            paddingSize="small"
+            color="secondary"
+            onClick={onShowComment}
+            upperCase
+            className={styles.showCommentButton}
+            classes={{
+              outlined: styles.outlined,
+              active: styles.active,
+              disabled: styles.disabled,
+              mouseHover: styles.mouseHover,
+              colorSecondary: styles.colorSecondary,
+            }}
+          >
+            <Localized id="comments-tombstone-showComment">
+              Show Comment
+            </Localized>
+          </Button>
+        )}
       </Tombstone>
     );
   }
