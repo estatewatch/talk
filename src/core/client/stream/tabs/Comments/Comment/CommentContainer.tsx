@@ -36,6 +36,7 @@ import UserBadgesContainer from "./AuthorBadgesContainer";
 import ButtonsBar from "./ButtonsBar";
 import EditCommentFormContainer from "./EditCommentForm";
 import FeaturedTag from "./FeaturedTag";
+import EmbedSectionContainer from "./EmbedSection/EmbedSectionContainer";
 import IndentedComment from "./IndentedComment";
 import CaretContainer, {
   RejectedTombstoneContainer,
@@ -483,6 +484,7 @@ export class CommentContainer extends Component<Props, State> {
               onClose={this.onCloseReportFlow}
             />
           )}
+          <EmbedSectionContainer comment={comment} />
           {showReplyDialog && !comment.deleted && (
             <ReplyCommentFormContainer
               settings={settings}
@@ -592,6 +594,7 @@ const enhanced = withContext(({ eventEmitter }) => ({ eventEmitter }))(
             ...UserTagsContainer_comment
             ...UsernameWithPopoverContainer_comment
             ...UsernameContainer_comment
+            ...EmbedSectionContainer_comment
           }
         `,
         settings: graphql`
