@@ -99,8 +99,10 @@ exports[`post a comment: optimistic response 1`] = `
                     onTouchEnd={[Function]}
                     type="button"
                   >
-                    <span
-                      className="Username-root"
+                    <time
+                      className="RelativeTime-root Timestamp-text Comment-timestamp coral coral-timestamp coral-comment-timestamp"
+                      dateTime="2018-07-06T18:24:00.000Z"
+                      title="2018-07-06T18:24:00.000Z"
                     >
                       2018-07-06T18:24:00.000Z
                     </time>
@@ -137,58 +139,45 @@ exports[`post a comment: optimistic response 1`] = `
                     </div>
                   </button>
                 </div>
-                <div
-                  className="Box-root Flex-root Flex-flex Flex-alignCenter"
-                />
-              </div>
-              <div
-                className="Box-root Flex-root Flex-flex Flex-itemGutter Flex-alignBaseline Flex-directionRow gutter"
-              >
-                <button
-                  className="BaseButton-root Timestamp-root"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onMouseOut={[Function]}
-                  onMouseOver={[Function]}
-                  onTouchEnd={[Function]}
-                  type="button"
-                >
-                  <time
-                    className="RelativeTime-root Timestamp-text Comment-timestamp coral coral-timestamp coral-comment-timestamp"
-                    dateTime="2018-07-06T18:24:00.000Z"
-                    title="2018-07-06T18:24:00.000Z"
-                  >
-                    2018-07-06T18:24:00.000Z
-                  </time>
-                </button>
               </div>
             </div>
-            <div>
+            <div
+              className="Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
+            >
               <div
-                className="Box-root Flex-root Flex-flex Flex-itemGutter Flex-alignCenter gutter"
+                className="HTMLContent-root coral coral-content coral-comment-content"
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<b>Hello world!</b>",
+                  }
+                }
+              />
+              <div
+                className="Box-root Flex-root coral coral-comment-actionBar Flex-flex Flex-justifySpaceBetween"
               >
-                <button
-                  className="BaseButton-root Button-root Button-sizeRegular Button-colorRegular Button-variantText Button-uppercase coral coral-comment-editButton"
-                  data-color="regular"
-                  data-testid="comment-edit-button"
-                  data-variant="text"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onMouseOut={[Function]}
-                  onMouseOver={[Function]}
-                  onTouchEnd={[Function]}
-                  type="button"
+                <div
+                  className="Box-root Flex-root CommentContainer-actionBar Flex-flex Flex-halfItemGutter Flex-justifySpaceBetween Flex-alignCenter Flex-directionRow gutter"
                 >
-                  <div
-                    className="Box-root Flex-root CommentContainer-editButton Flex-flex Flex-justifyCenter Flex-alignCenter"
+                  <button
+                    aria-label="Respect"
+                    className="BaseButton-root Button-root Button-sizeRegular Button-colorMono Button-variantText Button-uppercase CommentContainer-actionButton coral coral-reactButton coral-comment-reactButton ReactionButton-button"
+                    data-color="mono"
+                    data-testid="comment-reaction-button"
+                    data-variant="text"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    onTouchEnd={[Function]}
+                    type="button"
                   >
                     <i
                       aria-hidden="true"
-                      className="Icon-root Icon-sm CommentContainer-editIcon"
+                      className="Icon-root Icon-sm"
                     >
-                      edit
+                      thumb_up
                     </i>
                     Edit
                   </div>
@@ -251,12 +240,14 @@ exports[`post a comment: optimistic response 1`] = `
                   className="Box-root Flex-root CommentContainer-actionBar Flex-flex Flex-halfItemGutter Flex-justifySpaceBetween Flex-alignCenter Flex-directionRow gutter"
                 >
                   <button
-                    aria-controls="permalink-popover-uuid-0"
-                    aria-label="Share"
-                    className="BaseButton-root Button-root Button-sizeRegular Button-colorMono Button-variantText Button-uppercase CommentContainer-actionButton coral coral-comment-shareButton"
+                    aria-label="Reply"
+                    className="BaseButton-root Button-root Button-sizeRegular Button-colorMono Button-variantText Button-uppercase CommentContainer-actionButton coral coral-comment-replyButton"
                     data-active={false}
                     data-color="mono"
+                    data-testid="comment-reply-button"
                     data-variant="text"
+                    disabled={false}
+                    id="comments-commentContainer-replyButton-uuid-0"
                     onBlur={[Function]}
                     onClick={[Function]}
                     onFocus={[Function]}
@@ -269,7 +260,7 @@ exports[`post a comment: optimistic response 1`] = `
                       aria-hidden="true"
                       className="Icon-root Icon-sm"
                     >
-                      share
+                      reply
                     </i>
                   </button>
                   <div
@@ -319,12 +310,20 @@ exports[`post a comment: optimistic response 1`] = `
                 <div
                   className="Box-root Flex-root Flex-flex Flex-halfItemGutter Flex-justifySpaceBetween Flex-alignCenter Flex-directionRow gutter"
                 >
-                  <div
-                    className="Box-root Flex-root Flex-flex Flex-alignCenter"
+                  <button
+                    className="BaseButton-root Button-base Button-flat Button-fontSizeSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimarySemiBold Button-paddingSizeExtraSmall Button-colorSecondary coral coral-reportButton coral-comment-reportButton"
+                    data-testid="comment-report-button"
+                    disabled={false}
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseOut={[Function]}
+                    onMouseOver={[Function]}
+                    onTouchEnd={[Function]}
+                    type="button"
                   >
-                    <i
-                      aria-hidden="true"
-                      className="Icon-root Icon-sm ReportButton-icon"
+                    <div
+                      className="Box-root Flex-root Flex-flex Flex-alignCenter"
                     >
                       flag
                     </i>

@@ -37,6 +37,7 @@ import ButtonsBar from "./ButtonsBar";
 import EditCommentFormContainer from "./EditCommentForm";
 import FeaturedTag from "./FeaturedTag";
 import EmbedSectionContainer from "./EmbedSection/EmbedSectionContainer";
+import FeaturedTag from "./FeaturedTag";
 import IndentedComment from "./IndentedComment";
 import CaretContainer, {
   RejectedTombstoneContainer,
@@ -602,6 +603,7 @@ const enhanced = withContext(({ eventEmitter }) => ({ eventEmitter }))(
             ...UsernameWithPopoverContainer_comment
             ...UsernameContainer_comment
             ...EmbedSectionContainer_comment
+            ...UsernameContainer_comment
           }
         `,
         settings: graphql`

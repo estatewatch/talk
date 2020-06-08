@@ -221,8 +221,10 @@ exports[`renders permalink view 1`] = `
                                     </time>
                                   </button>
                                 </div>
+                              </div>
+                              <div>
                                 <div
-                                  className="Box-root Flex-root Flex-flex Flex-alignCenter"
+                                  className="Box-root Flex-root Flex-flex Flex-itemGutter Flex-alignCenter gutter"
                                 />
                               </div>
                               <div
@@ -1534,7 +1536,7 @@ exports[`renders permalink view 1`] = `
                                     A dialog showing a permalink to the comment
                                   </div>
                                 </div>
-                              </div>
+                              </button>
                             </div>
                             <div
                               className="Box-root Flex-root Flex-flex Flex-halfItemGutter Flex-justifySpaceBetween Flex-alignCenter Flex-directionRow gutter"

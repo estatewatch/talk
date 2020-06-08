@@ -944,7 +944,7 @@ exports[`renders comment stream 1`] = `
                       >
                         <i
                           aria-hidden="true"
-                          className="Icon-root Icon-sm ReportButton-icon"
+                          className="Icon-root Icon-sm"
                         >
                           reply
                         </i>
@@ -1912,7 +1912,184 @@ exports[`renders comment stream 1`] = `
                                       Read More of this Conversation &gt;
                                     </a>
                                   </div>
-                                </button>
+                                  <div
+                                    className="Comment-subBar"
+                                  >
+                                    <div
+                                      className="Box-root Flex-root coral coral-comment-inReplyTo Flex-flex Flex-alignCenter"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        className="Icon-root Icon-sm InReplyTo-icon"
+                                      >
+                                        reply
+                                      </i>
+                                      <span>
+                                         
+                                      </span>
+                                      <span
+                                        className="InReplyTo-inReplyTo coral coral-comment-inReplyToText"
+                                      >
+                                        In reply to
+                                        <span
+                                          className="InReplyTo-username coral coral-comment-inReplyToUsername"
+                                        >
+                                          Markus
+                                        </span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div
+                                    className="Box-root HorizontalGutter-root HorizontalGutter-oneAndAHalf"
+                                  >
+                                    <div
+                                      className="HTMLContent-root coral coral-content coral-comment-content"
+                                      dangerouslySetInnerHTML={
+                                        Object {
+                                          "__html": "body 3",
+                                        }
+                                      }
+                                    />
+                                    <div
+                                      className="Box-root Flex-root coral coral-comment-actionBar Flex-flex Flex-justifySpaceBetween"
+                                    >
+                                      <div
+                                        className="Box-root Flex-root CommentContainer-actionBar Flex-flex Flex-halfItemGutter Flex-justifySpaceBetween Flex-alignCenter Flex-directionRow gutter"
+                                      >
+                                        <button
+                                          aria-label="Respect"
+                                          className="BaseButton-root Button-root Button-sizeRegular Button-colorMono Button-variantText Button-uppercase CommentContainer-actionButton coral coral-reactButton coral-comment-reactButton ReactionButton-button"
+                                          data-color="mono"
+                                          data-testid="comment-reaction-button"
+                                          data-variant="text"
+                                          disabled={false}
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onFocus={[Function]}
+                                          onMouseOut={[Function]}
+                                          onMouseOver={[Function]}
+                                          onTouchEnd={[Function]}
+                                          type="button"
+                                        >
+                                          <i
+                                            aria-hidden="true"
+                                            className="Icon-root Icon-sm"
+                                          >
+                                            thumb_up
+                                          </i>
+                                        </button>
+                                        <button
+                                          aria-label="Reply"
+                                          className="BaseButton-root Button-root Button-sizeRegular Button-colorMono Button-variantText Button-uppercase CommentContainer-actionButton coral coral-comment-replyButton"
+                                          data-active={false}
+                                          data-color="mono"
+                                          data-testid="comment-reply-button"
+                                          data-variant="text"
+                                          disabled={false}
+                                          id="comments-commentContainer-replyButton-comment-with-deepest-replies-3"
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onFocus={[Function]}
+                                          onMouseOut={[Function]}
+                                          onMouseOver={[Function]}
+                                          onTouchEnd={[Function]}
+                                          type="button"
+                                        >
+                                          <i
+                                            aria-hidden="true"
+                                            className="Icon-root Icon-sm"
+                                          >
+                                            reply
+                                          </i>
+                                        </button>
+                                        <div
+                                          className="Popover-root"
+                                        >
+                                          <button
+                                            aria-controls="permalink-popover-comment-with-deepest-replies-3"
+                                            aria-label="Share"
+                                            className="BaseButton-root Button-root Button-sizeRegular Button-colorMono Button-variantText Button-uppercase CommentContainer-actionButton coral coral-comment-shareButton"
+                                            data-active={false}
+                                            data-color="mono"
+                                            data-variant="text"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseOut={[Function]}
+                                            onMouseOver={[Function]}
+                                            onTouchEnd={[Function]}
+                                            type="button"
+                                          >
+                                            <i
+                                              aria-hidden="true"
+                                              className="Icon-root Icon-sm"
+                                            >
+                                              share
+                                            </i>
+                                          </button>
+                                          <div
+                                            aria-hidden={true}
+                                            aria-labelledby="permalink-popover-comment-with-deepest-replies-3-ariainfo"
+                                            id="permalink-popover-comment-with-deepest-replies-3"
+                                            role="dialog"
+                                          >
+                                            <div
+                                              className="AriaInfo-root"
+                                              id="permalink-popover-comment-with-deepest-replies-3-ariainfo"
+                                            >
+                                              A dialog showing a permalink to the comment
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div
+                                        className="Box-root Flex-root Flex-flex Flex-halfItemGutter Flex-justifySpaceBetween Flex-alignCenter Flex-directionRow gutter"
+                                      >
+                                        <button
+                                          className="BaseButton-root Button-base Button-flat Button-fontSizeSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimarySemiBold Button-paddingSizeExtraSmall Button-colorSecondary coral coral-reportButton coral-comment-reportButton"
+                                          data-testid="comment-report-button"
+                                          disabled={false}
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onFocus={[Function]}
+                                          onMouseOut={[Function]}
+                                          onMouseOver={[Function]}
+                                          onTouchEnd={[Function]}
+                                          type="button"
+                                        >
+                                          <div
+                                            className="Box-root Flex-root Flex-flex Flex-alignCenter"
+                                          >
+                                            <i
+                                              aria-hidden="true"
+                                              className="Icon-root Icon-sm ReportButton-icon"
+                                            >
+                                              flag
+                                            </i>
+                                            Report
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                    <a
+                                      className="BaseButton-root Button-root Button-sizeRegular Button-colorRegular ShowConversationLink-colorRegular Button-variantTextUnderlined Button-uppercase ShowConversationLink-conversationLink coral coral-comment-readMoreOfConveration"
+                                      data-color="regular"
+                                      data-variant="textUnderlined"
+                                      href="http://localhost/stories/story-with-replies?commentID=comment-with-deepest-replies-3"
+                                      id="comments-commentContainer-showConversation-comment-with-deepest-replies-3"
+                                      onBlur={[Function]}
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseOut={[Function]}
+                                      onMouseOver={[Function]}
+                                      onTouchEnd={[Function]}
+                                      target="_parent"
+                                      type="button"
+                                    >
+                                      Read More of this Conversation &gt;
+                                    </a>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
