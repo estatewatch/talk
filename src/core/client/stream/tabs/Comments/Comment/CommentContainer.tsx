@@ -592,12 +592,6 @@ const enhanced = withContext(({ eventEmitter }) => ({ eventEmitter }))(
               dontAgree
               flag
             }
-            media {
-              url
-              width
-              height
-              alt
-            }
             ...ReplyCommentFormContainer_comment
             ...EditCommentFormContainer_comment
             ...ReactionButtonContainer_comment
