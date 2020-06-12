@@ -2659,6 +2659,20 @@ type CommentTagCounts {
   UNANSWERED: Int!
 }
 
+enum COMMENT_MEDIA_PROVIDER {
+  GIPHY
+}
+
+type CommentMedia {
+  url: String!
+  width: Int!
+  height: Int!
+  mimetype: String!
+  alt: String!
+  remote_id: String!
+  provider: COMMENT_MEDIA_PROVIDER!
+}
+
 """
 Comment is a comment left by a User on an Story or another Comment as a reply.
 """
@@ -2804,6 +2818,8 @@ type Comment {
   site is the Site referenced by the Story for this Comment.
   """
   site: Site!
+
+  media: [CommentMedia!]
 }
 
 type PageInfo {
@@ -3464,6 +3480,8 @@ input CreateCommentInput {
   clientMutationId is required for Relay support.
   """
   clientMutationId: String!
+
+  media: CreateCommentMediaInput
 }
 
 """
@@ -3480,6 +3498,16 @@ type CreateCommentPayload {
   clientMutationId is required for Relay support.
   """
   clientMutationId: String!
+}
+
+input CreateCommentMediaInput {
+  provider: COMMENT_MEDIA_PROVIDER!
+  url: String!
+  width: Int!
+  height: Int!
+  mimetype: String!
+  alt: String!
+  remote_id: String!
 }
 
 ##################
@@ -3521,6 +3549,8 @@ input CreateCommentReplyInput {
   clientMutationId is required for Relay support.
   """
   clientMutationId: String!
+
+  media: CreateCommentMediaInput
 }
 
 """
@@ -4234,7 +4264,6 @@ input NewCommentersConfigurationInput {
   approvedCommentsThreshold: Int
 }
 
-
 """
 RTEConfigurationInput specifies the configuration for the rte.
 """
@@ -4384,7 +4413,6 @@ input SettingsInput {
   """
   embeds: EmbedConfigurationInput
 }
-
 
 """
 UpdateSettingsInput provides the input for the updateSettings Mutation.
