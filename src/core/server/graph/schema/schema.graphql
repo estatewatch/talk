@@ -1698,7 +1698,7 @@ type Settings {
   embeds stores the configuration around embedding links
   in the stream.
   """
-  embeds: EmbedConfiguration! @auth(roles: [ADMIN])
+  embeds: EmbedConfiguration!
 
   """
   featureFlags provides the enabled feature flags.
@@ -3504,6 +3504,7 @@ type CreateCommentPayload {
 input CreateCommentEmbedInput {
   source: EMBED_SOURCE!
   url: String!
+  id: String
 }
 
 ##################
