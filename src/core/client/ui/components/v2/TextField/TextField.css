@@ -8,7 +8,7 @@ $input-disabled-background: var(--colors-white-500);
 $input-disabled-value: var(--colors-grey-400);
 $input-disabled-border: var(--colors-grey-400);
 $input-error-border: var(--colors-red-500);
-$input-dark-focused-border: var(--colors-blue-500);
+$input-dark-focused-border: var(--colors-teal-900);
 
 .root {
   display: flex;

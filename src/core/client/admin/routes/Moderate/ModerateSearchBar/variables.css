@@ -9,17 +9,17 @@ $story-search-input-text: var(--colors-mono-100);
 $story-search-input-label: var(--colors-mono-500);
 $story-search-input-background: var(--colors-pure-white);
 
-$story-search-button-background: var(--colors-blue-500);
+$story-search-button-background: var(--colors-teal-900);
 $story-search-button-foreground: var(--colors-pure-white);
 
-$story-search-group-background: var(--colors-blue-500);
+$story-search-group-background: var(--colors-teal-900);
 $story-search-group-foreground: var(--colors-pure-white);
 
 $story-search-results-heading: var(--colors-white-500);
 $story-search-results-heading-background: var(--colors-grey-500);
 
 $story-search-results-see-all-label: var(--colors-white-500);
-$story-search-results-see-all-background: var(--colors-blue-500);
-$story-search-results-see-all-hover: var(--colors-blue-400);
+$story-search-results-see-all-background: var(--colors-teal-900);
+$story-search-results-see-all-hover: var(--colors-teal-700);
 $story-search-results-see-all-border: var(--colors-grey-400);
 $story-search-results-see-all-divider: var(--colors-grey-300);

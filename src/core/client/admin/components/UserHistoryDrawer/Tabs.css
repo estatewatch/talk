@@ -1,4 +1,4 @@
-$indicator-dot: var(--colors-blue-400);
+$indicator-dot: var(--colors-teal-500);
 
 .root {
   height: 100%;
