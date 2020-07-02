@@ -12,3 +12,11 @@
   color: var(--colors-stream-blue-500);
   font-weight: var(--font-weight-primary-bold);
 }
+
+.icon {
+  margin-right: var(--spacing-1);
+}
+
+.totalReactions {
+  margin-left: var(--spacing-1);
+}

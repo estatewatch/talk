@@ -55,25 +55,30 @@ const IndentedComment: FunctionComponent<IndentedCommentProps> = (props) => {
         CommentToggleElement
       ) : (
         <Flex alignItems="flex-start" spacing={1}>
-          <Localized
-            id="comments-collapse-toggle"
-            attrs={{ "aria-label": true }}
-          >
-            <BaseButton
-              onClick={toggleCollapsed}
-              aria-label="Collapse comment thread"
-              className={cn(
-                styles.toggleButton,
-                CLASSES.comment.collapseToggle.$root
-              )}
+          {toggleCollapsed && (
+            <Localized
+              id="comments-collapse-toggle"
+              attrs={{ "aria-label": true }}
             >
-              <ButtonIcon
-                className={cn(styles.icon, CLASSES.comment.collapseToggle.icon)}
+              <BaseButton
+                onClick={toggleCollapsed}
+                aria-label="Collapse comment thread"
+                className={cn(
+                  styles.toggleButton,
+                  CLASSES.comment.collapseToggle.$root
+                )}
               >
-                remove
-              </ButtonIcon>
-            </BaseButton>
-          </Localized>
+                <ButtonIcon
+                  className={cn(
+                    styles.icon,
+                    CLASSES.comment.collapseToggle.icon
+                  )}
+                >
+                  remove
+                </ButtonIcon>
+              </BaseButton>
+            </Localized>
+          )}
           {CommentElement}
         </Flex>
       )}

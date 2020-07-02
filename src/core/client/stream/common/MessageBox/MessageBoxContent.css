@@ -5,4 +5,10 @@ $commentsMessageBoxColor: var(--colors-pure-white);
 
   color: $commentsMessageBoxColor;
   font-weight: var(--font-weight-primary-semi-bold);
+  a {
+    color: $commentsMessageBoxColor;
+    &:hover {
+      color: $commentsMessageBoxColor;
+    }
+  }
 }

@@ -1,18 +1,28 @@
-import { MarkdownEditor } from 'coral-framework/components/loadables';
-import { formatEmpty, parseEmptyAsNull } from 'coral-framework/lib/form';
-import CLASSES from 'coral-stream/classes';
-import FieldValidationMessage from 'coral-stream/common/FieldValidationMessage';
-import { MessageBox, MessageBoxContent, MessageBoxIcon } from 'coral-stream/common/MessageBox';
+import { MarkdownEditor } from "coral-framework/components/loadables";
+import { formatEmpty, parseEmptyAsNull } from "coral-framework/lib/form";
+import CLASSES from "coral-stream/classes";
+import FieldValidationMessage from "coral-stream/common/FieldValidationMessage";
 import {
-    AriaInfo, HorizontalGutter, Icon, Spinner, TileOption, TileSelector, Typography
-} from 'coral-ui/components/v2';
-import React, { FunctionComponent, Suspense } from 'react';
-import { Field } from 'react-final-form';
-import { graphql } from 'react-relay';
+  MessageBox,
+  MessageBoxContent,
+  MessageBoxIcon,
+} from "coral-stream/common/MessageBox";
+import {
+  AriaInfo,
+  HorizontalGutter,
+  Icon,
+  Spinner,
+  TileOption,
+  TileSelector,
+  Typography,
+} from "coral-ui/components/v2";
+import React, { FunctionComponent, Suspense } from "react";
+import { Field } from "react-final-form";
+import { graphql } from "react-relay";
 
-import { Localized } from '@fluent/react/compat';
+import { Localized } from "@fluent/react/compat";
 
-import styles from './MessageBoxConfig.css';
+import styles from "./MessageBoxConfig.css";
 
 // eslint-disable-next-line no-unused-expressions
 graphql`
