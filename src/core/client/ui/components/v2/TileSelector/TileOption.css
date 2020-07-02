@@ -25,7 +25,7 @@
 }
 
 .checked {
-  border: 1px solid var(--colors-stream-blue-500);
-  background: var(--colors-stream-blue-500);
+  border: 1px solid var(--colors-grey-700);
+  background: var(--colors-grey-700);
   color: var(--palette-text-light);
 }
