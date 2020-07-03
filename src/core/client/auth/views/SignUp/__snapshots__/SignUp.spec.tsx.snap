@@ -61,7 +61,7 @@ exports[`renders correctly 1`] = `
         className="coral coral-login-signUp-alreadyHaveAccount SignUp-alreadyHaveAccount"
       >
         Already have an account?
-
+         
         <withPropsOnChange(Button)
           className="SignUp-signIn"
           color="primary"

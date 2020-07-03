@@ -25,7 +25,7 @@ exports[`auth configuration renders all auth enabled 1`] = `
           className="TextField-root TextField-fullWidth"
         >
           <input
-            className="TextField-input TextField-colorStreamBlue"
+            className="TextField-input"
             disabled={false}
             id="email"
             name="email"
@@ -354,7 +354,7 @@ exports[`renders sign in view 1`] = `
         <div
           className="coral coral-login-signIn-noAccount SignIn-noAccount"
         >
-          Don't have an account?
+          Don't have an account? 
           <a
             className="BaseButton-root Button-base Button-flat Button-fontSizeSmall Button-textAlignCenter Button-fontFamilySecondary Button-fontWeightSecondarySemiBold Button-colorPrimary Button-underline SignIn-signUp"
             disabled={false}
@@ -395,7 +395,7 @@ exports[`renders sign in view 1`] = `
                 className="TextField-root TextField-fullWidth"
               >
                 <input
-                  className="TextField-input TextField-colorStreamBlue"
+                  className="TextField-input"
                   disabled={false}
                   id="email"
                   name="email"

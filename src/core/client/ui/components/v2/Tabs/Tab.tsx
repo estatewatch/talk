@@ -41,6 +41,7 @@ export interface TabProps {
   uppercase?: boolean;
 
   ariaLabel?: string;
+  localizationId?: string;
 }
 
 class Tab extends React.Component<TabProps> {
@@ -60,6 +61,7 @@ class Tab extends React.Component<TabProps> {
       variant,
       uppercase,
       ariaLabel,
+      localizationId,
     } = this.props;
 
     const buttonClassName = cn(

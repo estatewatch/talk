@@ -28,7 +28,7 @@ exports[`renders link account view 1`] = `
           <div
             className="coral coral-login-description LinkAccountContainer-description"
           >
-            The email
+            The email 
             <span
               className="LinkAccountContainer-strong"
             >
