@@ -1,12 +1,12 @@
-import { FormError, OnSubmit } from 'coral-framework/lib/form';
-import { Button, CallOut, HorizontalGutter } from 'coral-ui/components/v2';
-import React, { FunctionComponent } from 'react';
-import { Form } from 'react-final-form';
+import { Localized } from "@fluent/react/compat";
+import React, { FunctionComponent } from "react";
+import { Form } from "react-final-form";
 
-import { Localized } from '@fluent/react/compat';
+import { FormError, OnSubmit } from "coral-framework/lib/form";
+import { Button, CallOut, HorizontalGutter } from "coral-ui/components/v2";
 
-import CompleteAccountBox from '../../CompleteAccountBox';
-import UsernameField from './UsernameField';
+import CompleteAccountBox from "../../CompleteAccountBox";
+import UsernameField from "./UsernameField";
 
 interface FormProps {
   username: string;

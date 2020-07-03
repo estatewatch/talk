@@ -1,14 +1,16 @@
-import cn from 'classnames';
-import CLASSES from 'coral-stream/classes';
-import HTMLContent from 'coral-stream/common/HTMLContent';
-import Timestamp from 'coral-stream/common/Timestamp';
-import { Flex, HorizontalGutter } from 'coral-ui/components/v2';
-import React, { FunctionComponent } from 'react';
+import cn from "classnames";
+import React, { FunctionComponent } from "react";
 
-import styles from './Comment.css';
-import EditedMarker from './EditedMarker';
-import InReplyTo from './InReplyTo';
-import TopBarLeft from './TopBarLeft';
+import CLASSES from "coral-stream/classes";
+import HTMLContent from "coral-stream/common/HTMLContent";
+import Timestamp from "coral-stream/common/Timestamp";
+import { Flex, HorizontalGutter } from "coral-ui/components/v2";
+
+import EditedMarker from "./EditedMarker";
+import InReplyTo from "./InReplyTo";
+import TopBarLeft from "./TopBarLeft";
+
+import styles from "./Comment.css";
 
 export interface CommentProps {
   className?: string;

@@ -3,9 +3,9 @@ import cn from "classnames";
 import React, { FunctionComponent } from "react";
 
 import { PropTypesOf } from "coral-framework/types";
+import CLASSES from "coral-stream/classes";
 import { BaseButton, ButtonIcon, Flex } from "coral-ui/components/v2";
 
-import CLASSES from "coral-stream/classes";
 import Indent from "../Indent";
 import Comment from "./Comment";
 import CommentToggle from "./CommentToggle";

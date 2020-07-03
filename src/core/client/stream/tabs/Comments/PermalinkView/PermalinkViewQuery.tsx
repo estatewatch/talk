@@ -1,18 +1,19 @@
-import { QueryRenderData, QueryRenderer, withLocalStateContainer } from 'coral-framework/lib/relay';
-import {
-    PermalinkViewQuery as QueryTypes
-} from 'coral-stream/__generated__/PermalinkViewQuery.graphql';
-import {
-    PermalinkViewQueryLocal as Local
-} from 'coral-stream/__generated__/PermalinkViewQueryLocal.graphql';
-import useHandleIncompleteAccount from 'coral-stream/common/useHandleIncompleteAccount';
-import { Delay, Spinner } from 'coral-ui/components/v2';
-import React, { FunctionComponent } from 'react';
-import { graphql } from 'react-relay';
+import { Localized } from "@fluent/react/compat";
+import React, { FunctionComponent } from "react";
+import { graphql } from "react-relay";
 
-import { Localized } from '@fluent/react/compat';
+import {
+  QueryRenderData,
+  QueryRenderer,
+  withLocalStateContainer,
+} from "coral-framework/lib/relay";
+import useHandleIncompleteAccount from "coral-stream/common/useHandleIncompleteAccount";
+import { Delay, Spinner } from "coral-ui/components/v2";
 
-import PermalinkViewContainer from './PermalinkViewContainer';
+import { PermalinkViewQuery as QueryTypes } from "coral-stream/__generated__/PermalinkViewQuery.graphql";
+import { PermalinkViewQueryLocal as Local } from "coral-stream/__generated__/PermalinkViewQueryLocal.graphql";
+
+import PermalinkViewContainer from "./PermalinkViewContainer";
 
 interface Props {
   local: Local;

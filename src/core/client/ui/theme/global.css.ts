@@ -6,8 +6,8 @@
 */
 
 import flat from "flat";
-import { kebabCase, mapKeys, mapValues, pickBy } from "lodash";
 import fs from "fs";
+import { kebabCase, mapKeys, mapValues, pickBy } from "lodash";
 import path from "path";
 import postcss from "postcss";
 import postcssJs from "postcss-js";
@@ -25,7 +25,9 @@ const cssVariables = pickBy(
   (v, k) => !k.startsWith("breakpoints-")
 );
 
-const typography = fs.readFileSync(path.join(__dirname, "./typography.css")).toString();
+const typography = fs
+  .readFileSync(path.join(__dirname, "./typography.css"))
+  .toString();
 const typographyObject = postcssJs.objectify(postcss.parse(typography));
 
 const cssObject = {

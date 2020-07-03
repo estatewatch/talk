@@ -1,17 +1,31 @@
-import { colorFromMeta, OnSubmit, ValidationMessage } from 'coral-framework/lib/form';
-import {
-    composeValidators, required, validateEmail, validateURL
-} from 'coral-framework/lib/validation';
-import {
-    CallOut, Flex, FormField, HorizontalGutter, InputDescription, InputLabel, TextField, Typography
-} from 'coral-ui/components/v2';
-import React from 'react';
-import { Field, Form } from 'react-final-form';
+import { Localized } from "@fluent/react/compat";
+import React from "react";
+import { Field, Form } from "react-final-form";
 
-import { Localized } from '@fluent/react/compat';
+import {
+  colorFromMeta,
+  OnSubmit,
+  ValidationMessage,
+} from "coral-framework/lib/form";
+import {
+  composeValidators,
+  required,
+  validateEmail,
+  validateURL,
+} from "coral-framework/lib/validation";
+import {
+  CallOut,
+  Flex,
+  FormField,
+  HorizontalGutter,
+  InputDescription,
+  InputLabel,
+  TextField,
+  Typography,
+} from "coral-ui/components/v2";
 
-import BackButton from './BackButton';
-import NextButton from './NextButton';
+import BackButton from "./BackButton";
+import NextButton from "./NextButton";
 
 interface Props {
   onGoToNextStep: () => void;
@@ -167,9 +181,7 @@ class AddOrganizationStep extends React.Component<Props> {
                 {({ input, meta }) => (
                   <FormField>
                     <Localized id="install-addSite-siteName">
-                      <InputLabel htmlFor={input.name}>
-                        Site name
-                      </InputLabel>
+                      <InputLabel htmlFor={input.name}>Site name</InputLabel>
                     </Localized>
                     <Localized id="install-addSite-siteNameDescription">
                       <InputDescription>

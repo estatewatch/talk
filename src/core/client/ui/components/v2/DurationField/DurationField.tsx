@@ -1,14 +1,20 @@
-import TIME from 'coral-common/time';
-import { Flex } from 'coral-ui/components/v2';
+import { Localized } from "@fluent/react/compat";
 import React, {
-    ChangeEvent, FunctionComponent, useCallback, useEffect, useMemo, useState
-} from 'react';
+  ChangeEvent,
+  FunctionComponent,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 
-import { Localized } from '@fluent/react/compat';
+import TIME from "coral-common/time";
+import { Flex } from "coral-ui/components/v2";
 
-import { Option, SelectField } from '../SelectField';
-import TextField, { TextFieldProps } from '../TextField';
-import styles from './DurationField.css';
+import { Option, SelectField } from "../SelectField";
+import TextField, { TextFieldProps } from "../TextField";
+
+import styles from "./DurationField.css";
 
 /**
  * DURATION_UNIT are units that can be used in the

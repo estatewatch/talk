@@ -1,21 +1,31 @@
-import {
-    EventsSelectField_settings, WEBHOOK_EVENT_NAME
-} from 'coral-admin/__generated__/EventsSelectField_settings.graphql';
-import { ValidationMessage } from 'coral-framework/lib/form';
-import { ExternalLink } from 'coral-framework/lib/i18n/components';
-import { withFragmentContainer } from 'coral-framework/lib/relay';
-import { validateWebhookEventSelection } from 'coral-framework/lib/validation';
-import {
-    Button, CheckBox, Flex, FormField, FormFieldDescription, HelperText, Label, ListGroup,
-    ListGroupRow, Typography
-} from 'coral-ui/components/v2';
-import React, { FunctionComponent, useCallback } from 'react';
-import { useField } from 'react-final-form';
-import { graphql } from 'react-relay';
+import { Localized } from "@fluent/react/compat";
+import React, { FunctionComponent, useCallback } from "react";
+import { useField } from "react-final-form";
+import { graphql } from "react-relay";
 
-import { Localized } from '@fluent/react/compat';
+import { ValidationMessage } from "coral-framework/lib/form";
+import { ExternalLink } from "coral-framework/lib/i18n/components";
+import { withFragmentContainer } from "coral-framework/lib/relay";
+import { validateWebhookEventSelection } from "coral-framework/lib/validation";
+import {
+  Button,
+  CheckBox,
+  Flex,
+  FormField,
+  FormFieldDescription,
+  HelperText,
+  Label,
+  ListGroup,
+  ListGroupRow,
+  Typography,
+} from "coral-ui/components/v2";
 
-import styles from './EventsSelectField.css';
+import {
+  EventsSelectField_settings,
+  WEBHOOK_EVENT_NAME,
+} from "coral-admin/__generated__/EventsSelectField_settings.graphql";
+
+import styles from "./EventsSelectField.css";
 
 interface Props {
   settings: EventsSelectField_settings;

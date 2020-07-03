@@ -1,16 +1,18 @@
-import Loading from 'coral-account/components/Loading';
-import { useToken } from 'coral-framework/hooks';
-import { createFetch } from 'coral-framework/lib/relay';
-import { withRouteConfig } from 'coral-framework/lib/router';
-import { parseHashQuery } from 'coral-framework/utils';
-import { HorizontalGutter } from 'coral-ui/components/v2';
-import React, { FunctionComponent } from 'react';
-import { Environment } from 'relay-runtime';
+import React, { FunctionComponent } from "react";
+import { Environment } from "relay-runtime";
 
-import DownloadDescription from './DownloadDescription';
-import DownloadForm from './DownloadForm';
-import styles from './DownloadRoute.css';
-import Sorry from './Sorry';
+import Loading from "coral-account/components/Loading";
+import { useToken } from "coral-framework/hooks";
+import { createFetch } from "coral-framework/lib/relay";
+import { withRouteConfig } from "coral-framework/lib/router";
+import { parseHashQuery } from "coral-framework/utils";
+import { HorizontalGutter } from "coral-ui/components/v2";
+
+import DownloadDescription from "./DownloadDescription";
+import DownloadForm from "./DownloadForm";
+import Sorry from "./Sorry";
+
+import styles from "./DownloadRoute.css";
 
 const fetcher = createFetch(
   "downloadToken",

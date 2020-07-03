@@ -1,17 +1,24 @@
-import { parseAccessTokenClaims } from 'coral-framework/lib/auth/helpers';
-import { InvalidRequestError } from 'coral-framework/lib/errors';
-import { useMutation } from 'coral-framework/lib/relay';
-import { Button, CallOut, Flex, HorizontalGutter, Typography } from 'coral-ui/components/v2';
-import { FORM_ERROR } from 'final-form';
-import React, { useCallback, useMemo } from 'react';
-import { Form } from 'react-final-form';
+import { Localized } from "@fluent/react/compat";
+import { FORM_ERROR } from "final-form";
+import React, { useCallback, useMemo } from "react";
+import { Form } from "react-final-form";
 
-import { Localized } from '@fluent/react/compat';
+import { parseAccessTokenClaims } from "coral-framework/lib/auth/helpers";
+import { InvalidRequestError } from "coral-framework/lib/errors";
+import { useMutation } from "coral-framework/lib/relay";
+import {
+  Button,
+  CallOut,
+  Flex,
+  HorizontalGutter,
+  Typography,
+} from "coral-ui/components/v2";
 
-import styles from './InviteCompleteForm.css';
-import InviteCompleteMutation from './InviteCompleteMutation';
-import SetPasswordField from './SetPasswordField';
-import SetUsernameField from './SetUsernameField';
+import InviteCompleteMutation from "./InviteCompleteMutation";
+import SetPasswordField from "./SetPasswordField";
+import SetUsernameField from "./SetUsernameField";
+
+import styles from "./InviteCompleteForm.css";
 
 interface Props {
   token: string;

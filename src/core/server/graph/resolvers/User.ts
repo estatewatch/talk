@@ -1,12 +1,13 @@
 import { GraphQLResolveInfo } from "graphql";
 
 import GraphContext from "coral-server/graph/context";
+import * as user from "coral-server/models/user";
+import { roleIsStaff } from "coral-server/models/user/helpers";
+
 import {
   GQLUser,
   GQLUserTypeResolver,
 } from "coral-server/graph/schema/__generated__/types";
-import * as user from "coral-server/models/user";
-import { roleIsStaff } from "coral-server/models/user/helpers";
 
 import { RecentCommentHistoryInput } from "./RecentCommentHistory";
 import { UserStatusInput } from "./UserStatus";

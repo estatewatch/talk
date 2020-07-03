@@ -2,7 +2,7 @@ import { Localized } from "@fluent/react/compat";
 import cn from "classnames";
 import React, { FunctionComponent } from "react";
 
-import { Icon, Flex, Typography } from "coral-ui/components/v2";
+import { Flex, Icon, Typography } from "coral-ui/components/v2";
 
 interface Props {
   className?: string;

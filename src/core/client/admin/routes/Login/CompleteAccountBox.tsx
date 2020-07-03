@@ -22,9 +22,7 @@ const CompleteAccountBox: FunctionComponent<Props> = ({
             <div className={styles.heading3}>
               Finish Setting Up Your Account
             </div>
-            <div className={styles.title}>
-              {title}
-            </div>
+            <div className={styles.title}>{title}</div>
           </div>
           <div className={styles.main}>
             <div {...rest}>{children}</div>

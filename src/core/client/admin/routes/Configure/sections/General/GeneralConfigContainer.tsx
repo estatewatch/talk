@@ -1,24 +1,28 @@
-import {
-    GeneralConfigContainer_settings as SettingsData
-} from 'coral-admin/__generated__/GeneralConfigContainer_settings.graphql';
-import { purgeMetadata, withFragmentContainer } from 'coral-framework/lib/relay';
-import { HorizontalGutter } from 'coral-ui/components/v2';
-import React, { useMemo } from 'react';
-import { useForm } from 'react-final-form';
-import { graphql } from 'react-relay';
+import React, { useMemo } from "react";
+import { useForm } from "react-final-form";
+import { graphql } from "react-relay";
 
-import AnnouncementConfigContainer from './AnnouncementConfigContainer';
-import ClosedStreamMessageConfig from './ClosedStreamMessageConfig';
-import ClosingCommentStreamsConfig from './ClosingCommentStreamsConfig';
-import CommentEditingConfig from './CommentEditingConfig';
-import CommentLengthConfig from './CommentLengthConfig';
-import styles from './GeneralConfigContainer.css';
-import GuidelinesConfig from './GuidelinesConfig';
-import LocaleConfig from './LocaleConfig';
-import ReactionConfigContainer from './ReactionConfigContainer';
-import RTEConfig from './RTEConfig';
-import SitewideCommentingConfig from './SitewideCommentingConfig';
-import StaffConfig from './StaffConfig';
+import {
+  purgeMetadata,
+  withFragmentContainer,
+} from "coral-framework/lib/relay";
+import { HorizontalGutter } from "coral-ui/components/v2";
+
+import { GeneralConfigContainer_settings as SettingsData } from "coral-admin/__generated__/GeneralConfigContainer_settings.graphql";
+
+import AnnouncementConfigContainer from "./AnnouncementConfigContainer";
+import ClosedStreamMessageConfig from "./ClosedStreamMessageConfig";
+import ClosingCommentStreamsConfig from "./ClosingCommentStreamsConfig";
+import CommentEditingConfig from "./CommentEditingConfig";
+import CommentLengthConfig from "./CommentLengthConfig";
+import GuidelinesConfig from "./GuidelinesConfig";
+import LocaleConfig from "./LocaleConfig";
+import ReactionConfigContainer from "./ReactionConfigContainer";
+import RTEConfig from "./RTEConfig";
+import SitewideCommentingConfig from "./SitewideCommentingConfig";
+import StaffConfig from "./StaffConfig";
+
+import styles from "./GeneralConfigContainer.css";
 
 interface Props {
   submitting: boolean;

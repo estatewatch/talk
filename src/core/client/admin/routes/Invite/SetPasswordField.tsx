@@ -9,11 +9,11 @@ import {
   validatePassword,
 } from "coral-framework/lib/validation";
 import {
-  InputLabel,
-  InputDescription,
   FormField,
+  InputDescription,
+  InputLabel,
   PasswordField,
-} from "coral-ui/components/v2"
+} from "coral-ui/components/v2";
 
 interface Props {
   disabled: boolean;

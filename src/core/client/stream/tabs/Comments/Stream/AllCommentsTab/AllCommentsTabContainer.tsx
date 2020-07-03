@@ -1,44 +1,41 @@
-import cn from 'classnames';
-import FadeInTransition from 'coral-framework/components/FadeInTransition';
-import { useViewerNetworkEvent } from 'coral-framework/lib/events';
-import {
-    combineDisposables, useLoadMore, useLocal, useMutation, useSubscription, withPaginationContainer
-} from 'coral-framework/lib/relay';
-import { GQLCOMMENT_SORT, GQLSTORY_MODE } from 'coral-framework/schema';
-import { PropTypesOf } from 'coral-framework/types';
-import {
-    AllCommentsTabContainer_settings
-} from 'coral-stream/__generated__/AllCommentsTabContainer_settings.graphql';
-import {
-    AllCommentsTabContainer_story
-} from 'coral-stream/__generated__/AllCommentsTabContainer_story.graphql';
-import {
-    AllCommentsTabContainer_viewer
-} from 'coral-stream/__generated__/AllCommentsTabContainer_viewer.graphql';
-import {
-    AllCommentsTabContainerLocal
-} from 'coral-stream/__generated__/AllCommentsTabContainerLocal.graphql';
-import {
-    AllCommentsTabContainerPaginationQueryVariables
-} from 'coral-stream/__generated__/AllCommentsTabContainerPaginationQuery.graphql';
-import CLASSES from 'coral-stream/classes';
-import { LoadMoreAllCommentsEvent } from 'coral-stream/events';
-import { Box, HorizontalGutter } from 'coral-ui/components/v2';
-import { Button } from 'coral-ui/components/v3';
-import React, { FunctionComponent, useCallback, useEffect } from 'react';
-import { graphql, RelayPaginationProp } from 'react-relay';
+import { Localized } from "@fluent/react/compat";
+import cn from "classnames";
+import React, { FunctionComponent, useCallback, useEffect } from "react";
+import { graphql, RelayPaginationProp } from "react-relay";
 
-import { Localized } from '@fluent/react/compat';
+import FadeInTransition from "coral-framework/components/FadeInTransition";
+import { useViewerNetworkEvent } from "coral-framework/lib/events";
+import {
+  combineDisposables,
+  useLoadMore,
+  useLocal,
+  useMutation,
+  useSubscription,
+  withPaginationContainer,
+} from "coral-framework/lib/relay";
+import { GQLCOMMENT_SORT, GQLSTORY_MODE } from "coral-framework/schema";
+import { PropTypesOf } from "coral-framework/types";
+import CLASSES from "coral-stream/classes";
+import { LoadMoreAllCommentsEvent } from "coral-stream/events";
+import { Box, HorizontalGutter } from "coral-ui/components/v2";
+import { Button } from "coral-ui/components/v3";
 
-import { CommentContainer } from '../../Comment';
-import CollapsableComment from '../../Comment/CollapsableComment';
-import IgnoredTombstoneOrHideContainer from '../../IgnoredTombstoneOrHideContainer';
-import { ReplyListContainer } from '../../ReplyList';
-import styles from './AllCommentsTabContainer.css';
-import AllCommentsTabViewNewMutation from './AllCommentsTabViewNewMutation';
-import CommentCreatedSubscription from './CommentCreatedSubscription';
-import CommentReleasedSubscription from './CommentReleasedSubscription';
-import NoComments from './NoComments';
+import { AllCommentsTabContainer_settings } from "coral-stream/__generated__/AllCommentsTabContainer_settings.graphql";
+import { AllCommentsTabContainer_story } from "coral-stream/__generated__/AllCommentsTabContainer_story.graphql";
+import { AllCommentsTabContainer_viewer } from "coral-stream/__generated__/AllCommentsTabContainer_viewer.graphql";
+import { AllCommentsTabContainerLocal } from "coral-stream/__generated__/AllCommentsTabContainerLocal.graphql";
+import { AllCommentsTabContainerPaginationQueryVariables } from "coral-stream/__generated__/AllCommentsTabContainerPaginationQuery.graphql";
+
+import { CommentContainer } from "../../Comment";
+import CollapsableComment from "../../Comment/CollapsableComment";
+import IgnoredTombstoneOrHideContainer from "../../IgnoredTombstoneOrHideContainer";
+import { ReplyListContainer } from "../../ReplyList";
+import AllCommentsTabViewNewMutation from "./AllCommentsTabViewNewMutation";
+import CommentCreatedSubscription from "./CommentCreatedSubscription";
+import CommentReleasedSubscription from "./CommentReleasedSubscription";
+import NoComments from "./NoComments";
+
+import styles from "./AllCommentsTabContainer.css";
 
 interface Props {
   story: AllCommentsTabContainer_story;

@@ -9,7 +9,6 @@ import { Button, Flex, HorizontalGutter } from "coral-ui/components/v2";
 import ChangeStatusModal from "./ChangeStatusModal";
 import ChangeStatusModalHeader from "./ChangeStatusModalHeader";
 import ModalHeaderUsername from "./ModalHeaderUsername";
-
 import SuspendForm from "./SuspendForm";
 
 import styles from "./SuspendModal.css";

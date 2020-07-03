@@ -1,8 +1,8 @@
-import Main from 'coral-auth/components/Main';
-import { HorizontalGutter, Typography } from 'coral-ui/components/v2';
-import React, { FunctionComponent } from 'react';
+import { Localized } from "@fluent/react/compat";
+import React, { FunctionComponent } from "react";
 
-import { Localized } from '@fluent/react/compat';
+import Main from "coral-auth/components/Main";
+import { HorizontalGutter, Typography } from "coral-ui/components/v2";
 
 interface Props {
   email: string;

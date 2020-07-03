@@ -1,13 +1,20 @@
-import cn from 'classnames';
-import CLASSES from 'coral-stream/classes';
-import { AriaInfo, HorizontalGutter, TabContent, TabPane } from 'coral-ui/components/v2';
-import React, { FunctionComponent } from 'react';
+import cn from "classnames";
+import React, { FunctionComponent } from "react";
 
-import Comments from '../tabs/Comments';
-import Configure from '../tabs/Configure';
-import Profile from '../tabs/Profile';
-import styles from './App.css';
-import TabBarQuery from './TabBarQuery';
+import CLASSES from "coral-stream/classes";
+import {
+  AriaInfo,
+  HorizontalGutter,
+  TabContent,
+  TabPane,
+} from "coral-ui/components/v2";
+
+import Comments from "../tabs/Comments";
+import Configure from "../tabs/Configure";
+import Profile from "../tabs/Profile";
+import TabBarQuery from "./TabBarQuery";
+
+import styles from "./App.css";
 
 type TabValue = "COMMENTS" | "PROFILE" | "%future added value";
 

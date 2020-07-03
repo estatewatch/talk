@@ -1,17 +1,18 @@
-import { QueryRenderData, QueryRenderer, withLocalStateContainer } from 'coral-framework/lib/relay';
-import {
-    FeaturedCommentsQuery as QueryTypes
-} from 'coral-stream/__generated__/FeaturedCommentsQuery.graphql';
-import {
-    FeaturedCommentsQueryLocal as Local
-} from 'coral-stream/__generated__/FeaturedCommentsQueryLocal.graphql';
-import { Delay, Flex, Spinner } from 'coral-ui/components/v2';
-import React, { FunctionComponent } from 'react';
-import { graphql } from 'react-relay';
+import { Localized } from "@fluent/react/compat";
+import React, { FunctionComponent } from "react";
+import { graphql } from "react-relay";
 
-import { Localized } from '@fluent/react/compat';
+import {
+  QueryRenderData,
+  QueryRenderer,
+  withLocalStateContainer,
+} from "coral-framework/lib/relay";
+import { Delay, Flex, Spinner } from "coral-ui/components/v2";
 
-import FeaturedCommentsContainer from './FeaturedCommentsContainer';
+import { FeaturedCommentsQuery as QueryTypes } from "coral-stream/__generated__/FeaturedCommentsQuery.graphql";
+import { FeaturedCommentsQueryLocal as Local } from "coral-stream/__generated__/FeaturedCommentsQueryLocal.graphql";
+
+import FeaturedCommentsContainer from "./FeaturedCommentsContainer";
 
 interface Props {
   local: Local;

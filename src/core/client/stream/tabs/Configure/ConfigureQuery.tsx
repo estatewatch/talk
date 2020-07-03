@@ -1,15 +1,18 @@
-import { polyfillCSSVarsForIE11 } from 'coral-framework/helpers';
-import { QueryRenderData, QueryRenderer, withLocalStateContainer } from 'coral-framework/lib/relay';
-import { ConfigureQuery as QueryTypes } from 'coral-stream/__generated__/ConfigureQuery.graphql';
-import {
-    ConfigureQueryLocal as Local
-} from 'coral-stream/__generated__/ConfigureQueryLocal.graphql';
-import { Delay, Spinner } from 'coral-ui/components/v2';
-import { once } from 'lodash';
-import React, { FunctionComponent, Suspense } from 'react';
-import { graphql } from 'react-relay';
+import { Localized } from "@fluent/react/compat";
+import { once } from "lodash";
+import React, { FunctionComponent, Suspense } from "react";
+import { graphql } from "react-relay";
 
-import { Localized } from '@fluent/react/compat';
+import { polyfillCSSVarsForIE11 } from "coral-framework/helpers";
+import {
+  QueryRenderData,
+  QueryRenderer,
+  withLocalStateContainer,
+} from "coral-framework/lib/relay";
+import { Delay, Spinner } from "coral-ui/components/v2";
+
+import { ConfigureQuery as QueryTypes } from "coral-stream/__generated__/ConfigureQuery.graphql";
+import { ConfigureQueryLocal as Local } from "coral-stream/__generated__/ConfigureQueryLocal.graphql";
 
 const loadConfigureContainer = () =>
   import("./ConfigureContainer" /* webpackChunkName: "configure" */).then(

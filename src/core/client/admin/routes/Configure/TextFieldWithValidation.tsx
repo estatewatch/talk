@@ -1,10 +1,11 @@
-import { FieldMeta, hasError } from 'coral-framework/lib/form/helpers';
-import { DeepPartial } from 'coral-framework/types';
-import { HorizontalGutter } from 'coral-ui/components/v2';
-import TextField, { TextFieldProps } from 'coral-ui/components/v2/TextField';
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent } from "react";
 
-import ValidationMessage from './ValidationMessage';
+import { FieldMeta, hasError } from "coral-framework/lib/form/helpers";
+import { DeepPartial } from "coral-framework/types";
+import { HorizontalGutter } from "coral-ui/components/v2";
+import TextField, { TextFieldProps } from "coral-ui/components/v2/TextField";
+
+import ValidationMessage from "./ValidationMessage";
 
 type OptionalTextFieldProps = Omit<TextFieldProps, "classes"> &
   DeepPartial<Pick<TextFieldProps, "classes">>;

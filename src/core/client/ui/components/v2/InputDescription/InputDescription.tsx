@@ -1,8 +1,9 @@
 import cn from "classnames";
 import React, { FunctionComponent, ReactNode } from "react";
 
-import Typography from "../Typography";
 import { PropTypesOf } from "coral-ui/types";
+
+import Typography from "../Typography";
 
 import styles from "./InputDescription.css";
 
@@ -16,10 +17,7 @@ interface InputDescriptionProps {
 const InputDescription: FunctionComponent<InputDescriptionProps> = (props) => {
   const { className, children, ...rest } = props;
   return (
-    <div
-      className={cn(className, styles.root)}
-      {...rest}
-    >
+    <div className={cn(className, styles.root)} {...rest}>
       {children}
     </div>
   );

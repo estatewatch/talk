@@ -1,10 +1,11 @@
-import cn from 'classnames';
-import { Flex } from 'coral-ui/components/v2';
-import { withStyles } from 'coral-ui/hocs';
-import { PropTypesOf } from 'coral-ui/types';
-import React, { FunctionComponent } from 'react';
+import cn from "classnames";
+import React, { FunctionComponent } from "react";
 
-import styles from './Begin.css';
+import { Flex } from "coral-ui/components/v2";
+import { withStyles } from "coral-ui/hocs";
+import { PropTypesOf } from "coral-ui/types";
+
+import styles from "./Begin.css";
 
 interface Props extends Omit<PropTypesOf<typeof Flex>, "ref"> {
   children?: React.ReactNode;

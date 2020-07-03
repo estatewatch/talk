@@ -11,8 +11,8 @@ import ChangeEmailContainer from "./ChangeEmail";
 import ChangePasswordContainer from "./ChangePasswordContainer";
 import ChangeUsernameContainer from "./ChangeUsername";
 import DeleteAccountContainer from "./DeleteAccount/DeleteAccountContainer";
-// import DownloadCommentsContainer from "../CommentHistory/DownloadCommentsContainer";
 
+// import DownloadCommentsContainer from "../CommentHistory/DownloadCommentsContainer";
 import styles from "./AccountSettingsContainer.css";
 
 interface Props {

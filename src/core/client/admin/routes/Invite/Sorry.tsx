@@ -1,7 +1,7 @@
-import { CallOut, HorizontalGutter, Typography } from 'coral-ui/components/v2';
-import React from 'react';
+import { Localized } from "@fluent/react/compat";
+import React from "react";
 
-import { Localized } from '@fluent/react/compat';
+import { CallOut, HorizontalGutter, Typography } from "coral-ui/components/v2";
 
 interface Props {
   reason: React.ReactNode;

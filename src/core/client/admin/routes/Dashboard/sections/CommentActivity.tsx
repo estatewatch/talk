@@ -12,10 +12,9 @@ import {
   YAxis,
 } from "recharts";
 
-import { Flex, useUIContext } from "coral-ui/components/v2";
-
 import { TimeSeriesMetricsJSON } from "coral-common/rest/dashboard/types";
 import { useImmediateFetch } from "coral-framework/lib/relay/fetch";
+import { Flex, useUIContext } from "coral-ui/components/v2";
 
 import { DashboardBox, DashboardComponentHeading, Loader } from "../components";
 import createDashboardFetch from "../createDashboardFetch";

@@ -1,18 +1,19 @@
-import cn from 'classnames';
-import FadeInTransition from 'coral-framework/components/FadeInTransition';
-import { PropTypesOf } from 'coral-framework/types';
-import CLASSES from 'coral-stream/classes';
-import { HorizontalGutter } from 'coral-ui/components/v2';
-import { Button } from 'coral-ui/components/v3';
-import React, { FunctionComponent } from 'react';
+import { Localized } from "@fluent/react/compat";
+import cn from "classnames";
+import React, { FunctionComponent } from "react";
 
-import { Localized } from '@fluent/react/compat';
+import FadeInTransition from "coral-framework/components/FadeInTransition";
+import { PropTypesOf } from "coral-framework/types";
+import CLASSES from "coral-stream/classes";
+import { HorizontalGutter } from "coral-ui/components/v2";
+import { Button } from "coral-ui/components/v3";
 
-import CommentContainer from '../Comment';
-import CollapsableComment from '../Comment/CollapsableComment';
-import IgnoredTombstoneOrHideContainer from '../IgnoredTombstoneOrHideContainer';
-import Indent from '../Indent';
-import styles from './ReplyList.css';
+import CommentContainer from "../Comment";
+import CollapsableComment from "../Comment/CollapsableComment";
+import IgnoredTombstoneOrHideContainer from "../IgnoredTombstoneOrHideContainer";
+import Indent from "../Indent";
+
+import styles from "./ReplyList.css";
 
 export interface ReplyListProps {
   story: PropTypesOf<typeof CommentContainer>["story"];

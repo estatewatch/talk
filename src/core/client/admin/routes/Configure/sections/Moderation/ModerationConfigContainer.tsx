@@ -1,17 +1,20 @@
-import {
-    ModerationConfigContainer_settings as SettingsData
-} from 'coral-admin/__generated__/ModerationConfigContainer_settings.graphql';
-import { purgeMetadata, withFragmentContainer } from 'coral-framework/lib/relay';
-import { HorizontalGutter } from 'coral-ui/components/v2';
-import React, { useMemo } from 'react';
-import { useForm } from 'react-final-form';
-import { graphql } from 'react-relay';
+import React, { useMemo } from "react";
+import { useForm } from "react-final-form";
+import { graphql } from "react-relay";
 
-import AkismetConfig from './AkismetConfig';
-import NewCommentersConfig from './NewCommentersConfig';
-import PerspectiveConfig from './PerspectiveConfig';
-import PreModerationConfig from './PreModerationConfig';
-import RecentCommentHistoryConfig from './RecentCommentHistoryConfig';
+import {
+  purgeMetadata,
+  withFragmentContainer,
+} from "coral-framework/lib/relay";
+import { HorizontalGutter } from "coral-ui/components/v2";
+
+import { ModerationConfigContainer_settings as SettingsData } from "coral-admin/__generated__/ModerationConfigContainer_settings.graphql";
+
+import AkismetConfig from "./AkismetConfig";
+import NewCommentersConfig from "./NewCommentersConfig";
+import PerspectiveConfig from "./PerspectiveConfig";
+import PreModerationConfig from "./PreModerationConfig";
+import RecentCommentHistoryConfig from "./RecentCommentHistoryConfig";
 
 interface Props {
   submitting: boolean;

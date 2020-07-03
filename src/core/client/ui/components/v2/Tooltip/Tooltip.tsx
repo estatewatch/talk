@@ -1,7 +1,7 @@
 import cn from "classnames";
 import React, { FunctionComponent } from "react";
 
-import { ClickOutside, Box, Popover } from "coral-ui/components/v2";
+import { Box, ClickOutside, Popover } from "coral-ui/components/v2";
 import { PropTypesOf } from "coral-ui/types";
 
 import styles from "./Tooltip.css";
