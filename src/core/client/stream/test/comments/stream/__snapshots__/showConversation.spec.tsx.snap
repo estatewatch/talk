@@ -114,28 +114,6 @@ exports[`renders deepest comment with link 1`] = `
                   className="Box-root Flex-root Flex-flex Flex-itemGutter Flex-alignCenter gutter"
                 />
               </div>
-              <div
-                className="Box-root Flex-root Flex-flex Flex-itemGutter Flex-alignBaseline Flex-directionRow gutter"
-              >
-                <button
-                  className="BaseButton-root Timestamp-root"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onMouseOut={[Function]}
-                  onMouseOver={[Function]}
-                  onTouchEnd={[Function]}
-                  type="button"
-                >
-                  <time
-                    className="RelativeTime-root Timestamp-text Comment-timestamp coral coral-timestamp coral-comment-timestamp"
-                    dateTime="2018-07-06T18:24:00.000Z"
-                    title="2018-07-06T18:24:00.000Z"
-                  >
-                    2018-07-06T18:24:00.000Z
-                  </time>
-                </button>
-              </div>
             </div>
             <div
               className="Comment-subBar"
@@ -155,7 +133,7 @@ exports[`renders deepest comment with link 1`] = `
                 <span
                   className="InReplyTo-inReplyTo coral coral-comment-inReplyToText"
                 >
-                  In reply to
+                  In reply to 
                   <span
                     className="InReplyTo-username coral coral-comment-inReplyToUsername"
                   >

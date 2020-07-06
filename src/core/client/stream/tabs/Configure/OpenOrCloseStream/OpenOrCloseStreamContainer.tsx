@@ -36,9 +36,9 @@ const OpenOrCloseStreamContainer: FunctionComponent<Props> = ({
     if (!waiting) {
       setWaiting(true);
       if (story.isClosed) {
-        openStory({ id: story.id });
+        void openStory({ id: story.id });
       } else {
-        closeStory({ id: story.id });
+        void closeStory({ id: story.id });
       }
       setWaiting(false);
       setShowSuccess(true);

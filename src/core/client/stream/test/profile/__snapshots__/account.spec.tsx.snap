@@ -175,29 +175,6 @@ to sign in to your account or to receive notifications.
       </button>
     </div>
     <div
-      className="coral coral-myPassword"
-      data-testid="profile-account-changePassword"
-    >
-      <div
-        className="ChangePassword-title coral coral-myPassword-title"
-      >
-        Password
-      </div>
-      <button
-        className="BaseButton-root Button-base Button-flat Button-fontSizeSmall Button-textAlignCenter Button-fontFamilyPrimary Button-fontWeightPrimaryBold Button-colorPrimary ChangePassword-changeButton coral coral-myPassword-editButton"
-        disabled={false}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onMouseOut={[Function]}
-        onMouseOver={[Function]}
-        onTouchEnd={[Function]}
-        type="button"
-      >
-        Change
-      </button>
-    </div>
-    <div
       className="DeleteAccountContainer-root coral coral-deleteMyAccount"
     >
       <div
