@@ -150,7 +150,7 @@ exports[`render popup 1`] = `
         className="ReportCommentForm-heading"
         htmlFor="comments-reportCommentForm-aditionalDetails--comment-0"
       >
-        Additional information
+        Additional information 
         <span
           className="ReportCommentForm-detail"
         >
@@ -368,7 +368,7 @@ exports[`render popup expanded 1`] = `
         className="ReportCommentForm-heading"
         htmlFor="comments-reportCommentForm-aditionalDetails--comment-0"
       >
-        Additional information
+        Additional information 
         <span
           className="ReportCommentForm-detail"
         >

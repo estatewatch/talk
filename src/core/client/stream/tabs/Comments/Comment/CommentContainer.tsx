@@ -487,14 +487,6 @@ export class CommentContainer extends Component<Props, State> {
               onClose={this.onCloseReportFlow}
             />
           )}
-          <EmbedSectionContainer comment={comment} settings={settings} />
-          {this.state.showReportFlow && (
-            <ReportFlowContainer
-              viewer={viewer}
-              comment={comment}
-              onClose={this.onCloseReportFlow}
-            />
-          )}
           {showReplyDialog && !comment.deleted && (
             <ReplyCommentFormContainer
               settings={settings}
