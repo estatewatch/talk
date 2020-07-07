@@ -1,4 +1,4 @@
-$timestampColor: var(--colors-mono-100);
+$timestampColor: $colors-mono-100;
 
 .root {
   color: $timestampColor;

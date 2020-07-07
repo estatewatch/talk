@@ -4,7 +4,7 @@
   font-size: var(--font-size-4);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-900);
+  color: $colors-mono-900;
 
   margin-top: var(--spacing-4);
   margin-bottom: var(--spacing-1);
@@ -28,7 +28,7 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
   margin-bottom: var(--spacing-3);
 }
@@ -39,7 +39,7 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-900);
+  color: $colors-mono-900;
 
   margin-bottom: var(--spacing-2);
 }
@@ -50,7 +50,7 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 }
 
 .footer {

@@ -1,6 +1,6 @@
-$callout-regular-bg: var(--colors-grey-100);
-$callout-regular-text: var(--colors-mono-500);
-$callout-regular-border: var(--colors-grey-300);
+$callout-regular-bg: $colors-grey-100;
+$callout-regular-text: $colors-mono-500;
+$callout-regular-border: $colors-grey-300;
 
 .root {
   font-family: var(--font-family-primary);

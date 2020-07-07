@@ -4,5 +4,5 @@
 
 .muted {
   font-weight: var(--font-weight-primary-bold);
-  color: var(--colors-grey-400);
+  color: $colors-grey-400;
 }

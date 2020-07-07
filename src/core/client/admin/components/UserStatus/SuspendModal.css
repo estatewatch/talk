@@ -1,4 +1,4 @@
-$suspend-modal-text: var(--colors-mono-500);
+$suspend-modal-text: $colors-mono-500;
 
 .bodyText {
   font-size: var(--font-size-3);

@@ -7,22 +7,17 @@
 
 import flat from "flat";
 import fs from "fs";
-import { kebabCase, mapKeys, mapValues, pickBy } from "lodash";
+import { kebabCase, mapKeys, mapValues } from "lodash";
 import path from "path";
 import postcss from "postcss";
 import postcssJs from "postcss-js";
 
+import breakpoints from "./breakpoints";
 import variables from "./variables";
 
 const flatKebabVariables = mapKeys(
   mapValues(flat(variables, { delimiter: "-" }), (v) => v.toString()),
   (_, k) => `--${kebabCase(k)}`
-);
-
-// These are the default css standard variables.
-const cssVariables = pickBy(
-  flatKebabVariables,
-  (v, k) => !k.startsWith("breakpoints-")
 );
 
 const typography = fs
@@ -33,10 +28,10 @@ const typographyObject = postcssJs.objectify(postcss.parse(typography));
 const cssObject = {
   ...typographyObject,
   ":root": {
-    ...cssVariables,
+    ...flatKebabVariables,
     "--mini-unit": "calc(1px * var(--mini-unit-small))",
   },
-  [`@media (min-width: ${variables.breakpoints.xs}px)`]: {
+  [`@media (min-width: ${breakpoints.xs}px)`]: {
     ":root": {
       "--mini-unit": "calc(1px * var(--mini-unit-large))",
     },

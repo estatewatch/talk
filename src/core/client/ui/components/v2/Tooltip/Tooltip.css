@@ -1,4 +1,4 @@
-$tooltip-contents: var(--colors-pure-white);
+$tooltip-contents: $colors-pure-white;
 
 .root {
   align-items: center;

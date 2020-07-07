@@ -1,6 +1,6 @@
-$commentsModerationCaretColor: var(--colors-pure-white);
-$commentsModerationCaretBorderColor: var(--colors-grey-500);
-$commentsModerationCaretBackground: var(--colors-grey-500);
+$commentsModerationCaretColor: $colors-pure-white;
+$commentsModerationCaretBorderColor: $colors-grey-500;
+$commentsModerationCaretBackground: $colors-grey-500;
 
 .root {
   padding: 2px 4px;

@@ -1,26 +1,26 @@
 .root {
-  background: var(--colors-pure-white);
+  background: $colors-pure-white;
   border-radius: 4px;
-  border: 1px solid var(--colors-grey-300);
+  border: 1px solid $colors-grey-300;
   padding: var(--spacing-3);
 }
 
 .time {
-  color: var(--colors-mono-100);
+  color: $colors-mono-100;
   font-size: var(--font-size-2);
   margin: 0;
   font-weight: var(--font-weight-primary-semi-bold);
 }
 
 .count {
-  color: var(--colors-teal-600);
+  color: $colors-teal-600;
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-primary-bold);
   margin: 0;
 }
 
 .comments {
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-primary-semi-bold);
   margin: 0;

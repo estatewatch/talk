@@ -1,7 +1,7 @@
 .root {
   border-radius: var(--round-corners);
   padding: var(--spacing-1);
-  background-color: var(--colors-grey-100);
+  background-color: $colors-grey-100;
 
   margin-bottom: var(--spacing-2);
 }
@@ -12,7 +12,7 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 }
 
 .username {
@@ -21,7 +21,7 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
   margin-right: var(--spacing-1);
 }

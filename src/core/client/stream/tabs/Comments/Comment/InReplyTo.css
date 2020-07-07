@@ -1,6 +1,6 @@
-$commentsInReplyToUsernameColor: var(--colors-mono-500);
-$commentsInReplyToLabelColor: var(--colors-mono-100);
-$commentsInReplyToIconColor: var(--colors-mono-100);
+$commentsInReplyToUsernameColor: $colors-mono-500;
+$commentsInReplyToLabelColor: $colors-mono-100;
+$commentsInReplyToIconColor: $colors-mono-100;
 
 .icon {
   color: $commentsInReplyToIconColor;

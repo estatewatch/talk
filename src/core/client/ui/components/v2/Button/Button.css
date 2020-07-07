@@ -1,113 +1,113 @@
 /* Design tokens */
 
 /* flat button */
-$button-flat-regular-foreground: var(--colors-teal-600);
-$button-flat-mono-foreground: var(--colors-grey-500);
-$button-flat-alert-foreground: var(--colors-red-500);
-$button-flat-alt-foreground: var(--colors-green-500);
-$button-flat-dark-foreground: var(--colors-teal-900);
+$button-flat-regular-foreground: $colors-teal-600;
+$button-flat-mono-foreground: $colors-grey-500;
+$button-flat-alert-foreground: $colors-red-500;
+$button-flat-alt-foreground: $colors-green-500;
+$button-flat-dark-foreground: $colors-teal-900;
 
-$button-flat-background: var(--colors-pure-white);
+$button-flat-background: $colors-pure-white;
 
-$button-flat-regular-background-hover: var(--colors-teal-100);
-$button-flat-mono-background-hover: var(--colors-grey-200);
-$button-flat-alert-background-hover: var(--colors-red-100);
-$button-flat-alt-background-hover: var(--colors-green-100);
-$button-flat-dark-background-hover: var(--colors-teal-100);
+$button-flat-regular-background-hover: $colors-teal-100;
+$button-flat-mono-background-hover: $colors-grey-200;
+$button-flat-alert-background-hover: $colors-red-100;
+$button-flat-alt-background-hover: $colors-green-100;
+$button-flat-dark-background-hover: $colors-teal-100;
 
-$button-flat-regular-background-active: var(--colors-teal-200);
-$button-flat-mono-background-active: var(--colors-grey-300);
-$button-flat-alert-background-active: var(--colors-red-200);
-$button-flat-alt-background-active: var(--colors-green-200);
-$button-flat-dark-background-active: var(--colors-teal-200);
+$button-flat-regular-background-active: $colors-teal-200;
+$button-flat-mono-background-active: $colors-grey-300;
+$button-flat-alert-background-active: $colors-red-200;
+$button-flat-alt-background-active: $colors-green-200;
+$button-flat-dark-background-active: $colors-teal-200;
 
-$button-flat-foreground-disabled: var(--colors-grey-400);
+$button-flat-foreground-disabled: $colors-grey-400;
 
 /* regular button */
-$button-regular-foreground: var(--colors-pure-white);
+$button-regular-foreground: $colors-pure-white;
 
-$button-regular-regular-background: var(--colors-teal-600);
-$button-regular-mono-background: var(--colors-grey-500);
-$button-regular-alert-background: var(--colors-red-500);
-$button-regular-alt-background: var(--colors-green-500);
-$button-regular-dark-background: var(--colors-teal-900);
-$button-regular-stream-background: var(--colors-stream-blue-500);
+$button-regular-regular-background: $colors-teal-600;
+$button-regular-mono-background: $colors-grey-500;
+$button-regular-alert-background: $colors-red-500;
+$button-regular-alt-background: $colors-green-500;
+$button-regular-dark-background: $colors-teal-900;
+$button-regular-stream-background: $colors-stream-blue-500;
 
-$button-regular-regular-background-hover: var(--colors-teal-700);
-$button-regular-mono-background-hover: var(--colors-grey-600);
-$button-regular-alert-background-hover: var(--colors-red-600);
-$button-regular-alt-background-hover: var(--colors-green-600);
-$button-regular-dark-background-hover: var(--colors-teal-800);
-$button-regular-stream-background-hover: var(--colors-stream-blue-600);
+$button-regular-regular-background-hover: $colors-teal-700;
+$button-regular-mono-background-hover: $colors-grey-600;
+$button-regular-alert-background-hover: $colors-red-600;
+$button-regular-alt-background-hover: $colors-green-600;
+$button-regular-dark-background-hover: $colors-teal-800;
+$button-regular-stream-background-hover: $colors-stream-blue-600;
 
-$button-regular-regular-background-active: var(--colors-teal-800);
-$button-regular-mono-background-active: var(--colors-grey-700);
-$button-regular-alert-background-active: var(--colors-red-700);
-$button-regular-alt-background-active: var(--colors-green-700);
-$button-regular-dark-background-active: var(--colors-teal-700);
-$button-regular-stream-background-active: var(--colors-stream-blue-700);
+$button-regular-regular-background-active: $colors-teal-800;
+$button-regular-mono-background-active: $colors-grey-700;
+$button-regular-alert-background-active: $colors-red-700;
+$button-regular-alt-background-active: $colors-green-700;
+$button-regular-dark-background-active: $colors-teal-700;
+$button-regular-stream-background-active: $colors-stream-blue-700;
 
-$button-regular-background-disabled: var(--colors-grey-300);
-$button-regular-stream-background-disabled: var(--colors-stream-blue-200);
+$button-regular-background-disabled: $colors-grey-300;
+$button-regular-stream-background-disabled: $colors-stream-blue-200;
 
 /* outline button */
-$button-outline-background: var(--colors-pure-white);
-$button-outline-background-disabled: var(--colors-grey-300);
-$button-outline-foreground-disabled: var(--colors-pure-white);
-$button-outline-foreground-hover: var(--colors-pure-white);
-$button-outline-foreground-active: var(--colors-pure-white);
+$button-outline-background: $colors-pure-white;
+$button-outline-background-disabled: $colors-grey-300;
+$button-outline-foreground-disabled: $colors-pure-white;
+$button-outline-foreground-hover: $colors-pure-white;
+$button-outline-foreground-active: $colors-pure-white;
 
-$button-outline-regular-foreground: var(--colors-teal-600);
-$button-outline-mono-foreground: var(--colors-grey-500);
-$button-outline-alert-foreground: var(--colors-red-500);
-$button-outline-alt-foreground: var(--colors-green-500);
-$button-outline-dark-foreground: var(--colors-teal-900);
+$button-outline-regular-foreground: $colors-teal-600;
+$button-outline-mono-foreground: $colors-grey-500;
+$button-outline-alert-foreground: $colors-red-500;
+$button-outline-alt-foreground: $colors-green-500;
+$button-outline-dark-foreground: $colors-teal-900;
 
-$button-outline-regular-border: var(--colors-teal-600);
-$button-outline-mono-border: var(--colors-grey-500);
-$button-outline-alert-border: var(--colors-red-500);
-$button-outline-alt-border: var(--colors-green-500);
-$button-outline-dark-border: var(--colors-teal-900);
+$button-outline-regular-border: $colors-teal-600;
+$button-outline-mono-border: $colors-grey-500;
+$button-outline-alert-border: $colors-red-500;
+$button-outline-alt-border: $colors-green-500;
+$button-outline-dark-border: $colors-teal-900;
 
-$button-outline-regular-background-hover: var(--colors-teal-600);
-$button-outline-mono-background-hover: var(--colors-grey-500);
-$button-outline-alert-background-hover: var(--colors-red-500);
-$button-outline-alt-background-hover: var(--colors-green-500);
-$button-outline-dark-background-hover: var(--colors-teal-900);
+$button-outline-regular-background-hover: $colors-teal-600;
+$button-outline-mono-background-hover: $colors-grey-500;
+$button-outline-alert-background-hover: $colors-red-500;
+$button-outline-alt-background-hover: $colors-green-500;
+$button-outline-dark-background-hover: $colors-teal-900;
 
-$button-outline-regular-background-active: var(--colors-teal-800);
-$button-outline-mono-background-active: var(--colors-grey-700);
-$button-outline-alert-background-active: var(--colors-red-700);
-$button-outline-alt-background-active: var(--colors-green-700);
-$button-outline-dark-background-active: var(--colors-teal-700);
+$button-outline-regular-background-active: $colors-teal-800;
+$button-outline-mono-background-active: $colors-grey-700;
+$button-outline-alert-background-active: $colors-red-700;
+$button-outline-alt-background-active: $colors-green-700;
+$button-outline-dark-background-active: $colors-teal-700;
 
-$button-outline-regular-border-active: var(--colors-teal-800);
-$button-outline-mono-border-active: var(--colors-grey-700);
-$button-outline-alert-border-active: var(--colors-red-700);
-$button-outline-alt-border-active: var(--colors-green-700);
-$button-outline-dark-border-active: var(--colors-teal-700);
+$button-outline-regular-border-active: $colors-teal-800;
+$button-outline-mono-border-active: $colors-grey-700;
+$button-outline-alert-border-active: $colors-red-700;
+$button-outline-alt-border-active: $colors-green-700;
+$button-outline-dark-border-active: $colors-teal-700;
 
 /* text button */
 $button-text-background: transparent;
-$button-text-foreground-disabled: var(--colors-pure-white);
+$button-text-foreground-disabled: $colors-pure-white;
 
-$button-text-regular-foreground: var(--colors-teal-600);
-$button-text-mono-foreground: var(--colors-grey-500);
-$button-text-alert-foreground: var(--colors-red-500);
-$button-text-alt-foreground: var(--colors-green-500);
-$button-text-dark-foreground: var(--colors-teal-900);
+$button-text-regular-foreground: $colors-teal-600;
+$button-text-mono-foreground: $colors-grey-500;
+$button-text-alert-foreground: $colors-red-500;
+$button-text-alt-foreground: $colors-green-500;
+$button-text-dark-foreground: $colors-teal-900;
 
-$button-text-regular-foreground-hover: var(--colors-teal-700);
-$button-text-mono-foreground-hover: var(--colors-grey-600);
-$button-text-alert-foreground-hover: var(--colors-red-600);
-$button-text-alt-foreground-hover: var(--colors-green-600);
-$button-text-dark-foreground-hover: var(--colors-teal-800);
+$button-text-regular-foreground-hover: $colors-teal-700;
+$button-text-mono-foreground-hover: $colors-grey-600;
+$button-text-alert-foreground-hover: $colors-red-600;
+$button-text-alt-foreground-hover: $colors-green-600;
+$button-text-dark-foreground-hover: $colors-teal-800;
 
-$button-text-regular-foreground-active: var(--colors-teal-800);
-$button-text-mono-foreground-active: var(--colors-grey-700);
-$button-text-alert-foreground-active: var(--colors-red-700);
-$button-text-alt-foreground-active: var(--colors-green-700);
-$button-text-dark-foreground-active: var(--colors-teal-700);
+$button-text-regular-foreground-active: $colors-teal-800;
+$button-text-mono-foreground-active: $colors-grey-700;
+$button-text-alert-foreground-active: $colors-red-700;
+$button-text-alt-foreground-active: $colors-green-700;
+$button-text-dark-foreground-active: $colors-teal-700;
 
 /* Class Definitions */
 

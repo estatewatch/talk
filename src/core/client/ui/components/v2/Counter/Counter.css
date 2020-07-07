@@ -1,7 +1,7 @@
-$counterBadgeForegroundColor: var(--colors-pure-white);
-$counterBadgeBackgroundDefaultColor: var(--colors-grey-500);
-$counterBadgeBackgroundEmphasisColor: var(--colors-grey-500);
-$counterBadgeBackgroundAlertColor: var(--colors-grey-500);
+$counterBadgeForegroundColor: $colors-pure-white;
+$counterBadgeBackgroundDefaultColor: $colors-grey-500;
+$counterBadgeBackgroundEmphasisColor: $colors-grey-500;
+$counterBadgeBackgroundAlertColor: $colors-grey-500;
 
 .root {
   font-size: var(--font-size-2);

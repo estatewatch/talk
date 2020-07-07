@@ -1,4 +1,4 @@
-$announcement-modal-text: var(--colors-mono-500);
+$announcement-modal-text: $colors-mono-500;
 
 .root {
   min-width: 500px;

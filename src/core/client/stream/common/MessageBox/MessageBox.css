@@ -1,4 +1,4 @@
-$commentsMessageBoxBackground: var(--colors-grey-700);
+$commentsMessageBoxBackground: $colors-grey-700;
 
 
 .root {

@@ -1,5 +1,5 @@
-$tableBodyTextColor: var(--colors-mono-500);
-$tableHeaderTextColor: var(--colors-mono-500);
+$tableBodyTextColor: $colors-mono-500;
+$tableHeaderTextColor: $colors-mono-500;
 
 .root {
   /* acts like min-width in a cell */

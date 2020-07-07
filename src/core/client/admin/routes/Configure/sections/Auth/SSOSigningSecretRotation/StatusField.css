@@ -10,21 +10,21 @@
 }
 
 .active {
-  background-color: var(--colors-green-500);
-  color: var(--colors-pure-white);
+  background-color: $colors-green-500;
+  color: $colors-pure-white;
 }
 
 .expiring {
-  background-color: var(--colors-yellow-500);
-  color: var(--colors-mono-500);
+  background-color: $colors-yellow-500;
+  color: $colors-mono-500;
 
   padding-top: var(--spacing-1);
   padding-bottom: var(--spacing-1);
 }
 
 .expired {
-  background-color: var(--colors-red-500);
-  color: var(--colors-pure-white);
+  background-color: $colors-red-500;
+  color: $colors-pure-white;
 
   padding-top: var(--spacing-1);
   padding-bottom: var(--spacing-1);

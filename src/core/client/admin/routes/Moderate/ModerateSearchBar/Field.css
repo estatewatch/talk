@@ -104,7 +104,7 @@
 .inputWithTitle {
   &::placeholder {
     font-weight: var(--font-weight-primary-bold);
-    color: var(--colors-mono-500);
+    color: $colors-mono-500;
     opacity: 1;
   }
 }

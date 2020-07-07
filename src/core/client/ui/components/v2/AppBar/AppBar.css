@@ -1,4 +1,4 @@
-$mainNavBackgroundDefaultColor: var(--colors-pure-white);
+$mainNavBackgroundDefaultColor: $colors-pure-white;
 
 .root {
   background-color: $mainNavBackgroundDefaultColor;

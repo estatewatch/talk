@@ -25,7 +25,7 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
   margin-right: var(--spacing-1);
 }
@@ -36,7 +36,7 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 }
 
 .removeIcon {

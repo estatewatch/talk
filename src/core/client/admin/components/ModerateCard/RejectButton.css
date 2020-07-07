@@ -1,4 +1,4 @@
-$moderateCardButtonOutlineRejectColor: var(--colors-red-500);
+$moderateCardButtonOutlineRejectColor: $colors-red-500;
 
 .root {
   border: 1px solid $moderateCardButtonOutlineRejectColor;
@@ -12,13 +12,13 @@ $moderateCardButtonOutlineRejectColor: var(--colors-red-500);
   color: $moderateCardButtonOutlineRejectColor;
   &:not(:disabled):active {
     background-color: $moderateCardButtonOutlineRejectColor;
-    color: var(--colors-pure-white);
+    color: $colors-pure-white;
   }
 }
 
 .invert {
   background-color: $moderateCardButtonOutlineRejectColor;
-  color: var(--colors-pure-white);
+  color: $colors-pure-white;
 }
 
 .icon {

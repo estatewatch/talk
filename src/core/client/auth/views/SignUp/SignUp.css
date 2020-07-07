@@ -1,5 +1,5 @@
 .bar {
-  background-color: var(--colors-grey-600);
+  background-color: $colors-grey-600;
   padding: var(--spacing-4);
 
   text-align: center;
@@ -11,7 +11,7 @@
   font-size: var(--font-size-6);
   line-height: var(--line-height-9);
 
-  color: var(--colors-pure-white);
+  color: $colors-pure-white;
 }
 
 .header {
@@ -20,11 +20,11 @@
   font-size: var(--font-size-4);
   line-height: var(--line-height-6);
 
-  color: var(--colors-pure-white);
+  color: $colors-pure-white;
 }
 
 .subBar {
-  background-color: var(--colors-grey-100);
+  background-color: $colors-grey-100;
   padding: var(--spacing-3);
 
   text-align: center;
@@ -40,7 +40,7 @@
   font-size: var(--font-size-2);
   line-height: var(--line-height-3);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 }
 
 .signIn {

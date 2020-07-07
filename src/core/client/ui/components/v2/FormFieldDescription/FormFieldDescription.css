@@ -1,4 +1,4 @@
-$configureDescriptionColor: var(--colors-mono-500);
+$configureDescriptionColor: $colors-mono-500;
 
 .root {
   color: $configureDescriptionColor;

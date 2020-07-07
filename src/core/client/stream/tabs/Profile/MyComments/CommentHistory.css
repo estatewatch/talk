@@ -1,4 +1,4 @@
-$commentsEmptyHistoryHeaderColor: var(--colors-mono-500);
+$commentsEmptyHistoryHeaderColor: $colors-mono-500;
 
 .emptyHistoryIcon {
   margin: 0 0 var(--spacing-3) 0;
@@ -26,12 +26,12 @@ $commentsEmptyHistoryHeaderColor: var(--colors-mono-500);
 }
 
 .loadMore {
-  background-color: var(--colors-pure-white);
+  background-color: $colors-pure-white;
 
   &:disabled,
   &.disabled {
-    color: var(--colors-pure-white);
-    background-color: var(--colors-grey-300);
+    color: $colors-pure-white;
+    background-color: $colors-grey-300;
   }
 
   &:not(.disabled),
@@ -41,8 +41,8 @@ $commentsEmptyHistoryHeaderColor: var(--colors-mono-500);
   &:not(.active),
   &:not(:active) {
     &.colorRegular {
-      color: var(--colors-stream-blue-500);
-      border-color: var(--colors-stream-blue-500);
+      color: $colors-stream-blue-500;
+      border-color: $colors-stream-blue-500;
     }
   }
 
@@ -50,18 +50,18 @@ $commentsEmptyHistoryHeaderColor: var(--colors-mono-500);
   &:not(:disabled) {
     &.mouseHover,
     &:hover {
-      color: var(--colors-pure-white);
+      color: $colors-pure-white;
       &.colorRegular {
-        background-color: var(--colors-stream-blue-500);
+        background-color: $colors-stream-blue-500;
       }
     }
 
     &.active,
     &:active {
-      color: var(--colors-pure-white);
+      color: $colors-pure-white;
       &.colorRegular {
-        background-color: var(--colors-stream-blue-800);
-        border-color: var(--colors-stream-blue-800);
+        background-color: $colors-stream-blue-800;
+        border-color: $colors-stream-blue-800;
       }
     }
   }

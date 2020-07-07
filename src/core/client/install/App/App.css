@@ -7,7 +7,7 @@
     -webkit-font-smoothing: antialiased;
     /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--colors-grey-300);
+    background-color: $colors-grey-300;
     color: var(--palette-text-primary);
   }
   input::-ms-clear, input::-ms-reveal {

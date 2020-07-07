@@ -1,7 +1,7 @@
-$user-drawer-background: var(--colors-pure-white);
-$user-drawer-account-info: var(--colors-mono-500);
-$user-drawer-divider: var(--colors-grey-300);
-$user-drawer-status-label: var(--colors-mono-500);
+$user-drawer-background: $colors-pure-white;
+$user-drawer-account-info: $colors-mono-500;
+$user-drawer-divider: $colors-grey-300;
+$user-drawer-status-label: $colors-mono-500;
 
 .comments {
   flex: auto;

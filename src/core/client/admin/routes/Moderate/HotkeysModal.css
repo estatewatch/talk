@@ -1,6 +1,6 @@
-$hotkeys-modal-text: var(--colors-mono-500);
-$hotkeys-modal-snippet-background: var(--colors-white-500);
-$hotkeys-modal-snippet-border: var(--colors-grey-400);
+$hotkeys-modal-text: $colors-mono-500;
+$hotkeys-modal-snippet-background: $colors-white-500;
+$hotkeys-modal-snippet-border: $colors-grey-400;
 
 .root {
   min-width: 475px;

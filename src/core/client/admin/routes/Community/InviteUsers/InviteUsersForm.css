@@ -1,4 +1,4 @@
-$invite-form-text: var(--colors-mono-500);
+$invite-form-text: $colors-mono-500;
 
 .bodyText {
   font-size: var(--font-size-3);

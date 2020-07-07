@@ -9,11 +9,11 @@
 }
 
 .colorReg {
-  color: var(--colors-grey-500);
+  color: $colors-grey-500;
 }
 
 .colorLight {
-  color: var(--colors-grey-400);
+  color: $colors-grey-400;
 }
 
 .root {

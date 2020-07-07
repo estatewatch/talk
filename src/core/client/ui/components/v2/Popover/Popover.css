@@ -1,7 +1,7 @@
-$popoverBorderColor: var(--colors-grey-400);
-$popoverBackgroundColor: var(--colors-pure-white);
-$popoverDarkBackgroundColor: var(--colors-grey-500);
-$popoverDarkBorderColor: var(--colors-grey-500);
+$popoverBorderColor: $colors-grey-400;
+$popoverBackgroundColor: $colors-pure-white;
+$popoverDarkBackgroundColor: $colors-grey-500;
+$popoverDarkBorderColor: $colors-grey-500;
 
 .root {
 }

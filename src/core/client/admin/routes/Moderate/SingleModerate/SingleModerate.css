@@ -1,6 +1,6 @@
-$single-moderate-background: var(--colors-grey-100);
-$single-moderate-bar: var(--colors-teal-900);
-$single-moderate-bar-text: var(--colors-pure-white);
+$single-moderate-background: $colors-grey-100;
+$single-moderate-bar: $colors-teal-900;
+$single-moderate-bar-text: $colors-pure-white;
 
 .background {
   position: fixed;

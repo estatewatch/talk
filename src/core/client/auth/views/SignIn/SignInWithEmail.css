@@ -8,7 +8,7 @@
   font-size: var(--font-size-2);
   line-height: var(--line-height-3);
 
-  color: var(--colors-stream-blue-500);
+  color: $colors-stream-blue-500;
 }
 
 .field {

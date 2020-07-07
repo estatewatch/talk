@@ -9,7 +9,7 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-3);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
   margin-bottom: var(--spacing-3);
 }
@@ -20,7 +20,7 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-3);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 }
 
 .actions {

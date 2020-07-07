@@ -1,12 +1,12 @@
 .success {
   background-color: var(--palette-success-main);
   border-color: var(--palette-success-main);
-  color: var(--colors-pure-white);
+  color: $colors-pure-white;
 }
 
 .error {
   background-color: var(--palette-error-darkest);
   border-color: var(--palette-error-darkest);
-  color: var(--colors-pure-white);
+  color: $colors-pure-white;
   font-weight: var(--font-weight-primary-semi-bold);
 }

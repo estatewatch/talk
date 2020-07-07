@@ -1,5 +1,5 @@
-$moderateCardTabDefaultColor: var(--colors-grey-100);
-$moderateCardTabPrimaryColor: var(--colors-grey-300);
+$moderateCardTabDefaultColor: $colors-grey-100;
+$moderateCardTabPrimaryColor: $colors-grey-300;
 $moderateCardTabSecondaryColor: var(--palette-divider);
 
 .root {

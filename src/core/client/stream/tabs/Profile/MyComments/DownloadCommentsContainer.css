@@ -12,7 +12,7 @@
   font-size: var(--font-size-4);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-900);
+  color: $colors-mono-900;
 }
 
 .description {
@@ -23,7 +23,7 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 }
 
 .requestContainer {
@@ -40,7 +40,7 @@
   font-size: var(--font-size-2);
   line-height: var(--line-height-3);
 
-  color: var(--colors-mono-100);
+  color: $colors-mono-100;
 }
 
 .callout {

@@ -4,7 +4,7 @@
 
 .loadMore {
   width: 100%;
-  background-color: var(--colors-pure-white);
+  background-color: $colors-pure-white;
 
   border-width: 1px;
   border-style: solid;

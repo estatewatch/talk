@@ -1,4 +1,4 @@
-$configureHeadingForegroundColor: var(--colors-pure-white);
+$configureHeadingForegroundColor: $colors-pure-white;
 
 .root {
   border-style: none;

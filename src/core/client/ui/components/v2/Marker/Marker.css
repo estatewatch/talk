@@ -1,5 +1,5 @@
-$markerReportedColor: var(--colors-red-500);
-$markerPendingColor: var(--colors-teal-700);
+$markerReportedColor: $colors-red-500;
+$markerPendingColor: $colors-teal-700;
 
 .root {
   font-family: var(--font-family-primary);
@@ -26,7 +26,7 @@ $markerPendingColor: var(--colors-teal-700);
 }
 
 .variantFilled {
-  color: var(--colors-pure-white);
+  color: $colors-pure-white;
   &.colorReported {
     background-color: $markerReportedColor;
     border-color: $markerReportedColor;

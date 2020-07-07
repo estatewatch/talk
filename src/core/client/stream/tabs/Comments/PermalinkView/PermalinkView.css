@@ -19,7 +19,7 @@
   font-size: var(--font-size-2);
   line-height: var(--line-height-3);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
   text-align: center;
 }
@@ -32,6 +32,6 @@
     font-size: var(--font-size-3);
     line-height: var(--line-height-3);
 
-    color: var(--colors-mono-500);
+    color: $colors-mono-500;
   }
 }

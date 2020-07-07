@@ -1,5 +1,5 @@
 .root {
-  border-bottom: 1px solid var(--colors-grey-200);
+  border-bottom: 1px solid $colors-grey-200;
   padding: var(--spacing-2);
 
   &:last-child {

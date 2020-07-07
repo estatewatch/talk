@@ -57,48 +57,48 @@
 
 .icon {
   &.mono {
-    color: var(--colors-mono-500);
+    color: $colors-mono-500;
   }
   &.positive {
-    color: var(--colors-green-500);
+    color: $colors-green-500;
   }
   &.negative {
-    color: var(--colors-red-500);
+    color: $colors-red-500;
   }
   &.primary {
-    color: var(--colors-stream-blue-500);
+    color: $colors-stream-blue-500;
   }
   &.warning {
-    color: var(--colors-yellow-500);
+    color: $colors-yellow-500;
   }
 }
 
 .mono {
-  background-color: var(--colors-grey-100);
-  border-color: var(--colors-grey-500);
-  color: var(--colors-mono-500);
+  background-color: $colors-grey-100;
+  border-color: $colors-grey-500;
+  color: $colors-mono-500;
 }
 
 .positive {
-  background-color: var(--colors-green-100);
-  border-color: var(--colors-green-500);
-  color: var(--colors-mono-500);
+  background-color: $colors-green-100;
+  border-color: $colors-green-500;
+  color: $colors-mono-500;
 }
 
 .negative {
-  background-color: var(--colors-stream-red-100);
-  border-color: var(--colors-stream-red-500);
-  color: var(--colors-mono-500);
+  background-color: $colors-stream-red-100;
+  border-color: $colors-stream-red-500;
+  color: $colors-mono-500;
 }
 
 .primary {
-  background-color: var(--colors-stream-blue-100);
-  border-color: var(--colors-stream-blue-500);
-  color: var(--colors-mono-500);
+  background-color: $colors-stream-blue-100;
+  border-color: $colors-stream-blue-500;
+  color: $colors-mono-500;
 }
 
 .warning {
-  background-color: var(--colors-yellow-100);
-  border-color: var(--colors-yellow-500);
-  color: var(--colors-mono-500);
+  background-color: $colors-yellow-100;
+  border-color: $colors-yellow-500;
+  color: $colors-mono-500;
 }

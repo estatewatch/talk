@@ -1,5 +1,5 @@
-$moderateCardDecisionHistoryLinkTextColor: var(--colors-teal-700);
-$moderateCardDecisionHistoryBorderColor: var(--colors-grey-300);
+$moderateCardDecisionHistoryLinkTextColor: $colors-teal-700;
+$moderateCardDecisionHistoryBorderColor: $colors-grey-300;
 
 .root {
   font-size: var(--font-size-2);

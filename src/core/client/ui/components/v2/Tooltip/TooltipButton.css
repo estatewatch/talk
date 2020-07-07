@@ -1,4 +1,4 @@
-$tooltip-button: var(--colors-mono-500);
+$tooltip-button: $colors-mono-500;
 
 .button {
   line-height: 0;

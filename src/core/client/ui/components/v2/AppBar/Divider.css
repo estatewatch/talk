@@ -1,4 +1,4 @@
-$mainNavDividerColor: var(--colors-grey-400);
+$mainNavDividerColor: $colors-grey-400;
 
 .root {
   height: 32px;

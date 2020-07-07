@@ -17,5 +17,5 @@
   font-weight: var(--font-weight-bold);
   font-family: var(--font-family-primary);
   line-height: var(--line-height-title);
-  color: var(--colors-mono-100);
+  color: $colors-mono-100;
 }

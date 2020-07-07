@@ -1,5 +1,5 @@
-$moderateCardCounterBadgeBackgroundAlert: var(--colors-red-500);
-$moderateCardToxicityColor: var(--colors-mono-500);
+$moderateCardCounterBadgeBackgroundAlert: $colors-red-500;
+$moderateCardToxicityColor: $colors-mono-500;
 
 .root {
   font-size: var(--font-size-2);

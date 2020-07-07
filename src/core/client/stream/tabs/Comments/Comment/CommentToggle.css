@@ -1,16 +1,16 @@
 .root {
   padding: var(--spacing-2);
   width: 100%;
-  background: var(--colors-grey-100);
+  background: $colors-grey-100;
 
   &.mouseHover,
   &:hover {
-    background: var(--colors-grey-200);
+    background: $colors-grey-200;
   }
 }
 
 .icon {
-  color: var(--colors-grey-500);
+  color: $colors-grey-500;
 }
 
 .timestamp {
@@ -19,7 +19,7 @@
   font-weight: var(--font-weight-primary-semi-bold);
   font-size: var(--font-size-2);
   line-height: var(--line-height-3);
-  color: var(--colors-grey-500);
+  color: $colors-grey-500;
 }
 
 .inner {

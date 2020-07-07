@@ -11,5 +11,5 @@
 }
 
 .success {
-  background-color: var(--colors-green-300);
+  background-color: $colors-green-300;
 }

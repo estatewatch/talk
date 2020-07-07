@@ -1,4 +1,4 @@
-$editedTextDefaultColor: var(--colors-grey-500);
+$editedTextDefaultColor: $colors-grey-500;
 
 .root {
   font-family: var(--font-family-primary);

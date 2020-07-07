@@ -1,7 +1,7 @@
-$moderator-note-bg: var(--colors-grey-100);
-$moderator-note-body: var(--colors-mono-500);
-$moderator-note-dot: var(--colors-mono-100);
-$moderator-note-username: var(--colors-mono-900);
+$moderator-note-bg: $colors-grey-100;
+$moderator-note-body: $colors-mono-500;
+$moderator-note-dot: $colors-mono-100;
+$moderator-note-username: $colors-mono-900;
 
 .root {
 }

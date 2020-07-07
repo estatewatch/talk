@@ -1,11 +1,11 @@
 .root {
-  background-color: var(--colors-grey-200);
+  background-color: $colors-grey-200;
 
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-primary-semi-bold);
   font-size: var(--font-size-2);
   line-height: var(--line-height-3);
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
   padding: var(--spacing-4);
 

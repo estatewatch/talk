@@ -1,4 +1,4 @@
-$user-status-details: var(--colors-mono-500);
+$user-status-details: $colors-mono-500;
 
 .root {
   font-family: var(--font-family-primary);

@@ -7,7 +7,7 @@ $tag-color-error-light: var(--palette-error-lightest);
 $tag-color-dark: var(--palette-primary-darkest);
 $tag-color-dark-light: var(--palette-primary-lightest);
 $tag-text-color: var(--palette-text-light);
-$tag-pill-bg: var(--colors-pure-white);
+$tag-pill-bg: $colors-pure-white;
 
 .root {
   font-size: var(--font-size-2);
@@ -38,7 +38,7 @@ $tag-pill-bg: var(--colors-pure-white);
 }
 
 .colorStreamBlue {
-  background-color: var(--colors-stream-blue-500);
+  background-color: $colors-stream-blue-500;
 }
 
 .variantPill {
@@ -62,8 +62,8 @@ $tag-pill-bg: var(--colors-pure-white);
     color: $tag-color-dark;
   }
   &.colorStreamBlue {
-    border: 1px solid var(--colors-stream-blue-500);
-    color: var(--colors-stream-blue-500);
+    border: 1px solid $colors-stream-blue-500;
+    color: $colors-stream-blue-500;
   }
 }
 

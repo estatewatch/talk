@@ -10,12 +10,12 @@
 
 .level1 {
   margin-left: var(--spacing-5);
-  border-left: 2px solid var(--colors-grey-600);
+  border-left: 2px solid $colors-grey-600;
 }
 
 .level2 {
   margin-left: calc(var(--spacing-5) + var(--spacing-2));
-  border-left: 2px solid var(--colors-grey-500);
+  border-left: 2px solid $colors-grey-500;
 }
 
 .level3 {

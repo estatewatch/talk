@@ -1,4 +1,4 @@
-$modal-header-background: var(--colors-white-500);
+$modal-header-background: $colors-white-500;
 
 .root {
   background-color: $modal-header-background;

@@ -29,5 +29,5 @@
 }
 
 .showMoreIcon {
-  color: var(--colors-mono-100);
+  color: $colors-mono-100;
 }

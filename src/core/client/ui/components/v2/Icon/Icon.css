@@ -48,16 +48,16 @@
 }
 
 .colorPrimary {
-  color: var(--colors-teal-700);
+  color: $colors-teal-700;
 }
 .colorError {
-  color: var(--colors-red-500);
+  color: $colors-red-500;
 }
 
 .colorSuccess {
-  color: var(--colors-green-500);
+  color: $colors-green-500;
 }
 
 .colorStream {
-  color: var(--colors-stream-blue-500);
+  color: $colors-stream-blue-500;
 }

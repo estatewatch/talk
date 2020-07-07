@@ -1,7 +1,7 @@
-$moderateCardIconColor: var(--colors-mono-100);
-$moderateCardInReplyToColor: var(--colors-mono-100);
-$moderateCardInReplyToUsernameColor: var(--colors-mono-500);
-$moderateCardUsernameBackgroundHover: var(--colors-grey-200);
+$moderateCardIconColor: $colors-mono-100;
+$moderateCardInReplyToColor: $colors-mono-100;
+$moderateCardInReplyToUsernameColor: $colors-mono-500;
+$moderateCardUsernameBackgroundHover: $colors-grey-200;
 
 .icon {
   color: $moderateCardIconColor;

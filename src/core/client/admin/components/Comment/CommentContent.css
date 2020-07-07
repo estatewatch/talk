@@ -1,6 +1,6 @@
-$comment-content: var(--colors-mono-900);
-$comment-blockquote-bg: var(--colors-grey-100);
-$comment-highlight-bg: var(--colors-yellow-500);
+$comment-content: $colors-mono-900;
+$comment-blockquote-bg: $colors-grey-100;
+$comment-highlight-bg: $colors-yellow-500;
 $comment-link: var(--palette-primary-main);
 $comment-link-active: var(--palette-primary-darkest);
 

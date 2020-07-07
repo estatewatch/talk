@@ -1,9 +1,9 @@
-$main-nav-text: var(--colors-mono-100);
-$main-nav-background: var(--colors-pure-white);
-$main-nav-hover-background: var(--colors-coral-200);
-$main-nav-active-background: var(--colors-coral-500);
-$main-nav-active-text: var(--colors-pure-white);
-$main-nav-hover-text: var(--colors-mono-500);
+$main-nav-text: $colors-mono-100;
+$main-nav-background: $colors-pure-white;
+$main-nav-hover-background: $colors-coral-200;
+$main-nav-active-background: $colors-coral-500;
+$main-nav-active-text: $colors-pure-white;
+$main-nav-hover-text: $colors-mono-500;
 
 .root {
 }

@@ -1,11 +1,11 @@
-$commentTimestampColor: var(--colors-grey-500);
+$commentTimestampColor: $colors-grey-500;
 
 .root {
   flex: 1;
 }
 
 .highlight {
-  background-color: var(--colors-stream-blue-100);
+  background-color: $colors-stream-blue-100;
   padding: var(--mini-unit);
 }
 .subBar {

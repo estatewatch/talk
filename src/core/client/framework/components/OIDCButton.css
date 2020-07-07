@@ -2,25 +2,25 @@
   border-style: solid;
   border-width: 1px;
 
-  color: var(--colors-pure-white);
+  color: $colors-pure-white;
 
   &:not(.disabled),
   &:not(:disabled) {
-    background-color: var(--colors-grey-500);
-    border-color: var(--colors-grey-500);
+    background-color: $colors-grey-500;
+    border-color: $colors-grey-500;
   }
 
   &:hover, &.mouseHover {
-    background-color: var(--colors-grey-400);
-    border-color: var(--colors-grey-400);
+    background-color: $colors-grey-400;
+    border-color: $colors-grey-400;
   }
   &:active, &.active {
-    background-color: var(--colors-grey-300);
-    border-color: var(--colors-grey-300);
+    background-color: $colors-grey-300;
+    border-color: $colors-grey-300;
   }
   &.disabled {
-    color: var(--colors-grey-400);
-    background-color: var(--colors-grey-200);
-    border-color: var(--colors-grey-200);
+    color: $colors-grey-400;
+    background-color: $colors-grey-200;
+    border-color: $colors-grey-200;
   }
 }

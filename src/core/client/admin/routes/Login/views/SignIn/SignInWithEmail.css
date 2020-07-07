@@ -1,7 +1,7 @@
 .textLink {
   font-weight: var(--font-weight-primary-semi-bold);
   font-family: var(--font-family-primary);
-  color: var(--colors-teal-700);
+  color: $colors-teal-700;
   font-size: var(--font-size-1);
   line-height: var(--line-height-reset);
   text-decoration: underline;

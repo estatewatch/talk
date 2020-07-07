@@ -2,7 +2,7 @@
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-primary-regular);
   font-size: var(--font-size-1);
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
   line-height: var(--line-height-reset);
   display: block;
   text-decoration: none;
@@ -10,7 +10,7 @@
 }
 
 .root:hover {
-  background: var(--colors-teal-100);
+  background: $colors-teal-100;
 }
 
 .active {

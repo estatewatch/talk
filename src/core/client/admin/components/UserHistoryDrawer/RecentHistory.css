@@ -1,6 +1,6 @@
-$recent-history-title: var(--colors-mono-500);
-$recent-history-subtitle: var(--colors-mono-100);
-$recent-history-info: var(--colors-mono-500);
+$recent-history-title: $colors-mono-500;
+$recent-history-subtitle: $colors-mono-100;
+$recent-history-info: $colors-mono-500;
 $recent-history-triggered: var(--palette-error-main);
 
 .title {

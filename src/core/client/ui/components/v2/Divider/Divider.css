@@ -1,4 +1,4 @@
-$divider-border-color: var(--colors-grey-300);
+$divider-border-color: $colors-grey-300;
 
 .root {
   border-top: 0;

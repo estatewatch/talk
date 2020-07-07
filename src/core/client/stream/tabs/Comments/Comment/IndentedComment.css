@@ -9,7 +9,7 @@
 
   &.mouseHover,
   &:hover {
-    background: var(--colors-grey-100);
+    background: $colors-grey-100;
     border-radius: var(--border-radius);
   }
 }
@@ -19,5 +19,5 @@
 }
 
 .icon {
-  color: var(--colors-grey-400);
+  color: $colors-grey-400;
 }

@@ -1,12 +1,12 @@
-$commentsHistoryCommentOnLabelColor: var(--colors-mono-100);
-$commentsHistoryStoryTitleColor: var(--colors-mono-500);
-$commentsHistoryDividerColor: var(--colors-grey-200);
+$commentsHistoryCommentOnLabelColor: $colors-mono-100;
+$commentsHistoryStoryTitleColor: $colors-mono-500;
+$commentsHistoryDividerColor: $colors-grey-200;
 
-$commentsHistoryReactionsColor: var(--colors-mono-900);
+$commentsHistoryReactionsColor: $colors-mono-900;
 
-$commentsHistoryViewConversationColor: var(--colors-stream-blue-500);
-$commentsHistoryViewConversationHoverColor: var(--colors-stream-blue-300);
-$commentsHistoryViewConversationActiveColor: var(--colors-stream-blue-200);
+$commentsHistoryViewConversationColor: $colors-stream-blue-500;
+$commentsHistoryViewConversationHoverColor: $colors-stream-blue-300;
+$commentsHistoryViewConversationActiveColor: $colors-stream-blue-200;
 
 .root:not(:first-child) {
   border-top: 1px solid var(--palette-divider);

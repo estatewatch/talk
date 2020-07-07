@@ -1,5 +1,5 @@
-$sub-bar-background: var(--colors-pure-white);
-$sub-bar-border: var(--colors-grey-300);
+$sub-bar-background: $colors-pure-white;
+$sub-bar-border: $colors-grey-300;
 
 .root {
   background-color: $sub-bar-background;

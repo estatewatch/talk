@@ -103,98 +103,98 @@
   border-width: 1px;
 
   &.colorPrimary {
-    color: var(--colors-pure-white);
+    color: $colors-pure-white;
 
     &:not(.disabled),
     &:not(:disabled) {
-      background-color: var(--colors-stream-blue-500);
-      border-color: var(--colors-stream-blue-500);
+      background-color: $colors-stream-blue-500;
+      border-color: $colors-stream-blue-500;
     }
 
     &:hover, &.mouseHover {
-      background-color: var(--colors-stream-blue-600);
-      border-color: var(--colors-stream-blue-600);
+      background-color: $colors-stream-blue-600;
+      border-color: $colors-stream-blue-600;
     }
     &:active, &.active {
-      background-color: var(--colors-stream-blue-700);
-      border-color: var(--colors-stream-blue-700);
+      background-color: $colors-stream-blue-700;
+      border-color: $colors-stream-blue-700;
     }
     &.disabled {
-      color: var(--colors-grey-400);
-      background-color: var(--colors-grey-200);
-      border-color: var(--colors-grey-200);
+      color: $colors-grey-400;
+      background-color: $colors-grey-200;
+      border-color: $colors-grey-200;
     }
   }
 
   &.colorSecondary {
-    color: var(--colors-pure-white);
+    color: $colors-pure-white;
 
     &:not(.disabled),
     &:not(:disabled) {
-      background-color: var(--colors-grey-500);
-      border-color: var(--colors-grey-500);
+      background-color: $colors-grey-500;
+      border-color: $colors-grey-500;
     }
 
     &:hover, &.mouseHover {
-      background-color: var(--colors-grey-600);
-      border-color: var(--colors-grey-600);
+      background-color: $colors-grey-600;
+      border-color: $colors-grey-600;
     }
     &:active, &.active {
-      background-color: var(--colors-grey-700);
-      border-color: var(--colors-grey-700);
+      background-color: $colors-grey-700;
+      border-color: $colors-grey-700;
     }
     &.disabled {
-      color: var(--colors-grey-400);
-      background-color: var(--colors-grey-200);
-      border-color: var(--colors-grey-200);
+      color: $colors-grey-400;
+      background-color: $colors-grey-200;
+      border-color: $colors-grey-200;
     }
   }
 
   &.colorNegative {
-    color: var(--colors-pure-white);
+    color: $colors-pure-white;
 
     &:not(.disabled),
     &:not(:disabled) {
-      background-color: var(--colors-red-500);
-      border-color: var(--colors-red-500);
+      background-color: $colors-red-500;
+      border-color: $colors-red-500;
     }
 
     &:hover, &.mouseHover {
-      background-color: var(--colors-red-600);
-      border-color: var(--colors-red-600);
+      background-color: $colors-red-600;
+      border-color: $colors-red-600;
     }
     &:active, &.active {
-      background-color: var(--colors-red-700);
-      border-color: var(--colors-red-700);
+      background-color: $colors-red-700;
+      border-color: $colors-red-700;
     }
     &.disabled {
-      color: var(--colors-grey-400);
-      background-color: var(--colors-grey-200);
-      border-color: var(--colors-grey-200);
+      color: $colors-grey-400;
+      background-color: $colors-grey-200;
+      border-color: $colors-grey-200;
     }
   }
 
   &.colorPositive {
-    color: var(--colors-pure-white);
+    color: $colors-pure-white;
 
     &:not(.disabled),
     &:not(:disabled) {
-      background-color: var(--colors-green-500);
-      border-color: var(--colors-green-500);
+      background-color: $colors-green-500;
+      border-color: $colors-green-500;
     }
 
     &:hover, &.mouseHover {
-      background-color: var(--colors-green-600);
-      border-color: var(--colors-green-600);
+      background-color: $colors-green-600;
+      border-color: $colors-green-600;
     }
     &:active, &.active {
-      background-color: var(--colors-green-700);
-      border-color: var(--colors-green-700);
+      background-color: $colors-green-700;
+      border-color: $colors-green-700;
     }
     &.disabled {
-      color: var(--colors-grey-400);
-      background-color: var(--colors-grey-200);
-      border-color: var(--colors-grey-200);
+      color: $colors-grey-400;
+      background-color: $colors-grey-200;
+      border-color: $colors-grey-200;
     }
   }
 }
@@ -206,25 +206,25 @@
 
     &:not(.disabled),
     &:not(:disabled) {
-      background-color: var(--colors-pure-white);
-      border-color: var(--colors-stream-blue-500);
-      color: var(--colors-stream-blue-500);
+      background-color: $colors-pure-white;
+      border-color: $colors-stream-blue-500;
+      color: $colors-stream-blue-500;
     }
 
     &:hover, &.mouseHover {
-      background-color: var(--colors-stream-blue-500);
-      border-color: var(--colors-stream-blue-500);
-      color: var(--colors-pure-white);
+      background-color: $colors-stream-blue-500;
+      border-color: $colors-stream-blue-500;
+      color: $colors-pure-white;
     }
     &:active, &.active {
-      background-color: var(--colors-stream-blue-600);
-      border-color: var(--colors-stream-blue-600);
-      color: var(--colors-pure-white);
+      background-color: $colors-stream-blue-600;
+      border-color: $colors-stream-blue-600;
+      color: $colors-pure-white;
     }
     &.disabled {
-      background-color: var(--colors-pure-white);
-      border-color: var(--colors-grey-400);
-      color: var(--colors-grey-400);
+      background-color: $colors-pure-white;
+      border-color: $colors-grey-400;
+      color: $colors-grey-400;
     }
   }
 
@@ -234,25 +234,25 @@
 
     &:not(.disabled),
     &:not(:disabled) {
-      background-color: var(--colors-pure-white);
-      border-color: var(--colors-grey-500);
-      color: var(--colors-grey-500);
+      background-color: $colors-pure-white;
+      border-color: $colors-grey-500;
+      color: $colors-grey-500;
     }
 
     &:hover, &.mouseHover {
-      background-color: var(--colors-grey-500);
-      border-color: var(--colors-grey-500);
-      color: var(--colors-pure-white);
+      background-color: $colors-grey-500;
+      border-color: $colors-grey-500;
+      color: $colors-pure-white;
     }
     &:active, &.active {
-      background-color: var(--colors-grey-600);
-      border-color: var(--colors-grey-600);
-      color: var(--colors-pure-white);
+      background-color: $colors-grey-600;
+      border-color: $colors-grey-600;
+      color: $colors-pure-white;
     }
     &.disabled {
-      background-color: var(--colors-pure-white);
-      border-color: var(--colors-grey-400);
-      color: var(--colors-grey-400);
+      background-color: $colors-pure-white;
+      border-color: $colors-grey-400;
+      color: $colors-grey-400;
     }
   }
 
@@ -262,25 +262,25 @@
 
     &:not(.disabled),
     &:not(:disabled) {
-      background-color: var(--colors-pure-white);
-      border-color: var(--colors-red-500);
-      color: var(--colors-red-500);
+      background-color: $colors-pure-white;
+      border-color: $colors-red-500;
+      color: $colors-red-500;
     }
 
     &:hover, &.mouseHover {
-      background-color: var(--colors-red-500);
-      border-color: var(--colors-red-500);
-      color: var(--colors-pure-white);
+      background-color: $colors-red-500;
+      border-color: $colors-red-500;
+      color: $colors-pure-white;
     }
     &:active, &.active {
-      background-color: var(--colors-red-600);
-      border-color: var(--colors-red-600);
-      color: var(--colors-pure-white);
+      background-color: $colors-red-600;
+      border-color: $colors-red-600;
+      color: $colors-pure-white;
     }
     &.disabled {
-      background-color: var(--colors-pure-white);
-      border-color: var(--colors-grey-400);
-      color: var(--colors-grey-400);
+      background-color: $colors-pure-white;
+      border-color: $colors-grey-400;
+      color: $colors-grey-400;
     }
   }
 
@@ -290,25 +290,25 @@
 
     &:not(.disabled),
     &:not(:disabled) {
-      background-color: var(--colors-pure-white);
-      border-color: var(--colors-green-500);
-      color: var(--colors-green-500);
+      background-color: $colors-pure-white;
+      border-color: $colors-green-500;
+      color: $colors-green-500;
     }
 
     &:hover, &.mouseHover {
-      background-color: var(--colors-green-500);
-      border-color: var(--colors-green-500);
-      color: var(--colors-pure-white);
+      background-color: $colors-green-500;
+      border-color: $colors-green-500;
+      color: $colors-pure-white;
     }
     &:active, &.active {
-      background-color: var(--colors-green-600);
-      border-color: var(--colors-green-600);
-      color: var(--colors-pure-white);
+      background-color: $colors-green-600;
+      border-color: $colors-green-600;
+      color: $colors-pure-white;
     }
     &.disabled {
-      background-color: var(--colors-pure-white);
-      border-color: var(--colors-grey-400);
-      color: var(--colors-grey-400);
+      background-color: $colors-pure-white;
+      border-color: $colors-grey-400;
+      color: $colors-grey-400;
     }
   }
 }
@@ -319,68 +319,68 @@
   &.colorPrimary {
     &:not(.disabled),
     &:not(:disabled) {
-      color: var(--colors-stream-blue-500);
+      color: $colors-stream-blue-500;
     }
 
     &:hover, &.mouseHover {
-      color: var(--colors-stream-blue-600);
+      color: $colors-stream-blue-600;
     }
     &:active, &.active {
-      color: var(--colors-stream-blue-700);
+      color: $colors-stream-blue-700;
     }
     &.disabled {
-      color: var(--colors-grey-400);
+      color: $colors-grey-400;
     }
   }
 
   &.colorSecondary {
     &:not(.disabled),
     &:not(:disabled) {
-      color: var(--colors-grey-500);
+      color: $colors-grey-500;
     }
 
     &:hover, &.mouseHover {
-      color: var(--colors-grey-600);
+      color: $colors-grey-600;
     }
     &:active, &.active {
-      color: var(--colors-grey-700);
+      color: $colors-grey-700;
     }
     &.disabled {
-      color: var(--colors-grey-400);
+      color: $colors-grey-400;
     }
   }
 
   &.colorNegative {
     &:not(.disabled),
     &:not(:disabled) {
-      color: var(--colors-red-500);
+      color: $colors-red-500;
     }
 
     &:hover, &.mouseHover {
-      color: var(--colors-red-600);
+      color: $colors-red-600;
     }
     &:active, &.active {
-      color: var(--colors-red-700);
+      color: $colors-red-700;
     }
     &.disabled {
-      color: var(--colors-grey-400);
+      color: $colors-grey-400;
     }
   }
 
   &.colorPositive{
     &:not(.disabled),
     &:not(:disabled) {
-      color: var(--colors-green-500);
+      color: $colors-green-500;
     }
 
     &:hover, &.mouseHover {
-      color: var(--colors-green-600);
+      color: $colors-green-600;
     }
     &:active, &.active {
-      color: var(--colors-green-700);
+      color: $colors-green-700;
     }
     &.disabled {
-      color: var(--colors-grey-400);
+      color: $colors-grey-400;
     }
   }
 }

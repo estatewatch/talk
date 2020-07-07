@@ -8,10 +8,10 @@
   justify-content: center;
   align-items: center;
   left: calc(-1 * var(--spacing-2) - var(--spacing-2) - 1px);
-  background-color: var(--colors-pure-white);
+  background-color: $colors-pure-white;
   width: calc(2 * var(--spacing-2));
   height: 23px;
-  color: var(--colors-grey-500);
+  color: $colors-grey-500;
 }
 
 .end {

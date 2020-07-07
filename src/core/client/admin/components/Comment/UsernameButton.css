@@ -1,4 +1,4 @@
-$moderateCardUsernameBackgroundHover: var(--colors-grey-200);
+$moderateCardUsernameBackgroundHover: $colors-grey-200;
 
 .root {
   margin-right: var(--mini-unit);

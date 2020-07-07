@@ -1,5 +1,5 @@
-$commenterActionEditColor: var(--colors-stream-blue-500);
-$commenterActionEditColorActive: var(--colors-stream-blue-300);
+$commenterActionEditColor: $colors-stream-blue-500;
+$commenterActionEditColorActive: $colors-stream-blue-300;
 
 .tagIcon {
   margin-right: var(--spacing-1);
@@ -46,5 +46,5 @@ $commenterActionEditColorActive: var(--colors-stream-blue-300);
 }
 
 .staticUsername {
-  color: var(--colors-mono-100);
+  color: $colors-mono-100;
 }

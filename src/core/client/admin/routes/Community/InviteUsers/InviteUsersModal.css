@@ -1,4 +1,4 @@
-$invite-modal-text: var(--colors-mono-500);
+$invite-modal-text: $colors-mono-500;
 
 .root {
   width: 400px;

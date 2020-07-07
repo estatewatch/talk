@@ -27,8 +27,8 @@
     cursor: default;
 
     background-color: transparent;
-    border-color: var(--colors-grey-300);
-    color: var(--colors-grey-300);
+    border-color: $colors-grey-300;
+    color: $colors-grey-300;
   }
 }
 
@@ -38,8 +38,8 @@
   color: var(--palette-text-light);
 
   &:disabled {
-    color: var(--colors-pure-white);
-    border-color: var(--colors-grey-300);
-    background-color: var(--colors-grey-300);
+    color: $colors-pure-white;
+    border-color: $colors-grey-300;
+    background-color: $colors-grey-300;
   }
 }

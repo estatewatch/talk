@@ -1,5 +1,5 @@
-$decisionHistoryBorderColor: var(--colors-grey-300);
-$decisionHistoryTitleBackgroundColor: var(--colors-grey-200);
+$decisionHistoryBorderColor: $colors-grey-300;
+$decisionHistoryTitleBackgroundColor: $colors-grey-200;
 
 .root {
   background: $decisionHistoryTitleBackgroundColor;

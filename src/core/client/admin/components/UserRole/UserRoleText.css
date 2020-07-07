@@ -1,4 +1,4 @@
-$tableBodyTextColor: var(--colors-mono-500);
+$tableBodyTextColor: $colors-mono-500;
 
 .root {
   font-family: var(--font-family-primary);

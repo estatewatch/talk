@@ -1,7 +1,7 @@
 .title {
   font-weight: var(--font-weight-secondary-bold);
   font-family: var(--font-family-secondary);
-  color: var(--colors-mono-100);
+  color: $colors-mono-100;
   font-size: var(--font-size-3);
   line-height: var(--line-height-title);
 

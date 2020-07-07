@@ -1,4 +1,4 @@
-$tableHeaderAltTextColor: var(--colors-mono-100);
+$tableHeaderAltTextColor: $colors-mono-100;
 
 .titleColumn {
   width: 60%;

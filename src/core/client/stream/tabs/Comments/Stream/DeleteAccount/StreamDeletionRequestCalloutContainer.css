@@ -1,5 +1,5 @@
 .icon {
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 }
 
 .gutter {

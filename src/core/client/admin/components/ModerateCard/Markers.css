@@ -1,5 +1,5 @@
-$moderateCardDetailsHeaderColor: var(--colors-mono-500);
-$moderateCardDetailsDividerColor: var(--colors-grey-100);
+$moderateCardDetailsHeaderColor: $colors-mono-500;
+$moderateCardDetailsDividerColor: $colors-grey-100;
 
 .detailsButton {
   font-size: var(--font-size-1);

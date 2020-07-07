@@ -13,9 +13,9 @@
   font-weight: var(--font-weight-primary-semi-bold);
   font-family: var(--font-family-primary);
   line-height: var(--line-height-4);
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
   position: relative;
-  background-color: var(--colors-pure-white);
+  background-color: $colors-pure-white;
   padding: 0 var(--mini-unit);
 }

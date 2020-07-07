@@ -9,7 +9,7 @@
 }
 
 .reacted {
-  color: var(--colors-stream-blue-500);
+  color: $colors-stream-blue-500;
   font-weight: var(--font-weight-primary-bold);
 }
 

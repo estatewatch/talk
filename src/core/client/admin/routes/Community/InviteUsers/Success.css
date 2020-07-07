@@ -1,4 +1,4 @@
-$success-text: var(--colors-mono-500);
+$success-text: $colors-mono-500;
 
 .box {
   width: 100%;

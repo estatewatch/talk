@@ -1,6 +1,6 @@
-$commentsRTEBorder: var(--colors-grey-300);
-$commentsRTEContentBackground: var(--colors-pure-white);
-$commentsRTEPlaceholder: var(--colors-grey-400);
+$commentsRTEBorder: $colors-grey-300;
+$commentsRTEContentBackground: $colors-pure-white;
+$commentsRTEPlaceholder: $colors-grey-400;
 
 .content {
   composes: root from "~coral-stream/shared/htmlContent.css";

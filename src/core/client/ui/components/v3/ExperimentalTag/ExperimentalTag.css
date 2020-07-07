@@ -6,8 +6,8 @@
 
   border-radius: var(--round-corners);
 
-  background-color: var(--colors-stream-blue-100);
-  color: var(--colors-stream-blue-500);
+  background-color: $colors-stream-blue-100;
+  color: $colors-stream-blue-500;
 
   padding-top: var(--spacing-1);
   padding-bottom: var(--spacing-1);
@@ -18,5 +18,5 @@
 }
 
 .button {
-  color: var(--colors-mono-100);
+  color: $colors-mono-100;
 }

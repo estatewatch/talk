@@ -4,7 +4,7 @@
 
   font-weight: var(--font-weight-secondary-bold);
   font-family: var(--font-family-secondary);
-  color: var(--colors-coral-500);
+  color: $colors-coral-500;
 
   font-size: 1.15rem;
   line-height: 1.15rem;

@@ -1,4 +1,4 @@
-$configBoxBorderColor: var(--colors-grey-300);
+$configBoxBorderColor: $colors-grey-300;
 
 .root {
   border: 0;

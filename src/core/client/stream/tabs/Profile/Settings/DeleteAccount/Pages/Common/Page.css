@@ -1,5 +1,5 @@
 .header {
-  background: var(--colors-grey-600);
+  background: $colors-grey-600;
 
   border-top-left-radius: var(--round-corners);
   border-top-right-radius: var(--round-corners);
@@ -17,7 +17,7 @@
   font-size: var(--font-size-6);
   line-height: var(--line-height-8);
 
-  color: var(--colors-pure-white);
+  color: $colors-pure-white;
 }
 
 .subHeaderText {
@@ -26,7 +26,7 @@
   font-size: var(--font-size-4);
   line-height: var(--line-height-6);
 
-  color: var(--colors-pure-white);
+  color: $colors-pure-white;
 }
 
 .body {
@@ -35,9 +35,9 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
-  background: var(--colors-pure-white);
+  background: $colors-pure-white;
 
   padding: var(--spacing-5) var(--spacing-5) var(--spacing-5) var(--spacing-5);
 
@@ -51,7 +51,7 @@
   font-size: var(--font-size-2);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
   margin-bottom: var(--spacing-2);
 }
@@ -104,7 +104,7 @@
 }
 
 .proceedButton {
-  border: 1px solid var(--colors-stream-blue-500);
+  border: 1px solid $colors-stream-blue-500;
 
   float: right;
 }

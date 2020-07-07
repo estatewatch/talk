@@ -1,4 +1,4 @@
-$userMenuButtonColor: var(--colors-mono-100);
+$userMenuButtonColor: $colors-mono-100;
 
 .button {
   padding-top: 0;

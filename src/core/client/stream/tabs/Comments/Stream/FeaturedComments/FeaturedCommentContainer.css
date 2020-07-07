@@ -1,13 +1,13 @@
 .root {
-  background-color: var(--colors-stream-blue-100);
-  border-left: 4px solid var(--colors-stream-blue-300);
-  color: var(--colors-mono-900);
+  background-color: $colors-stream-blue-100;
+  border-left: 4px solid $colors-stream-blue-300;
+  color: $colors-mono-900;
   padding: var(--spacing-4);
   box-sizing: border-box;
 }
 
 .body {
-  color: var(--colors-mono-900);
+  color: $colors-mono-900;
   font-size: var(--font-size-4);
 }
 
@@ -19,7 +19,7 @@
   font-size: var(--font-size-2);
   line-height: var(--line-height-2);
 
-  color: var(--colors-mono-100);
+  color: $colors-mono-100;
 
   padding-right: var(--spacing-3);
 }
@@ -31,7 +31,7 @@
 }
 
 .replies {
-  color: var(--colors-mono-100);
+  color: $colors-mono-100;
 }
 
 .icon {

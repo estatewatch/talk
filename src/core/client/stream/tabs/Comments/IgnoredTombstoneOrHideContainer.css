@@ -10,24 +10,24 @@
     &:not(.disabled),
     &:not(:disabled) {
       background-color: transparent;
-      border-color: var(--colors-grey-500);
-      color: var(--colors-grey-500);
+      border-color: $colors-grey-500;
+      color: $colors-grey-500;
     }
 
     &:hover, &.mouseHover {
-      background-color: var(--colors-grey-500);
-      border-color: var(--colors-grey-500);
-      color: var(--colors-pure-white);
+      background-color: $colors-grey-500;
+      border-color: $colors-grey-500;
+      color: $colors-pure-white;
     }
     &:active, &.active {
-      background-color: var(--colors-grey-600);
-      border-color: var(--colors-grey-600);
-      color: var(--colors-pure-white);
+      background-color: $colors-grey-600;
+      border-color: $colors-grey-600;
+      color: $colors-pure-white;
     }
     &.disabled {
-      background-color: var(--colors-pure-white);
-      border-color: var(--colors-grey-400);
-      color: var(--colors-grey-400);
+      background-color: $colors-pure-white;
+      border-color: $colors-grey-400;
+      color: $colors-grey-400;
     }
   }
 }

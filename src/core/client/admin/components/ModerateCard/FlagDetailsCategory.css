@@ -1,4 +1,4 @@
-$moderateCardFlagsCategoryColor: var(--colors-mono-500);
+$moderateCardFlagsCategoryColor: $colors-mono-500;
 
 .category {
   font-size: var(--font-size-4);

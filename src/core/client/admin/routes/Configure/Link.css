@@ -1,7 +1,7 @@
-$sideNavItemColor: var(--colors-mono-100);
-$sideNavBorderColor: var(--colors-grey-300);
-$sideNavIndicatorColor: var(--colors-coral-500);
-$sideNavActiveColor: var(--colors-mono-500);
+$sideNavItemColor: $colors-mono-100;
+$sideNavBorderColor: $colors-grey-300;
+$sideNavIndicatorColor: $colors-coral-500;
+$sideNavActiveColor: $colors-mono-500;
 
 .link {
   color: $sideNavItemColor;

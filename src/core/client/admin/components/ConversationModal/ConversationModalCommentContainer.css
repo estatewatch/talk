@@ -1,11 +1,11 @@
-$conversationModalHighlightBackground: var(--colors-teal-100);
-$conversationModalCommentText: var(--colors-mono-500);
+$conversationModalHighlightBackground: $colors-teal-100;
+$conversationModalCommentText: $colors-mono-500;
 .root {
   flex: 1;
 }
 
 .line {
-  border-color: var(--colors-grey-400);
+  border-color: $colors-grey-400;
 }
 
 .adornments {

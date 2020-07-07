@@ -1,9 +1,9 @@
-$commentsModerationApprovedColor: var(--colors-green-500);
-$commentsModerationRejectedColor: var(--colors-red-500);
-$commentsModerationFeaturedColor: var(--colors-stream-blue-500);
+$commentsModerationApprovedColor: $colors-green-500;
+$commentsModerationRejectedColor: $colors-red-500;
+$commentsModerationFeaturedColor: $colors-stream-blue-500;
 
 .label {
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-primary-regular);
   font-size: var(--font-size-3);
@@ -49,16 +49,16 @@ $commentsModerationFeaturedColor: var(--colors-stream-blue-500);
   font-size: var(--font-size-3);
   line-height: var(--line-height-3);
 
-  color: var(--colors-stream-blue-500);
+  color: $colors-stream-blue-500;
 
   text-decoration: underline;
 }
 
 .mouseHover {
-  background-color: var(--colors-stream-blue-100);
+  background-color: $colors-stream-blue-100;
 }
 
 .linkIcon {
   padding-top: 1px;
-  color: var(--colors-stream-blue-500);
+  color: $colors-stream-blue-500;
 }

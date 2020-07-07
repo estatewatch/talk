@@ -15,9 +15,9 @@
   position: relative;
   cursor: pointer;
   user-select: none;
-  border: 1px solid var(--colors-grey-300);
+  border: 1px solid $colors-grey-300;
   border-radius: var(--round-corners);
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
   padding: var(--spacing-1);
   line-height: var(--line-height-3);
   box-sizing: border-box;
@@ -25,7 +25,7 @@
 }
 
 .checked {
-  border: 1px solid var(--colors-grey-700);
-  background: var(--colors-grey-700);
+  border: 1px solid $colors-grey-700;
+  background: $colors-grey-700;
   color: var(--palette-text-light);
 }

@@ -1,5 +1,5 @@
-$tableHighlightColor: var(--colors-grey-100);
-$tableHoverColor: var(--colors-teal-100);
+$tableHighlightColor: $colors-grey-100;
+$tableHoverColor: $colors-teal-100;
 
 .root {
   box-sizing: border-box;

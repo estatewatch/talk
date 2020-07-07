@@ -34,6 +34,6 @@
 }
 
 .forumIcon {
-  background-color: var(--colors-teal-100);
-  color: var(--colors-teal-600);
+  background-color: $colors-teal-100;
+  color: $colors-teal-600;
 }

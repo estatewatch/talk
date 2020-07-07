@@ -8,7 +8,7 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
   margin-left: var(--spacing-1);
 }
@@ -23,25 +23,25 @@
   font-size: var(--font-size-3);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
-  background-color: var(--colors-grey-100);
+  background-color: $colors-grey-100;
   border-radius: var(--round-corners);
 }
 
 .stopIgnoringButton {
   &:not(.disabled),
   &:not(:disabled) {
-    color: var(--colors-stream-blue-500);
+    color: $colors-stream-blue-500;
   }
 
   &:hover, &.mouseHover {
-    color: var(--colors-stream-blue-600);
+    color: $colors-stream-blue-600;
   }
   &:active, &.active {
-    color: var(--colors-stream-blue-700);
+    color: $colors-stream-blue-700;
   }
   &.disabled {
-    color: var(--colors-stream-blue-200);
+    color: $colors-stream-blue-200;
   }
 }

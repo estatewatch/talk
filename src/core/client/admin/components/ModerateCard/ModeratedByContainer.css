@@ -1,5 +1,5 @@
-$moderated-by: var(--colors-mono-100);
-$moderated-by-username: var(--colors-mono-900);
+$moderated-by: $colors-mono-100;
+$moderated-by-username: $colors-mono-900;
 
 .moderatedBy {
   font-size: var(--font-size-1);

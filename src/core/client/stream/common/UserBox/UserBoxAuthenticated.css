@@ -8,7 +8,7 @@
   font-size: var(--font-size-2);
   line-height: var(--line-height-2);
 
-  color: var(--colors-mono-100);
+  color: $colors-mono-100;
 
   padding-bottom: var(--spacing-1);
 }
@@ -19,7 +19,7 @@
   font-size: var(--font-size-4);
   line-height: var(--line-height-4);
 
-  color: var(--colors-mono-900);
+  color: $colors-mono-900;
 
   padding-right: var(--spacing-1);
   padding-bottom: var(--spacing-1);

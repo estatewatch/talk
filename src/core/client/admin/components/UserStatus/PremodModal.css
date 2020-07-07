@@ -1,4 +1,4 @@
-$premod-modal-text: var(--colors-mono-500);
+$premod-modal-text: $colors-mono-500;
 
 .bodyText {
   font-size: var(--font-size-3);

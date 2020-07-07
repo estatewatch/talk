@@ -1,5 +1,5 @@
-$messageErrorBackgroundColor: var(--colors-red-500);
-$messageErrorForegroundColor: var(--colors-pure-white);
+$messageErrorBackgroundColor: $colors-red-500;
+$messageErrorForegroundColor: $colors-pure-white;
 
 .root {
   position: relative;
@@ -16,7 +16,7 @@ $messageErrorForegroundColor: var(--colors-pure-white);
 }
 
 .colorGrey {
-  background-color: var(--colors-pure-white);
+  background-color: $colors-pure-white;
   border-color: var(--palette-grey-main);
   color: var(--palette-grey-main);
 }

@@ -1,10 +1,10 @@
-$moderateCardTimestampColor: var(--colors-mono-100);
-$moderateCardEditedColor: var(--colors-mono-100);
-$moderateCardAuthorStatusColor: var(--colors-mono-100);
-$moderateCardDecisionColor: var(--colors-mono-500);
-$moderateCardStoryTitleColor: var(--colors-mono-500);
-$moderateCardUsernameBackgroundHover: var(--colors-grey-200);
-$moderateCardLinkTextColor: var(--colors-teal-700);
+$moderateCardTimestampColor: $colors-mono-100;
+$moderateCardEditedColor: $colors-mono-100;
+$moderateCardAuthorStatusColor: $colors-mono-100;
+$moderateCardDecisionColor: $colors-mono-500;
+$moderateCardStoryTitleColor: $colors-mono-500;
+$moderateCardUsernameBackgroundHover: $colors-grey-200;
+$moderateCardLinkTextColor: $colors-teal-700;
 
 .topBar {
   position: relative;
@@ -81,7 +81,7 @@ $moderateCardLinkTextColor: var(--colors-teal-700);
 }
 
 .ruledSeparator {
-  border-right: 1px solid var(--colors-grey-400);
+  border-right: 1px solid $colors-grey-400;
 }
 
 .root {

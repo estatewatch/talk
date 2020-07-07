@@ -1,5 +1,5 @@
-$navigation-item-selected: var(--colors-teal-600);
-$navigation-item-default: var(--colors-mono-100);
+$navigation-item-selected: $colors-teal-600;
+$navigation-item-default: $colors-mono-100;
 
 .root {
   height: 100%;

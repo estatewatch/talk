@@ -1,7 +1,7 @@
 .container {
   width: 385px;
-  background-color: var(--colors-grey-100);
-  border: 1px solid var(--colors-grey-300);
+  background-color: $colors-grey-100;
+  border: 1px solid $colors-grey-300;
   margin-top: 70px;
   padding: var(--spacing-6);
   box-sizing: border-box;

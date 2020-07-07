@@ -1,4 +1,4 @@
-$configureHeadingBackgroundColor: var(--colors-teal-900);
+$configureHeadingBackgroundColor: $colors-teal-900;
 
 .root {
 }

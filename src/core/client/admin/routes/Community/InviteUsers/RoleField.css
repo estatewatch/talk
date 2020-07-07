@@ -1,4 +1,4 @@
-$role-field-text: var(--colors-mono-500);
+$role-field-text: $colors-mono-500;
 
 .legend {
   font-size: var(--font-size-3);

@@ -1,4 +1,4 @@
-$moderateCardDecisionHistoryLinkTextColor: var(--colors-teal-700);
+$moderateCardDecisionHistoryLinkTextColor: $colors-teal-700;
 
 .root {
   line-height: var(--line-height-reset);

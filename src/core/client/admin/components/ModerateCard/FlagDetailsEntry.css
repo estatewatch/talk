@@ -1,5 +1,5 @@
-$moderateCardFlagUsernameColor: var(--colors-mono-900);
-$moderateCardReasonTextColor: var(--colors-mono-500);
+$moderateCardFlagUsernameColor: $colors-mono-900;
+$moderateCardReasonTextColor: $colors-mono-500;
 
 .user {
   color: $moderateCardFlagUsernameColor;

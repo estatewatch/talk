@@ -2,6 +2,6 @@
   height: 100%;
   font-size: var(--font-size-1);
   line-height: var(--line-height-reset);
-  color: var(--colors-mono-100);
+  color: $colors-mono-100;
   padding: 0 var(--spacing-1);
 }

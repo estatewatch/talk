@@ -1,6 +1,6 @@
-$commentsQuoteBackground: var(--colors-grey-200);
-$commentsLinkColor: var(--colors-stream-blue-500);
-$commentsLinkColorHovered: var(--colors-stream-blue-700);
+$commentsQuoteBackground: $colors-grey-200;
+$commentsLinkColor: $colors-stream-blue-500;
+$commentsLinkColorHovered: $colors-stream-blue-700;
 
 .root {
   font-family: var(--font-family-primary);
@@ -8,7 +8,7 @@ $commentsLinkColorHovered: var(--colors-stream-blue-700);
   font-weight: var(--font-weight-primary-regular);
   font-size: var(--font-size-3);
   line-height: 1.45rem;
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
   overflow-wrap: break-word;
 

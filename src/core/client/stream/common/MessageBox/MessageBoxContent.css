@@ -1,4 +1,4 @@
-$commentsMessageBoxColor: var(--colors-pure-white);
+$commentsMessageBoxColor: $colors-pure-white;
 
 .root {
   composes: root from "~coral-stream/shared/htmlContent.css";

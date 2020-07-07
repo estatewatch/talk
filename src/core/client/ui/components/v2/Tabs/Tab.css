@@ -1,8 +1,8 @@
-$tab-selected: var(--colors-teal-600);
-$tab-default: var(--colors-mono-100);
+$tab-selected: $colors-teal-600;
+$tab-default: $colors-mono-100;
 
-$tab-stream-selected: var(--colors-stream-blue-500);
-$tab-stream-default: var(--colors-mono-500);
+$tab-stream-selected: $colors-stream-blue-500;
+$tab-stream-default: $colors-mono-500;
 
 .root {
   display: inline-block;
@@ -52,7 +52,7 @@ $tab-stream-default: var(--colors-mono-500);
   padding: calc(0.5 * var(--mini-unit)) calc(var(--mini-unit) * 2);
   &.active {
     background-color: var(--palette-common-white);
-    color: var(--colors-pure-black);
+    color: $colors-pure-black;
     border-bottom: 0;
     border-top-width: calc(0.5 * var(--mini-unit));
     border-top-color: var(--palette-primary-main);
@@ -104,8 +104,8 @@ $tab-stream-default: var(--colors-mono-500);
   padding-left: var(--spacing-6);
   padding-right: var(--spacing-6);
 
-  background: var(--colors-grey-100);
-  border: 1px solid var(--colors-grey-300);
+  background: $colors-grey-100;
+  border: 1px solid $colors-grey-300;
   border-bottom-width: 0px;
 
   font-family: var(--font-family-secondary);
@@ -114,19 +114,19 @@ $tab-stream-default: var(--colors-mono-500);
   font-size: var(--font-size-4);
   line-height: var(--line-height-5);
 
-  color: var(--colors-mono-500);
+  color: $colors-mono-500;
 
   &.active {
     z-index: 10;
 
-    background-color: var(--colors-pure-white);
+    background-color: $colors-pure-white;
     border-bottom: 0;
     border-radius: 0;
 
-    color: var(--colors-stream-blue-500);
+    color: $colors-stream-blue-500;
     font-weight: var(--font-weight-secondary-bold);
 
-    border-top: 1px solid var(--colors-stream-blue-500);
+    border-top: 1px solid $colors-stream-blue-500;
 
     overflow: visible;
   }
@@ -140,8 +140,8 @@ $tab-stream-default: var(--colors-mono-500);
   width: calc(100% + 2px);
   height: 4px;
 
-  background-color: var(--colors-stream-blue-500);
-  color: var(--colors-stream-blue-500);
+  background-color: $colors-stream-blue-500;
+  color: $colors-stream-blue-500;
   content: "active";
   overflow: hidden;
 }

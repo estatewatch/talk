@@ -1,4 +1,4 @@
-$modal-header-text: var(--colors-mono-900);
+$modal-header-text: $colors-mono-900;
 
 .title {
   font-size: var(--font-size-4);

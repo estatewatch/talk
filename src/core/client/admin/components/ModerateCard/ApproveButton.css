@@ -1,4 +1,4 @@
-$moderateCardButtonOutlineApproveColor: var(--colors-green-500);
+$moderateCardButtonOutlineApproveColor: $colors-green-500;
 
 .root {
   border: 1px solid $moderateCardButtonOutlineApproveColor;
@@ -12,13 +12,13 @@ $moderateCardButtonOutlineApproveColor: var(--colors-green-500);
   color: $moderateCardButtonOutlineApproveColor;
   &:not(:disabled):active {
     background-color: $moderateCardButtonOutlineApproveColor;
-    color: var(--colors-pure-white);
+    color: $colors-pure-white;
   }
 }
 
 .invert {
   background-color: $moderateCardButtonOutlineApproveColor;
-  color: var(--colors-pure-white);
+  color: $colors-pure-white;
 }
 
 .icon {

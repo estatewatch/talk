@@ -1,4 +1,4 @@
-$moderateCardDecisionHistoryColor: var(--colors-mono-900);
+$moderateCardDecisionHistoryColor: $colors-mono-900;
 
 .root {
   color: $moderateCardDecisionHistoryColor;

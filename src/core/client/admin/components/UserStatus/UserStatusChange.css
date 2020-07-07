@@ -1,4 +1,4 @@
-$status-change-button-border: var(--colors-grey-400);
+$status-change-button-border: $colors-grey-400;
 
 .button {
   justify-content: space-between;
