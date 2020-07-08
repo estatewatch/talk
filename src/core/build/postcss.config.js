@@ -17,7 +17,7 @@ const postcssPrependImports = require("postcss-prepend-imports");
 const postcssAdvancedVariables = require("postcss-advanced-variables");
 
 delete require.cache[paths.appSassLikeVariables];
-const sassLikeVariables = require(paths.appSassLikeVariables);
+const sassLikeVariables = require(paths.appSassLikeVariables).default;
 
 const kebabs = mapKeys(
   mapValues(flat(sassLikeVariables, { delimiter: "-" }), (v) => v.toString()),

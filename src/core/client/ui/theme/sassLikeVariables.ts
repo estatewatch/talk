@@ -1,12 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const breakpoints = require("./breakpoints");
-const colors = require("./colors");
-// const zindex = require("./zIndex");
-
 const variables = {
-  colors,
-  breakpoints,
-  // zindex
+  colors: require("./colors").default,
+  breakpoints: require("./breakpoints").default,
+  zindex: require("./zIndex").default,
 };
 
 export default variables;
