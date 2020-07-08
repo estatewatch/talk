@@ -6,21 +6,32 @@
 import colors from "./colors";
 
 const variables = {
-  elevation: {
-    main: "1px 0px 4px rgba(0, 0, 0, 0.25)",
-  },
   palette: {
+    background: "inherit",
     text: {
       light: colors.white500,
       dark: colors.mono900,
       primary: colors.mono500,
       secondary: colors.mono100,
+      "000": colors.pure.white,
+      100: colors.mono100,
+      500: colors.mono500,
+      900: colors.mono900,
     },
     primary: {
       lightest: colors.teal100,
       light: colors.teal300,
       main: colors.teal700,
       darkest: colors.teal900,
+      100: colors.streamBlue100,
+      200: colors.streamBlue200,
+      300: colors.streamBlue300,
+      400: colors.streamBlue400,
+      500: colors.streamBlue500,
+      600: colors.streamBlue600,
+      700: colors.streamBlue700,
+      800: colors.streamBlue800,
+      900: colors.streamBlue900,
     },
     grey: {
       main: colors.grey500,
@@ -28,6 +39,29 @@ const variables = {
       lighter: colors.grey300,
       dark: colors.grey600,
       darkest: colors.grey700,
+      100: colors.grey100,
+      200: colors.grey200,
+      300: colors.grey300,
+      400: colors.grey400,
+      500: colors.grey500,
+      600: colors.grey600,
+      700: colors.grey700,
+      800: colors.grey800,
+      900: colors.grey900,
+    },
+    negative: {
+      100: colors.red100,
+      500: colors.red500,
+      900: colors.red900,
+    },
+    positive: {
+      100: colors.green100,
+      500: colors.green500,
+      900: colors.green900,
+    },
+    warning: {
+      100: colors.yellow100,
+      500: colors.yellow500,
     },
     error: {
       lightest: colors.red100,
@@ -119,9 +153,8 @@ const variables = {
     9: "84px",
   },
   roundCorners: "3px",
-  zindex: {
-    popover: 300,
-    modal: 1000,
+  elevation: {
+    main: "1px 0px 4px rgba(0, 0, 0, 0.25)",
   },
 };
 

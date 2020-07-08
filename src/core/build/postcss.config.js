@@ -16,16 +16,11 @@ const postcssMixins = require("postcss-mixins");
 const postcssPrependImports = require("postcss-prepend-imports");
 const postcssAdvancedVariables = require("postcss-advanced-variables");
 
-delete require.cache[paths.appColorVariables];
-const colors = require(paths.appColorVariables).default;
-
-delete require.cache[paths.appBreakpointVariables];
-const breakpoints = require(paths.appBreakpointVariables).default;
+delete require.cache[paths.appSassLikeVariables];
+const sassLikeVariables = require(paths.appSassLikeVariables);
 
 const kebabs = mapKeys(
-  mapValues(flat({ colors, breakpoints }, { delimiter: "-" }), (v) =>
-    v.toString()
-  ),
+  mapValues(flat(sassLikeVariables, { delimiter: "-" }), (v) => v.toString()),
   (_, k) => kebabCase(k)
 );
 

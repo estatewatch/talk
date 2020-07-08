@@ -12,7 +12,7 @@ $popoverDarkBorderColor: $colors-grey-500;
   box-sizing: border-box;
   box-shadow: var(--elevation-main);
   border-radius: var(--round-corners);
-  z-index: var(--zindex-popover);
+  z-index: $zindex-popover;
   margin: 2px;
 }
 
